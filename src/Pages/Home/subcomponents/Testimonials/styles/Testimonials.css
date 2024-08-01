@@ -1,0 +1,94 @@
+/* Container for the Swiper component */
+.testimonial-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for each slide */
+.testimonial-slide {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 70%;
+  margin: auto;
+  background-color: #f9f9f9; /* Light background color for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the image */
+.testimonial-image {
+  width: 60px; /* Slightly smaller image */
+  height: 60px; /* Maintain aspect ratio */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px; /* Adjust spacing */
+}
+
+/* Content styling */
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial-position {
+  font-size: 0.9rem;
+  color: #555; /* Slightly darker color for better contrast */
+  margin: 5px 0 10px;
+}
+
+.testimonial-review {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333; /* Darker color for better readability */
+}
+
+/* Swiper custom styles */
+.swiper-container {
+  padding: 20px;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff; /* Customize the color of navigation buttons */
+  width: 30px; /* Smaller width for buttons */
+  height: 30px; /* Smaller height for buttons */
+  background-color: #fff; /* Button background color */
+  border-radius: 50%; /* Rounded buttons */
+  border: 1px solid #ddd; /* Border color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation button icons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px; /* Smaller icon size */
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullets {
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #007bff; /* Customize the color of pagination bullets */
+  width: 8px; /* Smaller bullet size */
+  height: 8px; /* Smaller bullet size */
+}
+
+.swiper-pagination-bullet-active {
+  background: #0056b3; /* Different color for active bullet */
+}
