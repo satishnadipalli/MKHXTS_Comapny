@@ -3,6 +3,7 @@
   width: 70%;
   margin: auto;
   display: flex;
+  margin-top: 60px;
   justify-content: center;
   align-items: center;
 }
@@ -12,10 +13,11 @@
   display: flex;
   padding: 20px;
   align-items: center;
-  padding: 50px;
+  padding: 60px;
+  height: 290px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 70%;
+  width: 90%;
   margin: auto;
   background-color: #f9f9f9; /* Light background color for better readability */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,8 +25,8 @@
 
 /* Style for the image */
 .testimonial-image {
-  width: 60px; /* Slightly smaller image */
-  height: 60px; /* Maintain aspect ratio */
+  width: 50px; /* Slightly smaller image */
+  height: 50px; /* Maintain aspect ratio */
   border-radius: 50%;
   object-fit: cover;
   margin-right: 15px; /* Adjust spacing */
@@ -70,6 +72,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.eco{
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 17px;
+  color: rgb(106, 106, 106);
 }
 
 /* Navigation button icons */

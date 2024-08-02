@@ -3,20 +3,26 @@ header{
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    position: absolute; 
+    z-index: 10;
 }
 
 .head_wraper{
-    width: 80%;
+    width: 84%;
     margin: auto;
     display: flex;
+    justify-items: center;
+    align-items: center;
     padding: 7px;
-    justify-content: space-between;
+    
     align-items: center;
 }
 
 .logo_container{
     display: flex;
+    background-color: rgb(44, 19, 19);
+    border-radius: 90px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -37,22 +43,35 @@ header{
 }
 
 .route_container {
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: flex-end;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     
     
 }
-
-
 .route_names{
     padding-left: 20px;
     padding-right: 20px;
+    color: gray;
+    font-family: Rubics,sans-serif;
+    transition-duration: 0.3s;
 }
-
+.route_names:hover{
+    color: white;
+}
+.route_links{
+    white-space: nowrap;
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.linku{
+    margin-right: 10px;
+}
 
 @media (max-width: 728px) {
     header{
