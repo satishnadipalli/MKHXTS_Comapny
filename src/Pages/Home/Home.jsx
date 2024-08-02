@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./styles/Home.css";
 import "./subcomponents/Testimonials/styles/Testimonials.css"
 import Header from '../../Components/Header/Header';
@@ -39,6 +39,9 @@ import TwentySix from "../../assets/clients/shionogi.jpg";
 import TwentySeven from "../../assets/clients/takeda.jpg";
 import TwentyEight from "../../assets/clients/ucb.jpg"; // Adjusted to avoid duplicate key
 import Testimonial from './subcomponents/Testimonials/Testimonials';
+import OurService from './subcomponents/Ourservices/OurService';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 const clientImages = [
   One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
@@ -96,32 +99,56 @@ const serviceData = [
 ]
 
 const Home = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:1000});
+  },[])
   return (
     <>
       <div className='main-main-home'>
         <div  className='main-home'>
-          <div className='header_div'>
-            <Header />
-          </div>
-          <div className='main-middle'>
-            <span className='quote'>Welcome to MKTXS</span>
-            <p className='quote-2'>Discover the world of an integrated global consultancy</p>
-            <p className='quote-3'>
-              Market Access Solutions (MKTXS) is a boutique global consultancy that collaborates with life science companies to produce customized, integrated, and evidence-based strategies to optimize product value and patient access.
-            </p>
+          <div className='background'></div>
+          <div className='Two_divs'   style={{zIndex:17}}>
+              <div className='sec_1' style={{zIndex:17}} data-aos="slide-right">
+                  <p className='head_2'>Bluid your audiance and sale more</p>
+                  <p className='head_9'>
+                    Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.
+                  </p>
+                  <div className='buttons-div'>
+                    <button className='sub2'>Get Started</button>
+                  </div>
+              </div>
+              <div className='sec_2' style={{zIndex:17}} data-aos="slide-left">
+              <form action="" className="form-container">
+                <span className='form-p'>
+                  Book a Free Consultation Appointment
+                </span>
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" />
+                
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+                
+                <label htmlFor="phone">Phone</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" />
+                
+                <button type="submit" className='sub'>Book Appointment</button>
+              </form>
+
+              </div>
           </div>
         </div>
 
         <div className='client_list'>
           {
             boradingData.map((item, index) => (
-              <div key={index} className='rect_div'>
+              <div key={index} className='rect_div' data-aos="slide-right" data-aos-delay={`${4-index}00`}>
                 <div className='icon_wraper'>
                   <img src={item.image} alt={item.title} />
                 </div>
                 <div className='info_wraper'>
-                  <span className='head_2'>{item.members}+</span>
-                  <span className='head_3'>{item.title}</span>
+                  <span className='head_10'>{item.members}+</span>
+                  <span className='head_3'>{item.title}</span>    
                 </div>
               </div>
             ))
@@ -148,15 +175,19 @@ const Home = () => {
             }
           </div>
         </div>
-        <Testimonial/>
+        
         <div className="scrolling-container">
-        <span className='head-4'>Our Clients</span>
+          <span className='head-4'>Our Clients</span>
           <div className="scrolling-content">
             {clientImages.map((image, index) => (
               <img key={index} src={image} className='compan' alt={`client-${index}`} />
             ))}
           </div>
         </div>
+        <div className='Our_services'>
+            <OurService />
+        </div>
+        <Testimonial/>
       </div>
     </>
   );
