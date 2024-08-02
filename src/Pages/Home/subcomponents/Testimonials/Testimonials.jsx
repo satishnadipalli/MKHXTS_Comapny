@@ -1,9 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import {  Pagination,Navigation } from 'swiper/modules'; 
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper';
 import './styles/Testimonials.css';
 
 // Testimonial data
@@ -66,7 +66,7 @@ const Testimonial = () => {
           slidesPerView={1}
           
           pagination={{ clickable: true }}
-          modules={[Navigation, Pagination]}
+          modules={[Pagination,Navigation]} //Navigation, Pagination
           className="swiper-container"
         >
         {data.testimonials.map((testimonial) => (
