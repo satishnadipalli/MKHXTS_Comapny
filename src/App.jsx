@@ -5,6 +5,7 @@ import './App.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Header from './Components/Header/Header'
 import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
 
 
 function App() {
@@ -14,9 +15,9 @@ function App() {
     <div className='Main_wraper'>
       <Router>
         {/* <Header/> */}
-        <Home/>
+        {/* <Home/> */}
         <Routes>
-          
+          <Route path='/about' element={<About/>}/>
         </Routes>
       </Router>
     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import { Navigation, Pagination } from 'swiper';
 import './styles/Testimonials.css';
 
 // Testimonial data
@@ -60,7 +60,7 @@ const Testimonial = () => {
   return (
     <div style={{marginBottom:"60px"}}>
       <h4 style={{textAlign:"center",marginTop:"80px",marginBottom:"30px"}}>Feed From Top Clients</h4>
-      <div className="testimonial-container">
+      {/* <div className="testimonial-container">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -87,7 +87,7 @@ const Testimonial = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </div> */}
     </div>
   );
 };
