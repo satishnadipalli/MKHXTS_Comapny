@@ -38,7 +38,7 @@ const Header = () => {
                             <span className='route_names'>About us</span>
                             <span className='route_names'>Services</span>
                             <span className='route_names'>Blogs</span>
-                            <span className='route_names'>Contact Us</span>
+                            <span className='route_names'>Platforms</span>
                             <span className='route_names'>Contact Us</span>
                         </div>
                         <div className='route_links'>

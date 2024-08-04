@@ -119,7 +119,7 @@ const Home = () => {
         <div  className='main-home'>
           <div className='background'></div>
           <div className='Two_divs'   style={{zIndex:17}}>
-              <div className='sec_1' style={{zIndex:17}} data-aos="slide-right">
+              <div className='sec_1' style={{zIndex:17}} data-aos="fade-up">
                   <p className='head_2'>Bluid your audiance and sale more</p>
                   <p className='head_9'>
                     Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.
