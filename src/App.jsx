@@ -16,8 +16,8 @@ function App() {
     <div className='Main_wraper'>
       <Router>
         <Header/>
-        <Home/>
         <Routes>
+          <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>
         <Footer/>
