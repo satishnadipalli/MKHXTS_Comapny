@@ -42,12 +42,19 @@ import Testimonial from './subcomponents/Testimonials/Testimonials';
 import OurService from './subcomponents/Ourservices/OurService';
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from "swiper"
+import 'swiper/swiper-bundle.css';
+import  { Pagination, Autoplay } from 'swiper/modules';
+import FAQSection from './subcomponents/FaqSection/FaqSection';
+
+SwiperCore.use([Pagination, Autoplay]);
 
 const clientImages = [
   One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
   Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Eighteen, 
   Nineteen, Twenty, TwentyOne, TwentyTwo, TwentyThree, TwentyFour, 
-  TwentyFive, TwentySix, TwentySeven, TwentyEight
+  TwentyFive, TwentySix, TwentySeven, TwentyEight,One, Two, Three,
 ];
 
 const boradingData = [
@@ -78,23 +85,23 @@ const boradingData = [
 ];
 
 const serviceData = [
+  {  
+    image:thanks2,
+    title:"Systematic Approach"
+  },
   {
     image:thanks,
     title:"Comprehensive Service"
 
   },
-  {  
-    image:thanks2,
-    title:"Systematic Approach"
-  },
-  {  
-    image:thanks3,
-    title:"Extended Communication & Support"
-  },
   {
     image:thanks,
     title:"Innovative & Pragmatic Solutions"
 
+  },
+  {  
+    image:thanks3,
+    title:"Extended Communication & Support"
   }
 ]
 
@@ -103,6 +110,9 @@ const Home = () => {
   useEffect(()=>{
     Aos.init({duration:1000});
   },[])
+
+  console.log(window.innerWidth)
+
   return (
     <>
       <div className='main-main-home'>
@@ -139,10 +149,12 @@ const Home = () => {
           </div>
         </div>
 
+        {/* All the client Numbers */}
         <div className='client_list'>
           {
             boradingData.map((item, index) => (
-              <div key={index} className='rect_div' data-aos="slide-right" data-aos-delay={`${4-index}00`}>
+              <div key={index} className='rect_div' data-aos="fade-up" > 
+              {/* data-aos-delay={`${4-index}00`} */}
                 <div className='icon_wraper'>
                   <img src={item.image} alt={item.title} />
                 </div>
@@ -155,6 +167,7 @@ const Home = () => {
           }
         </div>
 
+        {/* Trust Us component */}
         <div style={{width:"100%"}}> 
           <p className='head-7' > Why Clients Trust Us</p>
           <div className='why-mk'>
@@ -168,26 +181,53 @@ const Home = () => {
                         <span>{item.title}</span>
                       </div>  
                     </div>
-                  {id != 3 &&  <div className='thin'></div>}
+                    {/* {id == 2 && <div className='thins'></div>} */}
+                  { id != 3 &&  <div  className='thin'></div> }
                   </div>
                 )
               })
             }
           </div>
         </div>
-        
-        <div className="scrolling-container">
-          <span className='head-4'>Our Clients</span>
-          <div className="scrolling-content">
-            {clientImages.map((image, index) => (
-              <img key={index} src={image} className='compan' alt={`client-${index}`} />
-            ))}
-          </div>
+          
+        <div>
+          
         </div>
+
+        {/* Compnay Slides Swiper */}
+        {  
+          <>
+            <span className='head-4'>Our Clients</span>
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={5}
+              slidesPerGroup={5}  // Scrolls 5 images at a time
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              pagination={{ clickable: true }}
+              className="scrolling-content"
+              style={{paddingTop:"20px"}}
+            >
+              {clientImages.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <img src={image} style={{width:"220px",height:"80px",verticalAlign:"top"}} className='compan' alt={`client-${index}`} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </>
+         }
+
+
         <div className='Our_services'>
             <OurService />
         </div>
         <Testimonial/>
+        <div>
+          <FAQSection/>
+        </div>
       </div>
     </>
   );
