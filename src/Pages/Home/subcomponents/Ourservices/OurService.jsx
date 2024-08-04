@@ -18,6 +18,7 @@ const MVAP =  "./assets/Img/MVAP.svg"
 const VIP  =  "./assets/Img/VIP.svg"
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import { Link } from 'react-router-dom';
 
  const serviceTools = [
   {
@@ -58,12 +59,14 @@ import "aos/dist/aos.css"
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Financial.svg",
       ttile:"VIP",
-      desc:"For Testing Value Message/Proposition"
+      desc:"For Testing Value Message/Proposition",
+      link:"/vip"
     },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Industry.svg",
       ttile:"EMAP",
-      desc:"To assess the value perception vis-a-vis"
+      desc:"To assess the value perception vis-a-vis",
+      link:""
     },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Sustainability.svg",
@@ -73,7 +76,8 @@ import "aos/dist/aos.css"
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Strategic.svg",
       ttile:"MVAP",
-      desc:"For evidence mapping to assess the disease and needs"
+      desc:"For evidence mapping to assess the disease and needs",
+      link:"./mvap"
     }
  ]
 const OurService = () => {
@@ -111,15 +115,17 @@ const OurService = () => {
           <p className='value-story'>Value Story Development and Message Testing</p>
           <div className='platforms_holder'>
               {
-                Platforms.map((item)=>{
+                Platforms.map((item,i)=>{
                   return(
-                    <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
-                      <div class="platform_card">
-                        <img src={item.svg} alt="not found" class="plt-img" />
-                        <div class="card_info">{item.desc}</div>
-                      </div>
-                      <p style={{color:"black",marginTop:"-40px"}} >{item.ttile}</p>
-                    </div>
+                    <Link to={item.link} key={i} >
+                      <div key={i} style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
+                          <div class="platform_card">
+                            <img src={item.svg} alt="not found" class="plt-img" />
+                            <div class="card_info">{item.desc}</div>
+                          </div>
+                          <p style={{color:"black",marginTop:"-40px"}} >{item.ttile}</p>
+                        </div>
+                    </Link>
                   )
                 })
               }
