@@ -6,6 +6,8 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Header from './Components/Header/Header'
 import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer'
+import Mvap from './Pages/Platforms/MVAP/Mvap'
+import Vip from './Pages/Platforms/VIP/Vip'
 
 
 function App() {
@@ -15,9 +17,10 @@ function App() {
     <div className='Main_wraper'>
       <Router>
         <Header/>
-        <Home/>
         <Routes>
-          
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/mvap' element={<Mvap/>}></Route>
+          <Route path='/vip' element={<Vip/>}></Route>
         </Routes>
         <Footer/>
       </Router>
