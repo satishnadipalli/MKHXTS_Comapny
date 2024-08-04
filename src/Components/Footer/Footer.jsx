@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <p>&copy; 2024 YourCompany. All rights reserved.</p>
+                <p style={{color:"lightgray"}}>&copy; 2024 Developed by GitaSphere Techonologies and Innovations.</p>
             </div>
         </footer>
     );

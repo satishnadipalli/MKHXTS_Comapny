@@ -6,6 +6,10 @@
     text-align: center;
     font-size: 24px;
     font-weight: 500;
+    margin-top: 150px;
+    color: rgb(7 ,107 ,178);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
 }  
 
 .serce_card_holder{
@@ -18,22 +22,27 @@
 }
 
 .service_card{
-    width: 210px;
-    height: 140px;
-    background: #afafaf;
+    width: 230px;
+    height: 150px;
+    background: #9216b1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6px;
-    transform-origin: x;
-    transition-duration: 0.2s;
+    gap: 15px;
+    background-color: rgb(227, 170, 255);
+    background-color: rgb(168, 165, 242);
+    box-shadow: rgb(15, 202, 211) 0px 20px 20px -18px;
+    transition-duration: 1s;
+    padding: 10px;    
 }
 
+
 .service_card:hover {
+    transition-duration: 1s;
     border-top-right-radius: 20px;
     background-color: rgb(72, 172, 159);
-    color: rgb(66, 0, 100);
+    color: rgb(255, 255, 255);
     .linku{
         color: rgb(0, 99, 169);
     }
@@ -64,36 +73,68 @@
     justify-content: space-between;
 }
 
-.inner{
-    display: none;
-}
-
-.platform_card{
+.platform_card {
     width: 250px;
     height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition-duration: 0.4s;
+    position: relative; /* Ensure the card can be positioned relatively */
+    transition: transform 0.4s ease;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Hide content that overflows the card */
+    margin-bottom: 50px; /* Space for card info to show */
 }
 
-.plt-img{
+.plt-img {
     width: 90px;
+    transition: transform 0.4s ease;
 }
 
-.platform_card:hover{
-    border: 3px dashed rgb(7 ,107 ,178);
-    background-color: rgb(160, 198, 224);
-    .inner{
-        display: block;
-        font-size: 20px;
-        font-weight: 600;
-
-    }
-    .plt-img{
-        display: none;
-    }
-    
+.inner {
+    display: none; /* Initially hidden */
 }
 
+.card_info {
+    position: absolute;
+    bottom: -60px; /* Initially positioned below the card */
+    width: 100%;
+    background-color: rgb(77, 102, 191);
+    color: #dbdbdb;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    opacity: 0;
+    transition: opacity 0.4s ease, bottom 0.4s ease;
+}
+.value-story{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color:rgb(58, 115, 51);
+}
+
+.platform_card:hover {
+    transform: translateY(-20px); /* Move the card up on hover */
+}
+
+.platform_card:hover .plt-img {
+    transform: translateY(-30px);
+}
+
+.platform_card:hover .inner {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(-20px); /* Move the text up with the card */
+}
+
+.platform_card:hover .card_info {
+    bottom: -10px; /* Move the info box up */
+    opacity: 1;
+}

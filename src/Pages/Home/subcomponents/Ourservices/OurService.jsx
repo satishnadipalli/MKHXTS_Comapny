@@ -57,19 +57,23 @@ import "aos/dist/aos.css"
  const Platforms = [
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Financial.svg",
-      ttile:"Carve"
+      ttile:"VIP",
+      desc:"For Testing Value Message/Proposition"
     },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Industry.svg",
-      ttile:"EMAP"
+      ttile:"EMAP",
+      desc:"To assess the value perception vis-a-vis"
     },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Sustainability.svg",
-      ttile:"FAP"
+      ttile:"FAP",
+      desc:"Oputunity Assesment & Stakeholder engagement"
     },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Strategic.svg",
-      ttile:"VIP"
+      ttile:"MVAP",
+      desc:"For evidence mapping to assess the disease and needs"
     }
  ]
 const OurService = () => {
@@ -103,14 +107,18 @@ const OurService = () => {
         </div>
         {/* Platforms Component */}
         <div className='Platforms'>
-          <p className='service_head' style={{marginTop:"120px"}}>Plaforms that we are offering</p>
+          <p className='service_head' style={{marginTop:"120px",color:" rgb(7 ,107 ,178)"}}>Plaforms that we are offering</p>
+          <p className='value-story'>Value Story Development and Message Testing</p>
           <div className='platforms_holder'>
               {
                 Platforms.map((item)=>{
                   return(
-                    <div className='platform_card'>
-                      <img src={item.svg} alt='not found' className='plt-img'/>
-                      <p className='inner'>{item.ttile}</p>
+                    <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
+                      <div class="platform_card">
+                        <img src={item.svg} alt="not found" class="plt-img" />
+                        <div class="card_info">{item.desc}</div>
+                      </div>
+                      <p style={{color:"black",marginTop:"-40px"}} >{item.ttile}</p>
                     </div>
                   )
                 })
