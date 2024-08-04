@@ -1,11 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import {  Pagination,Navigation } from 'swiper/modules'; 
+import { Pagination, Navigation } from 'swiper/modules'; 
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './styles/Testimonials.css';
-
+import semicolum from "./assets/colun.svg";
 // Testimonial data
 const data = {
   testimonials: [
@@ -53,44 +53,53 @@ const data = {
       enabled: true,
       _id: '65f1fcca0556c3f887e9d6e8',
     },
+    
   ],
 };
+
 
 const Testimonial = () => {
   return (
     <div style={{marginBottom:"60px",marginTop:"120px"}}>
-      <h4 style={{textAlign:"center",marginTop:"80px",marginBottom:"30px"}}>Feed From Employees and Clients</h4>
+      <h4 style={{textAlign:"center",marginTop:"80px",marginBottom:"20px",color:"#2d3748",fontWeight:"500"}}>Feed From Employees and Clients</h4>
       <h5 className='eco'>We've changed the way hundreds of teams work today with the products we are building in the HR ecosystem.</h5>
       <div className="testimonial-container">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
-          
           pagination={{ clickable: true }}
-          modules={[Pagination,Navigation]} //Navigation, Pagination
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }}
+          modules={[Pagination, Navigation]}
           className="swiper-container"
         >
-        {data.testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial._id}>
-            <div className="testimonial-slide">
-              <img
-              style={{marginTop:"-70px"}}
-                src={testimonial.image.url}
-                alt={testimonial.name}
-                className="testimonial-image"
-              />
-              <div className="testimonial-content">
-                <h3 className="testimonial-name">{testimonial.name}</h3>
-                <p className="testimonial-position">{testimonial.position}</p>
+          {data.testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial._id}>
+              <div className="testimonial-slide">
+                <img src={semicolum} className='semicol' alt="Here is your semi column" />
                 <p className="testimonial-review">"{testimonial.review}"</p>
+                <div className='slide_info'>
+                  <img className='testimonial-image' src={testimonial.image.url} alt="" />
+                  <div className='ccc'>
+                    <span className='testimonial-name'>{testimonial.name}</span>
+                    <span className='testimonial-position'>{testimonial.position}</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div> 
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        {/* <div className="swiper-navigation">
+          <div style={{fontSize:"16px"}} className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </div> */}
+      </div>
     </div>
   );
 };
 
 export default Testimonial;
+
+
