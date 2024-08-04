@@ -81,6 +81,75 @@ const developmentPhaseList =[
   },
 ]
 
+const whyChooseUsData = [
+  {
+    id: 1,
+    whyChooseUsText: "",
+    whyChooseUsImg: undefined,
+    style: "dummy-grid-left"
+  },
+  {
+    id: 2,
+    whyChooseUsText: "4000+ hours of interaction with payers/ payer influencers from around the world",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 3,
+    whyChooseUsText: "MKTXS principal has priced countless assets over 30+ years in the industry",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 4,
+    whyChooseUsText: "",
+    whyChooseUsImg: undefined,
+    style: "dummy-grid-right"
+  },
+  {
+    id: 5,
+    whyChooseUsText: "Vast global payer network with relevant payer archetypes in each market",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 6,
+    whyChooseUsText: "Prestigious reputation for providing high-quality deliverables over 17+ years",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 7,
+    whyChooseUsText: "360-degree integration of various internal expertise for optimal strategy development",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 8,
+    whyChooseUsText: "",
+    whyChooseUsImg: undefined,
+    style: "dummy-grid-left"
+  },
+  {
+    id: 9,
+    whyChooseUsText: "Innovative, propriety platforms deliver efficient & effective solutions for optimal value",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 10,
+    whyChooseUsText: "Prestigious reputation for providing high-quality deliverables over 17+ years",
+    whyChooseUsImg: "",
+    style: "active-grid"
+  },
+  {
+    id: 11,
+    whyChooseUsText: "",
+    whyChooseUsImg: undefined,
+    style: "dummy-grid-right"
+  },
+]
+
 const About = () => {
   return (
     <>
@@ -126,21 +195,30 @@ const About = () => {
 
       <div className='ceo-div'>
         <div className='ceo'>
-          <div className='ceo-upper'>
-            <div className='ceo-image'>
-              <img src="https://mktxs.com/wp-content/uploads/2023/03/Untitled.png" alt="CEO" className='ceo-img'/>
-            </div>
-            <div className='ceo-about'>
-              <h1 className='ceo-main-head'>Sandip Shah</h1>
-              <p className='ceo-main-para'>President & CEO</p>
-              <p className='ceo-text'>The Founder and CEO of Market Access Solutions (MKTXS), Sandip Shah, is a seasoned and experienced pricing strategist with 30+ years of experience in the healthcare sector, including 23 years in Global PRMA.</p>
-              <p className='ceo-text'>Sandip is now focused on providing global strategic guidance in pricing and reimbursement at all phases of pharmaceutical and medical/surgical product development through to customer segment contracting and has led countless initiatives managing and providing global market access strategies to Fortune 500 clients in numerous therapeutic areas for the last two decades.</p>
-            </div>
+          <div className='ceo-image'>
+            <img src="https://mktxs.com/wp-content/uploads/2023/03/Untitled.png" alt="CEO" className='ceo-img'/>
           </div>
-          <div className='ceo-lower'>
+          <div className='ceo-about'>
+            <h1 className='ceo-main-head'>Sandip Shah</h1>
+            <p className='ceo-main-para'>President & CEO</p>
+            <p className='ceo-text'>The Founder and CEO of Market Access Solutions (MKTXS), Sandip Shah, is a seasoned and experienced pricing strategist with 30+ years of experience in the healthcare sector, including 23 years in Global PRMA.</p>
+            <p className='ceo-text'>Sandip is now focused on providing global strategic guidance in pricing and reimbursement at all phases of pharmaceutical and medical/surgical product development through to customer segment contracting and has led countless initiatives managing and providing global market access strategies to Fortune 500 clients in numerous therapeutic areas for the last two decades.</p>
             <p className='ceo-text'>Prior to starting the company, Sandip was with the Johnson and Johnson family of companies from 1994-2004, where he developed optimal Price and Reimbursement strategies for the pharmaceutical, medical and surgical sectors and worked with local operating companies globally to implement recommendations. Before his time at Johnson and Johnson, Sandip oversaw inline product pricing and contracting at Glaxo Pharmaceuticals. Sandip has also managed sales/marketing services departments including compensation and forecasting.</p>
             <p className='ceo-text'>He holds an MBA from Duke and a Bachelor’s in Chemical Engineering from Purdue University.</p>
+            <p className='ceo-text'>Recognized authority in Global Pricing and Market Access for healthcare technology innovations</p>
           </div>
+        </div>
+      </div>
+
+      <div className='why-choose-us-div'>
+        <div className='why-choose-us'>
+          <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
+          <ul className='why-choose-us-cards'>{whyChooseUsData.map(eachRes => (
+            <li key={eachRes.id} className={`why-choose-us-each-list ${eachRes.style}`}>
+              {eachRes.whyChooseUsImg !== undefined ? <div className='why-choose-us-img'></div> : null}
+              <p className='why-choose-us-each-para'>{eachRes.whyChooseUsText}</p>
+            </li>
+          ))}</ul>
         </div>
       </div>
 
