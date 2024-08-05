@@ -89,3 +89,31 @@
     height: 350px;
     margin:auto;
   }
+
+
+  @media (max-width:730px){
+    .faq-sc{
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+  .faq-section {
+    width: 100%;
+    padding: 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    flex-direction: column;
+  }
+  .faq-img{
+    height: 270px;
+    margin:auto;
+    mix-blend-mode: multiply;
+  }
+
+  }

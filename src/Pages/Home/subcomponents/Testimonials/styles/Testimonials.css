@@ -176,7 +176,6 @@
 
 .eco{
   text-align: center;
-  width: 50%;
   margin-top: -20px;
   margin: auto;
   font-size: 16px;
@@ -202,4 +201,50 @@
 
 .swiper-pagination-bullet-active {
   background: #0056b3; /* Different color for active bullet */
+}
+
+@media (max-width:720px){
+  .testimonial-container {
+    width: 90%;
+    height: 100%;
+  }
+  .eco{
+    font-size: 14px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .swiper-container {
+    padding: 3px;
+  }
+  
+  .testimonial-slide {
+    padding: 20px;
+    height: 350px;
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+    background-color: #f9f9f9; /* Light background color for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.testimonial-review {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.9;
+  font-weight: 500;
+  margin-top: 60px;
+  font-style: italic;
+  color: #585858; /* Darker color for better readability */
+}
+.slide_info{
+  width: 60%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  gap: 0px;
+}
+.ccc{
+  width: 100%;
+}
 }

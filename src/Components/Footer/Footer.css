@@ -97,3 +97,14 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+
+@media (max-width:730px){
+    .main-head {
+        font-size: 21px !important;
+        font-weight: 700;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #e3e30c;
+        padding-bottom: 5px;
+        position: relative;
+    }
+}

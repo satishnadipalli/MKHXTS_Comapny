@@ -47,6 +47,7 @@ import SwiperCore from "swiper"
 import 'swiper/swiper-bundle.css';
 import  { Pagination, Autoplay } from 'swiper/modules';
 import FAQSection from './subcomponents/FaqSection/FaqSection';
+import Connect from './subcomponents/Connect/connect';
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -213,7 +214,7 @@ const Home = () => {
             >
               {clientImages.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <img src={image} style={{width:"220px",height:"80px",verticalAlign:"top"}} className='compan' alt={`client-${index}`} />
+                  <img src={image} className='compan' alt={`client-${index}`} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -227,6 +228,9 @@ const Home = () => {
         <Testimonial/>
         <div>
           <FAQSection/>
+        </div>
+        <div>
+          <Connect/>
         </div>
       </div>
     </>
