@@ -1,13 +1,13 @@
 .mvap_main_div{
     height: 100%;
-    background-color: #f7f9fd;
+    background-color: #ffffff;
 }
 
 
 .mktxs_back {
     height: 50vh;
     width: 100%;
-    background: url("../assets/mvapbackgroundImage.jpg") no-repeat center center;
+    background: url("../assets/img/vdo-bg-1.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -42,18 +42,28 @@
     margin: auto;
 }
 
-.rounded_info{
+.rounded_infos{
     width: 90%;
+    background-color: white;
     line-height: 35px;
     /* height: 200px; */
     display: flex;
     gap: 70px;
     align-items: center;
+    margin: auto;
     
 }
+
+.rounded_infossss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .plat-logo{
-    height: 130px;
+    height: 330px;
     min-height: 90px;
+    mix-blend-mode: multiply !important;
+    
 }
 .infor{
     margin-top: 16px;
@@ -61,6 +71,29 @@
     color: rgb(105, 105, 105);
     padding-left: 10px;
     padding-right: 10px;
+}
+.infors{
+    margin-top: 16px;
+    font-size: 17px;
+    color: rgb(20, 87, 109);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inforss{
+    margin-top: 16px;
+    font-size: 17px;
+    color: rgb(94, 13, 144);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carve_offerings{
+    width: 700px;
+    min-width: 600px;
+    max-height: 300px;
+    
+}
+.desss{
+    color: rgb(93, 93, 93);
 }
 .info_holder{
     display: flex;
@@ -87,6 +120,15 @@
     color: rgb(0, 238, 230);
     margin-bottom: 20px;
             
+}
+.big-img-holder{
+    display: flex;
+    margin-bottom: 100px;
+    vertical-align: text-bottom;
+}
+.our-skills{
+    width: 260px;
+    min-width: 200px;
 }
 @media (max-width: 1000px){
     .mktxs_back {
@@ -117,7 +159,7 @@
         margin-top: 500px; 
     }
     .rounded_infos{
-        margin-top: 250px;
+        margin-top: -30px;
     }
 }
 
@@ -148,6 +190,24 @@
         mix-blend-mode: multiply;
     }
     .head-4{
-        margin-top: 500px;
+        margin-top: 50px;
     }
+    .carve_offerings{
+        width: 400px;
+        height: 150px;
+        min-width: 200px;
+        display: grid;
+        
+    }
+    .big-img-holder{
+        display: grid;
+    }
+    
+.rounded_infossss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
 }

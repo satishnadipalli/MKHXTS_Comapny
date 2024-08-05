@@ -7,6 +7,7 @@ import flower from "./assets/mvapproductvalue.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 const allowanceData = ["Indication prioritization",
     "Product development strategy conceptualization", 
     "Alignment of medical, HEOR, commercial, and product development teams", 
@@ -35,7 +36,7 @@ const Mvap = () => {
          <h2 className='main-head'>MVAP</h2>
          <span className='head-0' data-aos="fade-left">MKTXS Value Assessment Platform (MVAP™)</span>
       </div>
-      <div className='sec_2' >
+      <div className='section_2' >
       <p className='head-34' >MKTXS Value Assessment Platform (MVAP™) aids in developing optimal market access strategies</p>
       <div className='rounded_info' data-aos="fade">
         <img src={mvapplogo} className='plat-logo' alt="" />
