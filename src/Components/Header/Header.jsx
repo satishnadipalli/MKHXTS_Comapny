@@ -2,12 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import logo from './Assets/logo.png';
 import { Hamberger, IntoMark } from '../../HeroIcons';
-import { FaGithub, FaInstagram,FaFacebook } from 'react-icons/fa';
-
-
+import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Header = () => {
-    const [width, setWidth] = useState(window.innerWidth); 
+    const [width, setWidth] = useState(window.innerWidth);
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -48,7 +46,7 @@ const Header = () => {
                             <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram size={21} color='white' className='linku'/>
                             </a>
-                            <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
+                            <a href="https://facebook.com/your-username" target="_blank" rel="noopener noreferrer">
                                 <FaFacebook size={21} color='white' className='linku'/>
                             </a>
                         </div>
@@ -61,7 +59,19 @@ const Header = () => {
                                 alt='Logo not found'
                                 className='company_logo'
                             />
-                            {/* <p className='quotes'>Meeting your expectations surpassing your needs</p> */}
+                        </div>
+                        <div>
+                            <div className='route_links' style={{margin:"auto"}}>
+                                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+                                    <FaGithub size={22} color='rgb(7 ,107 ,178)' className='linku'/>
+                                </a>
+                                <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
+                                    <FaInstagram size={22} color='rgb( 27 ,173 ,153)' className='linku'/>
+                                </a>
+                                <a href="https://facebook.com/your-username" target="_blank" rel="noopener noreferrer">
+                                    <FaFacebook size={23} color='rgb(75, 80 ,88)' className='linku'/>
+                                </a>
+                            </div>
                         </div>
                         <div className='hamberger_div' onClick={() => setIsOpen(prev => !prev)}>
                             {isOpen ? <IntoMark /> : <Hamberger />}
@@ -70,12 +80,12 @@ const Header = () => {
                 )}
             </header>
             {width <= 728 && (
-                <div  className={`drop_down_menu ${isOpen ? 'open' : ''}`}>
+                <div className={`drop_down_menu ${isOpen ? 'open' : ''}`}>
                     <a href='#' className='anchor'>About</a>
                     <a href='#' className='anchor'>Products</a>
                     <a href='#' className='anchor'>Contact Us</a> 
                     <a href='#' className='anchor'>Solutions</a> 
-                    <a href='#' className='anchor'>Insits</a> 
+                    <a href='#' className='anchor'>Insights</a> 
                 </div>
             )}
         </>

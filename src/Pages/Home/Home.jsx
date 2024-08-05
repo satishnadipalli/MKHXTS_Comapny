@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./styles/Home.css";
 import "./subcomponents/Testimonials/styles/Testimonials.css"
 import Header from '../../Components/Header/Header';
@@ -47,6 +47,7 @@ import SwiperCore from "swiper"
 import 'swiper/swiper-bundle.css';
 import  { Pagination, Autoplay } from 'swiper/modules';
 import FAQSection from './subcomponents/FaqSection/FaqSection';
+import Connect from './subcomponents/Connect/connect';
 
 SwiperCore.use([Pagination, Autoplay]);
 
@@ -111,7 +112,18 @@ const Home = () => {
     Aos.init({duration:1000});
   },[])
 
-  console.log(window.innerWidth)
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+      const handleWidth = () => {
+          setWidth(window.innerWidth);
+      };
+
+      window.addEventListener('resize', handleWidth);
+
+      // Cleanup listener on unmount
+      return () => window.removeEventListener('resize', handleWidth);
+  }, []);
 
   return (
     <>
@@ -199,9 +211,9 @@ const Home = () => {
           <>
             <span className='head-4'>Our Clients</span>
             <Swiper
-              spaceBetween={10}
-              slidesPerView={5}
-              slidesPerGroup={5}  // Scrolls 5 images at a time
+              spaceBetween={5}
+              slidesPerView={width < 600 ? 3 : 5}
+              slidesPerGroup={width < 600 ? 3 : 5}  // Scrolls 5 images at a time
               loop={true}
               autoplay={{
                 delay: 2000,
@@ -213,7 +225,7 @@ const Home = () => {
             >
               {clientImages.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <img src={image} style={{width:"220px",height:"80px",verticalAlign:"top"}} className='compan' alt={`client-${index}`} />
+                  <img src={image} className='compan' alt={`client-${index}`} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -227,6 +239,9 @@ const Home = () => {
         <Testimonial/>
         <div>
           <FAQSection/>
+        </div>
+        <div>
+          <Connect/>
         </div>
       </div>
     </>

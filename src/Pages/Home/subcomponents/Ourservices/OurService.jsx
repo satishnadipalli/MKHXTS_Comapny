@@ -62,16 +62,18 @@ import { Link } from 'react-router-dom';
       desc:"For Testing Value Message/Proposition",
       link:"/vip"
     },
+    ,
+    {
+      svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Sustainability.svg",
+      ttile:"Carve",
+      desc:"Oputunity Assesment & Stakeholder engagement",
+      link:"/carve"
+    },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Industry.svg",
       ttile:"EMAP",
       desc:"To assess the value perception vis-a-vis",
       link:""
-    },
-    {
-      svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Sustainability.svg",
-      ttile:"FAP",
-      desc:"Oputunity Assesment & Stakeholder engagement"
     },
     {
       svg: "https://valueinsightsplatform-dev.accentureanalytics.com/assets/images/landing%20page%20Strategic.svg",
@@ -118,8 +120,8 @@ const OurService = () => {
                 Platforms.map((item,i)=>{
                   return(
                     <Link to={item.link} key={i} >
-                      <div key={i} style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
-                          <div class="platform_card">
+                      <div key={i} className='hold' style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
+                          <div  class="platform_card">
                             <img src={item.svg} alt="not found" class="plt-img" />
                             <div class="card_info">{item.desc}</div>
                           </div>
