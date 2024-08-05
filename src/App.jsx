@@ -8,6 +8,7 @@ import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer'
 import Mvap from './Pages/Platforms/MVAP/Mvap'
 import Vip from './Pages/Platforms/VIP/Vip'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 function App() {

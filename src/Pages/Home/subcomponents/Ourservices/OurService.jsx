@@ -118,8 +118,8 @@ const OurService = () => {
                 Platforms.map((item,i)=>{
                   return(
                     <Link to={item.link} key={i} >
-                      <div key={i} style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
-                          <div class="platform_card">
+                      <div key={i} className='hold' style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}>
+                          <div  class="platform_card">
                             <img src={item.svg} alt="not found" class="plt-img" />
                             <div class="card_info">{item.desc}</div>
                           </div>
