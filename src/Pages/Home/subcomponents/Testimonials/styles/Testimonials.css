@@ -220,7 +220,7 @@
   
   .testimonial-slide {
     padding: 20px;
-    height: 350px;
+    height: 370px;
     border-radius: 8px;
     width: 100%;
     margin: auto;
@@ -238,7 +238,7 @@
   color: #585858; /* Darker color for better readability */
 }
 .slide_info{
-  width: 60%;
+  width: 80%;
   height: 100px;
   display: flex;
   justify-content: start;

@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer'
 import Mvap from './Pages/Platforms/MVAP/Mvap'
 import Vip from './Pages/Platforms/VIP/Vip'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Carve from './Pages/Platforms/Carve/Carve'
 
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/'  element={<Home/>}></Route>
           <Route path='/mvap' element={<Mvap/>}></Route>
           <Route path='/vip' element={<Vip/>}></Route>
+          <Route path="/carve" element={<Carve/>}></Route>
         </Routes>
         <Footer/>
       </Router>

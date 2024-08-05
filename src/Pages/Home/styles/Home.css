@@ -111,8 +111,6 @@
     margin-right: 90px;
     width: 50px;
     height: 50px;
-    width:"220px";
-    height:"80px";
     vertical-align:"top"
 }
 .morq{
@@ -596,17 +594,17 @@ input:focus {
 }
 .scrolling-content{
   background-color: white;
-  height: 140px;
+  height: 160px;
   width: 100%;
+  display: flex;
   gap: 30px;
   padding-top: 20px;
 }
 .compan{
-  margin-right: 90px;
-  width: 80px;
+  margin-right: 0px;
+  width: 100px;
   height: 90px;
-  width:"220px";
-  height:"80px";
-  vertical-align:"top"
+  vertical-align:"top";
+  margin-left: 20px !important;
 }
 }

@@ -58,7 +58,7 @@ const Vip = () => {
          <h2 className='main-head'>VIP™</h2>
          <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span>
       </div>
-      <div className='sec_2'>
+      <div className='section_2'>
       <p className='head-34' data-aos="fade-left">Value Insights Platform (VIP™) for Value Message Testing, Analysis, & Validation</p>
       <p className='head-common' data-aos="fade-right">VIP is a state-of-the-art digital application for real-time value message testing, analysis, and validation</p>
       <div className='rounded_info' data-aos="fade-left">
