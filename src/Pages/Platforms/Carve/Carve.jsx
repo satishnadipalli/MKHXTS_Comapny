@@ -31,7 +31,7 @@ const Mvap = () => {
   },[]);
   return (
     <div className='mvap_main_div'>
-      <div className='mktxs_back' data-aos="fade">
+      <div className='mktxs_backs' data-aos="fade">
         <div className='background'></div>
          <h2 className='main-head'>CARVE™</h2>
          <span className='head-0' data-aos="fade-left">Continued Access Reinforced</span>
@@ -43,9 +43,8 @@ const Mvap = () => {
       </div>
       <p className='head-4'>CARVE™ Will Make Promise these Points</p>
       <div className='rounded_infos'>
-        
         <div className='info_holder'data-aos="fade-up">
-            <ul>
+            <ul >
                 {
                     allowanceData.map((item)=>{
                         return(

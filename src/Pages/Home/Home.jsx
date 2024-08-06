@@ -48,7 +48,11 @@ import 'swiper/swiper-bundle.css';
 import  { Pagination, Autoplay } from 'swiper/modules';
 import FAQSection from './subcomponents/FaqSection/FaqSection';
 import Connect from './subcomponents/Connect/connect';
-
+import { BsGenderTrans } from "react-icons/bs";
+import { MdBugReport } from 'react-icons/md';
+import { TbDeviceMobileMessage } from "react-icons/tb";
+import { MdGroups2 } from "react-icons/md";
+import { FaLayerGroup } from "react-icons/fa";
 SwiperCore.use([Pagination, Autoplay]);
 
 const clientImages = [
@@ -106,6 +110,12 @@ const serviceData = [
   }
 ]
 
+const cards=[
+  {image:"https://images.squarespace-cdn.com/content/v1/61377b87e3ca872480d39a2b/1631204741937-LGVLOLP9MS5ELVXCF2Z2/windrose-img-home-1-leader.png?format=750w",title:"Active leadership. Strategic guidance. Global experience.",desc:"When you work with Windrose, you get an experienced team dedicated to helping you succeed.  "},
+  {image:"https://images.squarespace-cdn.com/content/v1/61377b87e3ca872480d39a2b/1631204779732-4HIZN1B0Q2REPE778F1Z/windrose-img-home-2-guideclients.png?format=750w",title:"Active leadership. Strategic guidance. Global experience.",desc:"When you work with Windrose, you get an experienced team dedicated to helping you succeed.  "},
+  {image:"https://images.squarespace-cdn.com/content/v1/61377b87e3ca872480d39a2b/1631204807214-TDC7QXTYCH13HX3QU2ID/windrose-img-home-3-team.png?format=750w",title:"Active leadership. Strategic guidance. Global experience.",desc:"When you work with Windrose, you get an experienced team dedicated to helping you succeed.  "}
+]
+
 const Home = () => {
 
   useEffect(()=>{
@@ -132,41 +142,46 @@ const Home = () => {
           <div className='background'></div>
           <div className='Two_divs'   style={{zIndex:17}}>
               <div className='sec_1' style={{zIndex:17}} data-aos="fade-up">
-                  <p className='head_2'>Bluid your audiance and sale more</p>
+                  <p className='head_2'>Build your audiance and sale more</p>
                   <p className='head_9'>
                     Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.
                   </p>
                   <div className='buttons-div'>
-                    <button className='sub2'>Get Started</button>
+                    <button className='subi'>Get Started</button> 
                   </div>
               </div>
-              <div className='sec_2' style={{zIndex:17}} data-aos="slide-left">
-              <form action="" className="form-container">
-                <span className='form-p'>
-                  Book a Free Consultation Appointment
-                </span>
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" />
-                
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" />
-                
-                <label htmlFor="phone">Phone</label>
-                <input type="text" id="phone" placeholder="Enter your phone number" />
-                
-                <button type="submit" className='sub'>Book Appointment</button>
-              </form>
+              {/* <div className='sec_2' style={{zIndex:17}} data-aos="slide-left">
+                <form action="" className="form-container">
+                  <span className='form-p'>
+                    Book a Free Consultation Appointment
+                  </span>
+                  <label htmlFor="name">Name</label>
+                  <input type="text" id="name" placeholder="Enter your name" />
+                  
+                  <label htmlFor="email">Email</label>
+                  <input type="email" id="email" placeholder="Enter your email" />
+                  
+                  <label htmlFor="phone">Phone</label>
+                  <input type="text" id="phone" placeholder="Enter your phone number" />
+                  
+                  <button type="submit" className='sub'>Book Appointment</button>
+                </form>
 
-              </div>
+              </div> */}
           </div>
+        </div>
+        <div className='home_sec2'>
+          <p className='home_partner'>We partner with life science companies to maximize the commercial value of their products</p>
+          <p className='home_secPrateder'>Windrose Consulting Group brings years of experience and keen insights to solving challenges related to life science product commercialization.</p>
         </div>
 
         {/* All the client Numbers */}
-        <div className='client_list'>
+
+        {/* <div className='client_list'>
           {
             boradingData.map((item, index) => (
               <div key={index} className='rect_div' data-aos="fade-up" > 
-              {/* data-aos-delay={`${4-index}00`} */}
+
                 <div className='icon_wraper'>
                   <img src={item.image} alt={item.title} />
                 </div>
@@ -177,10 +192,25 @@ const Home = () => {
               </div>
             ))
           }
-        </div>
+        </div> */}
+
+        <div className='home_second_container'>
+          {
+            cards.map((item)=>{
+              return(
+                <div className="card">
+                  <img src={item.image} alt={"Card Title 2"} className="card-image" />
+                  <h2 className="card-title">{item.title}</h2>
+                  <p className="card-info">{item.desc}</p>
+                  <button className="card-button">Learn More</button>
+                </div>
+              )
+            })
+          }  
+        </div>  
 
         {/* Trust Us component */}
-        <div style={{width:"100%"}}> 
+        {/* <div style={{width:"100%"}}> 
           <p className='head-7' > Why Clients Trust Us</p>
           <div className='why-mk'>
             {
@@ -193,15 +223,37 @@ const Home = () => {
                         <span>{item.title}</span>
                       </div>  
                     </div>
-                    {/* {id == 2 && <div className='thins'></div>} */}
+                    
                   { id != 3 &&  <div  className='thin'></div> }
                   </div>
                 )
               })
             }
           </div>
+        </div> */}
+        <div className='home-why-div'>
+          <p className='home-why-head'>Why Clients Trust MKTXS</p>
+            <div className='home-why-inner'>
+              <div className='home-service-cards'>
+                <BsGenderTrans size={50}/>
+                <p>Comprehensive Services</p>
+              </div>
+              <div className='home-service-cards'>
+                <BsGenderTrans size={50}/>
+                <p>Systematic Approach</p>
+              </div>
+              <div className='home-service-cards'>
+                <BsGenderTrans size={50}/>
+                <p>Extended Communication & Support</p>
+              </div> 
+              <div className='home-service-cards'>
+                <BsGenderTrans size={50}/>
+                <p>Innovative & Pragmatic Solutions</p>
+              </div> 
+            </div>
         </div>
-          
+
+
         <div>
           
         </div>
@@ -240,9 +292,9 @@ const Home = () => {
         <div>
           <FAQSection/>
         </div>
-        <div>
+        {/* <div>
           <Connect/>
-        </div>
+        </div> */}
       </div>
     </>
   );

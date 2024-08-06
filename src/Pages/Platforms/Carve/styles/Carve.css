@@ -4,7 +4,7 @@
 }
 
 
-.mktxs_back {
+.mktxs_backs {
     height: 50vh;
     width: 100%;
     background: url("../assets/img/vdo-bg-1.jpg") no-repeat center center;
@@ -184,6 +184,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-around;
+        width: 100%;
     }
     .output-img{
         height: 120px;
@@ -197,11 +198,23 @@
         height: 150px;
         min-width: 200px;
         display: grid;
+        margin: auto;
         
     }
     .big-img-holder{
         display: grid;
     }
+    .rounded_infos{
+        width: 100%;
+        background-color: white;
+        line-height: 35px;
+        display: flex;
+        gap: 70px;
+        padding:10px;
+        margin: auto;
+        
+    }
+    
     
 .rounded_infossss{
     display: flex;
@@ -209,5 +222,10 @@
     align-items: center;
     flex-direction: column-reverse;
     gap: 30px;
+}
+.head-3{
+    font-size: 18px;
+    text-decoration: none;
+    font-style:normal ;
 }
 }
