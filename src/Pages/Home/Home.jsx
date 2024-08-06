@@ -202,7 +202,7 @@ const Home = () => {
                   <img src={item.image} alt={"Card Title 2"} className="card-image" />
                   <h2 className="card-title">{item.title}</h2>
                   <p className="card-info">{item.desc}</p>
-                  <button className="card-button">Learn More</button>
+                  <button  className="card-button">Learn More</button>
                 </div>
               )
             })
