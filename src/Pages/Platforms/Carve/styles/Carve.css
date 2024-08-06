@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: end;
     flex-direction: column;
-
 }
 .main-head{
     font-size: 37px;
@@ -227,6 +226,14 @@
     font-size: 18px;
     text-decoration: none;
     font-style:normal ;
-    
+
+}
+.mktxs_backs {
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+.main-head{
+    margin-top: 80px;
 }
 }
