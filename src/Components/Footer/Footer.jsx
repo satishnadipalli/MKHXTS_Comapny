@@ -35,12 +35,6 @@ const Footer = () => {
             </div>
             <div className='foot_holder'>
                 <div className='foot-wraper'>
-                    <h2 className='main-head'>Solutions</h2>
-                    {solutions.map((item, index) => (
-                        <p className='items' key={index}>{item}</p>
-                    ))}
-                </div>
-                <div className='foot-wraper'>
                     <h2 className='main-head'>Our Offices</h2>
                     <div className='office-div'>
                         {ourOffices.map((item, index) => (

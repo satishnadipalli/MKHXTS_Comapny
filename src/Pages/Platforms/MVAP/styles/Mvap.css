@@ -4,7 +4,7 @@
 }
 
 
-.mktxs_back {
+.mktxs_backss {
     height: 50vh;
     width: 100%;
     background: url("../assets/mvapbackgroundImage.jpg") no-repeat center center;
@@ -51,8 +51,8 @@
     align-items: center;
     
 }
-.plat-logo{
-    height: 130px;
+.plat-logos{
+    height: 100px;
     min-height: 90px;
 }
 .infor{
@@ -126,8 +126,14 @@
 }
 
 @media (max-width: 800px){
-    .mktxs_back {
-        height: 70vh;
+    .mktxs_backss {
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .head-0{
+        font-size: 17px !important;
     }
 
     .rounded_info{
@@ -136,6 +142,9 @@
         height: 200px;
         flex-direction: column;
         gap: 5px; 
+    }
+    .main-head{
+        margin-top: 100px !important;
     }
     .info_holder{
         display: flex;
@@ -149,5 +158,17 @@
     }
     .head-4{
         margin-top: 500px;
+    }
+    .infor{
+        font-size: 15px !important;
+        color: rgb(105, 105, 105);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .rounded_inf{
+        margin-top: 200px;
+    }
+    .plat-logos{
+        margin: auto;
     }
 }

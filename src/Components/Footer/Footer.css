@@ -36,11 +36,14 @@ footer {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 4px 0;
+    padding-top: 0px;
+
+    margin-top: -50px;
 }
 
 .foot-wraper {
-    width: 45%;
+    width: 100%;
 }
 
 .main-head {
@@ -71,6 +74,11 @@ footer {
 
 .office-div {
     margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-around;
+
 }
 
 .country {
@@ -81,6 +89,8 @@ footer {
 
 .office-item {
     margin-bottom: 15px;
+    width: 200px;
+    vertical-align: top;
 }
 
 .footer-bottom {
@@ -99,6 +109,7 @@ footer {
 }
 
 @media (max-width:730px){
+
     .main-head {
         font-size: 21px !important;
         font-weight: 700;
@@ -106,5 +117,15 @@ footer {
         border-bottom: 2px solid #e3e30c;
         padding-bottom: 5px;
         position: relative;
+    }
+    .office-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .office-item {
+        margin-bottom: 15px;
+        width: 300px;
+        vertical-align: top;
     }
 }

@@ -53,10 +53,12 @@ const Vip = () => {
   
     return (
     <div className='mvap_main_div'>
-      <div className='mktxs_back' data-aos="fade">
+      <div className='mktxs_backs' data-aos="fade">
         <div className='background'></div>
+         <div className='mobility'>
          <h2 className='main-head'>VIP™</h2>
          <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span>
+         </div>
       </div>
       <div className='section_2'>
       <p className='head-34' data-aos="fade-left">Value Insights Platform (VIP™) for Value Message Testing, Analysis, & Validation</p>
@@ -64,7 +66,7 @@ const Vip = () => {
       <div className='rounded_info' data-aos="fade-left">
         <img src={stateofart} className='plat-logo' alt="" />
         <div className='info_holder'>
-            <ul>
+            <ul className='ul_holder'>
                 {
                 allowanceData.map((item)=>{
                     return(
