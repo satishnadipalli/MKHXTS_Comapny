@@ -8,11 +8,11 @@
 .mktxs_backs {
     height: 40vh;
     width: 100%;
-    background: url("../assets/vipbackground.jpg") no-repeat center center;
+    /* background: url("../assets/vipbackground.jpg") no-repeat center center; */
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     flex-direction: column;
     position: relative;
 }
@@ -199,8 +199,16 @@
 }
 
 @media (max-width: 800px){
-    .mktxs_back {
-        display: none;
+    .mktxs_backs {
+        height: 40vh;
+        width: 100%;
+        background: url("../assets/vipbackground.jpg") no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
     }
     .rounded_info{
         margin-top: 50px;
@@ -261,6 +269,10 @@
     color: rgb(96, 51, 10);
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.mobility{
+    margin-top: 120px;
 }
 
 }
