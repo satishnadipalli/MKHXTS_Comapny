@@ -1,20 +1,32 @@
 import React from 'react'
 import Header from '../../Components/Header/Header'
 import "./styles/About.css"
+import { IoMdSettings } from "react-icons/io";
+import { PiStrategy } from "react-icons/pi";
+import { GrNotes } from "react-icons/gr";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { IoGlobeOutline } from "react-icons/io5";
+import { FaBugSlash } from "react-icons/fa6";
+import { GiPriceTag } from "react-icons/gi";
+import { MdOutlineAssessment } from "react-icons/md";
+import { MdOutlineContentPasteSearch } from "react-icons/md";
+import { WiSmallCraftAdvisory } from "react-icons/wi";
+import { FaCode } from "react-icons/fa6";
+import { PiTargetBold } from "react-icons/pi";
 
 const servicesList = [
-  {id: 1,serviceText: "Evidence Generation"},
-  {id: 2,serviceText: "Strategic market access"},
-  {id: 3,serviceText: "GVDs"},
-  {id: 4,serviceText: "Contracting& payer strategy"},
-  {id: 5,serviceText: "Real World Evidence"},
-  {id: 6,serviceText: "Value Message Testing"},
-  {id: 7,serviceText: "Pricing & reimbursement strategy"},
-  {id: 8,serviceText: "Launch sequencing assessment"},
-  {id: 9,serviceText: "Analog Case Studies & Analysis"},
-  {id: 10,serviceText: "Advisory Boards / Panels (PRISM)"},
-  {id: 11,serviceText: "Proprietary Technologies"},
-  {id: 12,serviceText: "Systematic / Targeted Literature Reviews"}
+  {id: 1,serviceText: "Evidence Generation", icon: <IoMdSettings size={"100%"} />},
+  {id: 2,serviceText: "Strategic market access", icon: <PiStrategy size={"100%"}/>},
+  {id: 3,serviceText: "GVDs",icon: <GrNotes size={"100%"}/>},
+  {id: 4,serviceText: "Contracting& payer strategy", icon: <FaPeopleGroup size={"100%"}/>},
+  {id: 5,serviceText: "Real World Evidence", icon: <IoGlobeOutline size={"100%"}/>},
+  {id: 6,serviceText: "Value Message Testing", icon: <FaBugSlash size={"100%"}/>},
+  {id: 7,serviceText: "Pricing & reimbursement strategy", icon: <GiPriceTag size={"100%"}/>},
+  {id: 8,serviceText: "Launch sequencing assessment", icon: <MdOutlineAssessment size={"100%"}/>},
+  {id: 9,serviceText: "Analog Case Studies & Analysis", icon: <MdOutlineContentPasteSearch size={"100%"}/>},
+  {id: 10,serviceText: "Advisory Boards / Panels (PRISM)", icon: <WiSmallCraftAdvisory size={"100%"}/>},
+  {id: 11,serviceText: "Proprietary Technologies", icon: <FaCode size={"100%"}/>},
+  {id: 12,serviceText: "Systematic / Targeted Literature Reviews", icon: <PiTargetBold size={"100%"}/>}
 ]
 
 const developmentPhaseList =[
@@ -163,12 +175,18 @@ const About = () => {
         </div>
       </div>
 
+      {/* <div className='our-services'>
+        <
+      </div> */}
+
       <div className='our-services'>
         <h1 className='our-services-main-head'>OUR SERVICES</h1>
         <div className='servies'>
           <ul className='services-list'>{servicesList.map(eachService => (
             <li className='service-card' key={eachService.id}>
-              <div className='service-img'></div>
+              <div className='service-img'>
+                {eachService.icon}
+              </div>
               <p className='service-name'>{eachService.serviceText}</p>
             </li>
           ))}</ul>
@@ -178,8 +196,8 @@ const About = () => {
       <div className='development-pahes'>
         <h1 className='development-pahes-main-head'>Development Phase</h1>
         <ul className='phases-list'>{developmentPhaseList.map(eachPhase => (
-          // <li key={eachPhase.id} className={`each-phase  ${eachPhase.cardColor}`}>
-          <li key={eachPhase.id} className='each-phase'>
+          <li key={eachPhase.id} className={`each-phase  ${eachPhase.cardColor}`}>
+           {/* <li key={eachPhase.id} className='each-phase'> */}
             <h1 className='phase-head'>{eachPhase.phase}</h1>
             <h1 className='challenge-title'>Challenges</h1>
             <p className='phase-challenges'>{eachPhase.challenge}</p>
