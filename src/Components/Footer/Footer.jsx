@@ -33,7 +33,7 @@ const Footer = () => {
 
 
     function handleTop(){
-        window.scrollTo({top:"top",behavior:"smooth"})
+        window.scrollTo({top:"top",behavior:"smooth"});
     }
     return (
         <footer>
