@@ -20,6 +20,7 @@
     font-size: 37px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }   
 .head-2{
     color: rgb(0, 221, 255);
@@ -246,4 +247,20 @@
         width: 300px;
         height: 200px !important;
     }
+    
+.question{
+    margin-top: 16px;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(31, 129, 134);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.answer{
+    font-size: 17px;
+    color: rgb(96, 51, 10);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 }

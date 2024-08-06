@@ -64,7 +64,7 @@ const Vip = () => {
       <div className='rounded_info' data-aos="fade-left">
         <img src={stateofart} className='plat-logo' alt="" />
         <div className='info_holder'>
-            <ul>
+            <ul className='ul_holder'>
                 {
                 allowanceData.map((item)=>{
                     return(
