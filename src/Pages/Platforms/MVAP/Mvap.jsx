@@ -31,7 +31,7 @@ const Mvap = () => {
   },[]);
   return (
     <div className='mvap_main_div'>
-      <div className='mktxs_back' data-aos="fade">
+      <div className='mktxs_backss' data-aos="fade">
         <div className='background'></div>
          <h2 className='main-head'>MVAP</h2>
          <span className='head-0' data-aos="fade-left">MKTXS Value Assessment Platform (MVAP™)</span>
@@ -39,10 +39,10 @@ const Mvap = () => {
       <div className='section_2' >
       <p className='head-34' >MKTXS Value Assessment Platform (MVAP™) aids in developing optimal market access strategies</p>
       <div className='rounded_info' data-aos="fade">
-        <img src={mvapplogo} className='plat-logo' alt="" />
+        <img src={mvapplogo} className='plat-logos' alt="" />
         <p className='infor'>Proprietary clinical and commercial value assessment tool which quantifies product(s) value based on published literature and internal intelligence, to help assess the clinical and commercial opportunities within/across indications and competitive landscape</p>
       </div>
-      <div className='rounded_infos'>
+      <div className='rounded_inf'>
         <p className='head-4'>MVAP™ Allows For</p>
         <div className='info_holder'data-aos="fade">
             <ul>
