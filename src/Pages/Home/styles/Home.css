@@ -826,4 +826,7 @@ input:focus {
   margin-left: 10px;
   
 }
+  .card{
+    padding: 15px;
+  }
 }
