@@ -27,10 +27,17 @@ const ourOffices = [
     }
 ];
 
+
+
 const Footer = () => {
+
+
+    function handleTop(){
+        window.scrollTo({top:"top",behavior:"smooth"});
+    }
     return (
         <footer>
-            <div className='back-top'>
+            <div className='back-top' onClick={handleTop}>
                 Back To Top
             </div>
             <div className='foot_holder'>

@@ -36,10 +36,7 @@ footer {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    padding: 4px 0;
-    padding-top: 0px;
-
-    margin-top: -50px;
+    padding: 40px 0;
 }
 
 .foot-wraper {
@@ -109,7 +106,9 @@ footer {
 }
 
 @media (max-width:730px){
-
+    footer{
+        height: 800px;
+    }
     .main-head {
         font-size: 21px !important;
         font-weight: 700;
@@ -127,5 +126,14 @@ footer {
         margin-bottom: 15px;
         width: 300px;
         vertical-align: top;
+    }
+    .foot_holder {
+        width: 85%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        padding: 4px 0;
+        padding-top: 0px;
+        margin-top: -50px;
     }
 }
