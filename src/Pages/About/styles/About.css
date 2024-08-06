@@ -63,8 +63,9 @@ p{
 }
 
 .service-card{
+    border: 1px solid lightblue;
     /* background-color: #fff; */
-    /* border-radius: 7px; */
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -74,10 +75,10 @@ p{
 }
 
 .service-img{
-    background-color: red;
-    height: 75px;
-    width: 75px;
-    margin-bottom: 20px;
+    /* background-color: red; */
+    height: 40px;
+    width: 40px;
+    margin-bottom: 30px;
 }
 
 .service-name{
@@ -98,7 +99,7 @@ p{
     list-style: none;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     margin-bottom: 40px;
 }
 
@@ -110,18 +111,33 @@ p{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .each-phase::before{
     content: '';
     position: absolute;
-    top: -100%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
+    top: -150%;
+    left: -50%;
+    height: 150%;
+    width: 250%;
     background-color: black;
-    z-index: 1;
     border-bottom-right-radius: 100%;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.each-phase:hover{
+    color: #fff;
+}
+
+.each-phase:hover::before{
+    top: 0;
+    left: 0%;
+}
+
+.each-phase:hover .each-offer::before{
+    color: #fff;
 }
 
 .phase-head{
@@ -129,6 +145,7 @@ p{
     font-size: 20px;
     font-weight: bold;
     height: 50px;
+    z-index: 2;
 }
 
 .challenge-title{
@@ -142,7 +159,7 @@ p{
     margin-left: 20px;
     height: 40px;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .offerings-title{
@@ -162,7 +179,7 @@ p{
 }
 
 .offer{
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .each-offer::before{
@@ -170,7 +187,6 @@ p{
     content: '• '; 
     font-size: 30px;
     color: #47bf47; 
-    /* color: #fff; */
     top: -12px;
     left: -16px;
 }
@@ -202,7 +218,7 @@ p{
 }
 
 .ceo-about{
-    width: 100%;
+    width: 90%;
 }
 
 .ceo-main-head{
@@ -217,6 +233,27 @@ p{
 .ceo-text{
     font-size: 12px;
     word-spacing: 5px;
+}
+
+.ceo-title{
+    float: right;
+    display: inline;
+    background-color: red;
+}
+
+@media (max-width: 1040px) {
+    .ceo-image{
+        width: 100px;
+    }
+    .ceo-text{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .ceo-text{
+        font-size: 7px;
+    }
 }
 
 .why-choose-us-div{
@@ -309,15 +346,16 @@ p{
     }
 } */
 
-.color-1{
-    background-color: rgb(71, 128, 169);
+.color-1:hover::before{
+    /* background-color: rgb(71, 128, 169); */
+    background-color: rgb(123, 185, 255);
 }
-.color-2{
+.color-2:hover::before{
     background-color: rgb( 27 ,173 ,153);
 }
-.color-3{
+.color-3:hover::before{
     background-color: rgb(75, 80 ,88);
 }
-.color-4{
+.color-4:hover::before{
     background-color: rgb(167,169,172);
 }
