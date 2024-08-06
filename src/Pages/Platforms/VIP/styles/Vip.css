@@ -1,11 +1,12 @@
 .mvap_main_div{
     height: 100%;
     background-color: #f7f9fd;
+    overflow: hidden;
 }
 
 
-.mktxs_back {
-    height: 50vh;
+.mktxs_backs {
+    height: 40vh;
     width: 100%;
     background: url("../assets/vipbackground.jpg") no-repeat center center;
     background-size: cover;
@@ -14,7 +15,6 @@
     justify-content: end;
     flex-direction: column;
     position: relative;
-
 }
 .main-head{
     font-size: 37px;
@@ -198,6 +198,9 @@
 }
 
 @media (max-width: 800px){
+    .mktxs_back {
+        display: none;
+    }
     .rounded_info{
         margin-top: 50px;
         width: 100%;

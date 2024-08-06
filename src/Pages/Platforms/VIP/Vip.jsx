@@ -53,7 +53,7 @@ const Vip = () => {
   
     return (
     <div className='mvap_main_div'>
-      <div className='mktxs_back' data-aos="fade">
+      <div className='mktxs_backs' data-aos="fade">
         <div className='background'></div>
          <h2 className='main-head'>VIP™</h2>
          <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span>
