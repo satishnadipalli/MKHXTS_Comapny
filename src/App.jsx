@@ -24,7 +24,7 @@ function App() {
           <Route path='/mvap' element={<Mvap/>}></Route>
           <Route path='/vip' element={<Vip/>}></Route>
           <Route path="/carve" element={<Carve/>}></Route>
-          <Route path="/about" element={<About/>}></Route>
+          <Route path="/uspage" element={<About/>}></Route>
         </Routes>
         <Footer/>
       </Router>

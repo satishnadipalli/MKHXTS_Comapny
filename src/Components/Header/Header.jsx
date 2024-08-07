@@ -3,6 +3,7 @@ import './Header.css';
 import logo from './Assets/logo.png';
 import { Hamberger, IntoMark } from '../../HeroIcons';
 import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -33,7 +34,9 @@ const Header = () => {
                         </div>
                         <div className='route_container'>
                             <span className='route_names'>Home</span>
-                            <span className='route_names'>About us</span>
+                            <Link to={"/uspage"}>
+                              <span className='route_names'>Aboutus</span>
+                            </Link>
                             <span className='route_names'>Services</span>
                             <span className='route_names'>Blogs</span>
                             <span className='route_names'>Platforms</span>
