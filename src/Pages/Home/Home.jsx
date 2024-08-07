@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./styles/Home.css";
 import "./subcomponents/Testimonials/styles/Testimonials.css"
 import Header from '../../Components/Header/Header';
-import clients from "./Assets/clients.svg";
-import Players from "./Assets/Players.svg";
-import recruit from "./Assets/recruit.svg";
-import Verification from "./Assets/Verification.svg";
+
 import thanks from "./Assets/thanks.png";
 import thanks2 from "./Assets/thanks2.png";
 import thanks3 from "./Assets/thanks3.png";
@@ -60,33 +57,6 @@ const clientImages = [
   Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Eighteen, 
   Nineteen, Twenty, TwentyOne, TwentyTwo, TwentyThree, TwentyFour, 
   TwentyFive, TwentySix, TwentySeven, TwentyEight,One, Two, Three,
-];
-
-const boradingData = [
-  {
-    image: Players,
-    title: "Physicians",
-    members: 4120357,
-    desc: "Around the world, the term physician refers to a specialist in internal medicine or one of its many sub-specialties."
-  },
-  {
-    image: Verification,
-    title: "Patients",
-    members: 16121213,
-    desc: "Difficult patients are unavoidable and dealing with them often leads to increased stress levels within your practice."
-  },
-  {
-    image: clients,
-    title: "Publications",
-    members: 989,
-    desc: "Healthcare costs are paid for by private payers or public payers. Private payers are insurance companies."
-  },
-  {
-    image: recruit,
-    title: "Payers",
-    members: 389,
-    desc: "Subscription and open-access journals from SAGE Publishing, the world’s leading independent academic publisher."
-  }
 ];
 
 const serviceData = [
@@ -176,23 +146,6 @@ const Home = () => {
         </div>
 
         {/* All the client Numbers */}
-
-        {/* <div className='client_list'>
-          {
-            boradingData.map((item, index) => (
-              <div key={index} className='rect_div' data-aos="fade-up" > 
-
-                <div className='icon_wraper'>
-                  <img src={item.image} alt={item.title} />
-                </div>
-                <div className='info_wraper'>
-                  <span className='head_10'>{item.members}+</span>
-                  <span className='head_3'>{item.title}</span>    
-                </div>
-              </div>
-            ))
-          }
-        </div> */}
 
         <div className='home_second_container'>
           {
