@@ -237,13 +237,83 @@ p{
 .ceo-title{
     float: right;
     display: inline;
-    background-color: red;
 }
 .why-choose-us-div{
-    background-color: rgb(205, 194, 253);
+    background-color:rgb(235, 230, 255);
+    padding-top:20px ; 
+    /* rgb(205, 194, 253) */
 }
 
 
+/* New formated Ceo section */
+
+.ceo-div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    min-height: 390px;
+    min-width: 340px;
+}
+
+.ceo_sec_1{
+    position: relative;
+    width: 400px;
+}
+
+.ceo_image{
+    height: 450px;
+    width: 400px;
+    position: relative;
+    min-height: 390px;
+    min-width: 340px;
+}
+
+.sandip-infor {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(28, 14, 101, 0.7); /* 0.7 represents 70% opacity */
+    width: 100%;
+    height: 80px;
+    color: white; /* Optional: To ensure text is visible */
+    padding: 10px; /* Optional: Adds some space around the text */
+}
+
+.ceo-head{
+    font-size: 29px;
+    color: #003C43;
+}
+
+.ceo-intro{
+    font-size: 16px;
+    color: rgb(89, 89, 89);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rounded--div{
+    width: 35px !important;
+    height: 35px !important;
+    background-color: #4f64b6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ceo_info_holder{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ceo-prof-wraper{
+    display: flex;
+    gap: 15px;
+}
+.ceo-information{
+    font-size: 14px;
+    color: #452c5f;
+}
 @media (max-width: 1200px) {
     .ceo-image{
         width: 250px;
@@ -260,7 +330,7 @@ p{
 }
 
 .why-choose-us-div{
-    padding: 130px 0px;
+    padding: 90px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,6 +343,7 @@ p{
 
 .why-choose-us-main-head{
     margin-bottom: 30px;
+    color: #074173;
 }
 
 .why-choose-us-cards{
@@ -285,7 +356,11 @@ p{
 
 .why-choose-us-each-list{
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #27374D; 
+    /* f85e2a */
+    color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .active-grid{
@@ -300,22 +375,22 @@ p{
 }
 
 .dummy-grid-left{
-    background-color: transparent;
-    border: 2px dashed lightblue;
+    background-color: rgb(235, 230, 255);
     border-left: 0px;
     margin: 20px;
     margin-left: 0px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    box-shadow: none;
 }
 
 .dummy-grid-right{
     background-color: transparent;
-    border: 2px dashed lightblue;
     border-right: 0px;
     margin: 20px;
     margin-right: 0px;
     border-top-right-radius: 0;
+    box-shadow: none;
     border-bottom-right-radius: 0;
 }
 
@@ -334,26 +409,26 @@ p{
 }
 
 .client_list{
-    margin-bottom: 200px;
     width: 85%;
     margin: auto;
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     flex-wrap: wrap;
     row-gap: 30px;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 90px;
-    height: 100%;
+    height: 50vh;
+    
 }
 .rect_divs{
     display: flex;
     align-items: center;
     height: 120px;
-    background-color: rgb(111, 17, 17);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding:17px;
     border-radius: 10px;
-    width: 280px;
+    width: 300px;
     
 }
 .icon_wraper{
@@ -362,6 +437,16 @@ p{
     width: 90px;
     align-items: center;
     justify-content: center;
+}
+.clients-list-inner-wraper{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.clients-list-inner-wraper p{
+    font-size: 14px;
+    padding: 7px;
+    line-height: 29px;
 }
 .head_7{
   font-size: 20px;
@@ -391,7 +476,11 @@ p{
     font-size:13px ;
     
 }
-
+.clientListHead{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #344955;
+}
 
 /* @media (max-width: 1140px) {
     .why-choose-us-cards{
@@ -511,7 +600,8 @@ p{
 
 .experience-div{
     height: 100vh;
-    background-color: #33325b;
+    background-color: #757589;
+    /* 33325b */
     margin-top: 100px;
 }
 .experince-main-head{
@@ -533,7 +623,10 @@ p{
     margin-top: 70px;
 
 }
+.clientListHead{
+    text-align: center;
 
+}
 .exp-card{
     display: flex;
     flex-direction: column;
