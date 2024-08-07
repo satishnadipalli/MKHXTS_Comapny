@@ -20,11 +20,11 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path='/'  element={<Home/>}></Route>
-          <Route path='/mvap' element={<Mvap/>}></Route>
-          <Route path='/vip' element={<Vip/>}></Route>
-          <Route path="/carve" element={<Carve/>}></Route>
-          <Route path="/uspage" element={<About/>}></Route>
+          <Route path='/'  element={<Home/>} />
+          <Route path='/mvap' element={<Mvap/>}/>
+          <Route path='/vip' element={<Vip/>}/>
+          <Route path="/carve" element={<Carve/>}/>
+          <Route path="/uspage" element={<About/>}/>
         </Routes>
         <Footer/>
       </Router>
