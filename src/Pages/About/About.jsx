@@ -251,7 +251,6 @@ const boradingData = [
   }
 ];
 
-console.log(boradingData)
 const About = () => {
   return (
     <>

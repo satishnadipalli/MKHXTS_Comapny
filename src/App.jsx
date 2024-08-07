@@ -8,13 +8,12 @@ import Home from './Pages/Home/Home'
 import Footer from './Components/Footer/Footer'
 import Mvap from './Pages/Platforms/MVAP/Mvap'
 import Vip from './Pages/Platforms/VIP/Vip'
-import About from './Pages/About/About'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Carve from './Pages/Platforms/Carve/Carve'
+import About from './Pages/About/About'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='Main_wraper'>
@@ -25,7 +24,7 @@ function App() {
           <Route path='/mvap' element={<Mvap/>}></Route>
           <Route path='/vip' element={<Vip/>}></Route>
           <Route path="/carve" element={<Carve/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
         </Routes>
         <Footer/>
       </Router>
