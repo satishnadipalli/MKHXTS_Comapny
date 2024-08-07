@@ -24,8 +24,8 @@ function App() {
           <Route path='/'  element={<Home/>}></Route>
           <Route path='/mvap' element={<Mvap/>}></Route>
           <Route path='/vip' element={<Vip/>}></Route>
-          
           <Route path="/carve" element={<Carve/>}></Route>
+          <Route path='/about' element={<About/>}></Route>
         </Routes>
         <Footer/>
       </Router>
