@@ -1,0 +1,451 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:"Manrope-Regular" !important;
+    background-color: #f4f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* About Section */
+  .about {
+    background: linear-gradient(135deg, #00B7B7, #009e9e);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 183, 183, 0.3);
+  }
+  
+  .about-main-head {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .about-main-para {
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    font-family:"Manrope-Regular" !important;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .contact-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Header */
+  .contact-header {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+    line-height: 1.5;
+    font-family:"Manrope-Regular" !important;
+  }
+  
+  .contact-header span {
+    color: #142b2b;
+  }
+  
+  /* Content Layout */
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .divider {
+    height: 4px;
+    background-color: #106464;
+    width: 120px;
+    margin: 10px 0 20px;
+    border-radius: 4px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-item:hover {
+    transform: translateX(10px);
+  }
+  
+  .icon {
+    font-size: 28px;
+    color: #00B7B7;
+    background-color: #e6f9f9;
+    padding: 12px;
+    border-radius: 50%;
+  }
+  
+  /* Links */
+  a {
+    color: #125d5d;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0a2953;
+  }
+  
+  /* QR Code Placeholder */
+  .qr-code-placeholder {
+    width: 180px;
+    height: 180px;
+    background: #e6f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 0 auto 10px;
+    font-weight: bold;
+    color: #0a5151;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 183, 183, 0.3);
+  }
+  
+  .qr-caption {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    max-width: 450px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .contact-form input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    
+  }
+  
+  .contact-form input:focus {
+    border-color: #00B7B7;
+    box-shadow: 0 0 10px rgba(0, 183, 183, 0.6);
+  }
+  
+  .contact-form button {
+    background-color: #00B7B7;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #008a8a;
+    transform: translateY(-3px);
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    color: #777;
+    font-size: 13px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      
+    }
+
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+      gap: 40px;
+      flex-wrap: wrap;
+      /* background-color: green; */
+      
+    }
+  
+    .qr-code-placeholder {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .contact-header {
+      font-size: 17px !important;
+      text-align: left !important;
+    }
+    .contact-info{
+      /* text-align: center; */
+    }
+
+    .about-main-para{
+      font-size: 16px;
+    }
+    .info-item div{
+      display: flex;
+      gap: 20px;
+    }
+    .enomis{
+      display: grid !important;
+      gap: 0px !important;
+    }
+  }
+
+  .background{
+    width: 100%;
+    height: 100%;
+    background-color: #080e1f;
+    /* background-color: rgb(61, 61, 62); */
+    opacity: 0.6;
+    position: absolute; 
+    
+  }
+  
+
+  .contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .contact-header {
+    font-size: 26px;
+    text-align: center;
+    color: #222;
+    line-height: 1.4;
+  }
+  
+  .contact-header span {
+    color: #00B7B7;
+    font-weight: bold;
+  }
+  
+  /* Layout */
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Contact Info */
+  .contact-info, .qr-form-section {
+    flex: 1;
+    min-width: 300px;
+    /* background-color: gold;s
+     */
+  }
+  
+  .divider {
+    height: 4px;
+    background-color: #00B7B7;
+    width: 150px;
+    margin: 10px 0 20px;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 28px;
+    color: #00B7B7;
+    background-color: #e6f9f9;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  /* QR Code */
+  .qr-code-placeholder {
+    width: 180px;
+    height: 180px;
+    background: #e6f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 0 auto 10px;
+    font-weight: bold;
+    color: #00B7B7;
+    font-size: 18px;
+  }
+  
+  .qr-caption {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+  }
+  
+  .contact-form input, .contact-form button {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form button {
+    background-color: #00B7B7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #008a8a;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #777;
+    font-size: 13px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+      align-items: center;
+    }
+  
+    .contact-header {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+  
+    .qr-code-placeholder {
+      width: 140px;
+      height: 140px;
+      font-size: 16px;
+    }
+  
+    .contact-form input {
+      padding: 12px;
+      font-size: 13px;
+    }
+  
+    .contact-form button {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .info-item {
+      gap: 10px;
+    }
+  
+    .icon {
+      font-size: 24px;
+      padding: 8px;
+    }
+    .qr-form-section{
+      width: 100px;
+      /* background-color: green; */
+      margin-top: 40px;
+    }
+    .contact-form{
+      /* background-color: orange; */
+      width: 100%;
+      padding: 10px;
+    }
+    .contact-form input{
+      width: 100% !important;
+      
+    }
+    .contact-form button{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .qr-code-placeholder {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .contact-header {
+      font-size: 18px;
+    }
+  
+    .contact-form input,
+    .contact-form button {
+      font-size: 12px;
+    }
+  }
+
+  

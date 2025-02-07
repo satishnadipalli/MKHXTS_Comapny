@@ -1,0 +1,123 @@
+
+.insight-miner-container {
+    padding: 20px;
+    font-family:"Manrope-Regular";
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .dotted-line {
+    border-left: 2px dotted gray;
+    padding-left: 10px;
+    margin: 20px 0;
+  }
+  
+  .custom-analysis {
+    color: #b30086;
+    font-style: italic;
+  }
+  
+  .platform-highlight {
+    color: #0073e6;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .insight-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+
+  .insight-miner-section, .outputs-section {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .sre{
+    background-color: white;
+  }
+  .title-box {
+    background-color: #005bb5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .insight-miner-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .insight-miner-section li {
+    margin: 5px 0;
+  }
+  
+  .process-flow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    color: green;
+  }
+  
+  .output-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .output-box {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .insight-description {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .footer-highlight {
+    color: #0073e6;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .insight-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .insight-miner-section, .outputs-section {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+  }
+  

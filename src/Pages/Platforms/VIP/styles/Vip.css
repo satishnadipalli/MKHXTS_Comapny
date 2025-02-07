@@ -1,0 +1,303 @@
+.mvap_main_div{
+    height: 100%;
+    background-color: #f7f9fd;
+    overflow: hidden;
+    font-family: "Manrope-Regular" !important;
+}
+
+
+
+.mktxs_backs {
+    height: 40vh;
+    width: 100%;
+    background: url("../assets/vipbackground.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.main-head{
+    font-size: 37px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}   
+.head-2{
+    color: rgb(0, 221, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.head-3{
+    margin-top: 30px;
+    font-size: 22px;
+    font-style: italic;
+    color: rgb(22, 71, 71);
+    font-weight: 600;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 50px;
+}
+.head-34{
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgb(22, 71, 71);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.section_2{
+    width: 90%;
+    margin: auto;
+}
+
+.rounded_info{
+    width: 100%;
+    margin-top: 50px;
+    line-height: 35px;
+    /* height: 200px; */
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.plat-logo{
+    height: 200px;
+    margin-top: 0px;
+    min-height: 90px;
+}
+.infor{
+    margin-top: 16px;
+    font-size: 17px;
+    color: rgb(105, 105, 105);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.question{
+    margin-top: 16px;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(31, 129, 134);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.answer{
+    font-size: 17px;
+    color: rgb(96, 51, 10);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.info_holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.output-img{
+    height: 170px;
+    mix-blend-mode: multiply;
+}
+.rounded_infoss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flower-img{
+    height: 320px;
+    width: 320px;
+     mix-blend-mode: multiply;
+}
+.head-common {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    color: rgb(7 ,107 ,178);
+    font-family: "Manrope-Bold";
+  }
+.stack_holder{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.rounded_infosss {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 50px;
+}
+.cardd{
+    width: 250px;
+    height: 100px;
+}
+
+
+@media (max-width: 1000px){
+    .rounded_info{
+        margin-top: 50px;
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .info_holder{
+        flex-direction: column;
+        
+    }
+    .output-img{
+        margin-top: 50px;
+        height: 130px;
+        mix-blend-mode: multiply;
+    }
+    .rounded_infoss{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .rounded_infosss {
+        display: grid;
+        grid-template: 1fr;
+        gap: 10px;
+        margin-top: 70px;
+    }
+    .stack_holder{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .plat-logo{
+        height: 200px;
+        margin-top: 0px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .head-3{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 22px;
+        
+        
+    }
+    .head-common {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #075547;
+        text-align: center;
+    }
+    .head-34{
+        text-align: center;
+    }
+}
+.head-4{
+    margin-top: 50px;
+}
+
+@media (max-width: 800px){
+    .mktxs_backs {
+        height: 40vh;
+        width: 100%;
+        background: url("../assets/vipbackground.jpg") no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .rounded_info{
+        margin-top: 50px;
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        gap: 5px;
+        display: grid;
+        
+    }
+    .info_holder{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .output-img{
+        height: 120px;
+        mix-blend-mode: multiply;
+    }
+    .head-3{
+        margin-top: 560px;
+    }
+    .plat-logo{
+        height: 100px;
+    }
+    .rounded_infosss {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 20px;
+        margin: auto;
+        gap: 40px;
+    }
+    .cardd{
+        margin: auto;
+    }
+    .stack_holder{
+        gap: 10px;
+        display: grid;
+    }
+    .plat-logo{
+        width: 300px;
+        height: 200px !important;
+    }
+    
+.question{
+    margin-top: 16px;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(31, 129, 134);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.answer{
+    font-size: 17px;
+    color: rgb(96, 51, 10);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .mobility{
+        margin-top: 120px;
+    }
+    .head-2{
+        font-size: 16px !important;
+    }
+    
+    .section_2{
+        width: 100% !important;
+        padding: 10px;
+
+    }
+    .home_partner{
+        
+    }
+    .head-34{
+        margin-top: 0px !important;
+        font-size: 18px !important;
+        font-style: normal !important;
+        color: rgb(255, 255, 255) !important;
+        font-weight: 600;
+        text-decoration: none !important;
+        display: block;
+        margin-bottom: 50px;
+        background-color: rgb(0, 221, 255);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}

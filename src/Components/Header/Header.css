@@ -1,0 +1,215 @@
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 900;
+    background-color: transparent;
+    font-family : "Manrope-Regular" !important;
+}
+
+.head_wraper {
+    width: 84%;
+    
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 7px;
+    padding-top: 15px;
+    align-items: center;
+}
+
+.logo_container {
+    display: flex;
+    /* background-color: rgb(44, 19, 19); */
+    border-radius: 90px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.company_logo {
+    width: 200px;
+}
+
+.route_container {
+    width: 60%;
+    display: flex;
+
+    justify-content: center;
+    font-family: "Manrope-Semibold" !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.route_names {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Manrope-ExtraBold";
+    transition-duration: 0.3s;
+}
+
+.route_names:hover {
+    color: white;
+}
+
+
+.route_names{
+  font-family: "Manrope-Bold" !important;
+
+}
+.route_links {
+    white-space: nowrap;
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+.linku {
+    margin-right: 10px;
+}
+
+@media (max-width: 728px) {
+    header {
+        background-color: rgb(255, 255, 255);
+        height: 60px;
+        padding: 3px;
+    }
+
+    .head_wraper {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 7px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .company_logo {
+        width: 100px;
+    }
+
+    .route_container {
+        display: none;
+    }
+
+    .drop_down_menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        transition: left 0.4s ease-in-out;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+      
+      .drop_down_menu.open {
+        left: 0;
+      }
+      
+      .anchor {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 20px;
+        margin: 10px 0;
+        /* background-color: #005a9e; */
+        width: 80%;
+        text-align: center;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+
+      /* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  /* Dropdown Menu */
+  .drop_down_menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    transition: left 0.4s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .drop_down_menu.open {
+    left: 0;
+  }
+  
+  .anchor {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 10px 0;
+    /* background-color: #005a9e; */
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .anchor:hover {
+    background-color: #003f7f;
+  }
+  
+      
+      .anchor:hover {
+        background-color: #003f7f;
+      }
+      
+
+    .anchor {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        font-family: "Manrope-Regular";
+        font-weight: 500;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .anchor:hover {
+        transition-duration: 0.3s;
+        background-color: rgb(167, 169, 172);
+        color: white;
+    }
+}

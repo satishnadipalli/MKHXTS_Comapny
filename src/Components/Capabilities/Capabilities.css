@@ -1,0 +1,147 @@
+/* General Styles */
+.capabilities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  /* Hexagon Styling */
+  .hexagon {
+    width: 120px;
+    height: 138px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Center Hexagon */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 208px;
+    font-size: 18px;
+  }
+  
+  /* Small Numbered Hexagons */
+  .small {
+    width: 50px;
+    height: 58px;
+    background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
+    font-size: 16px;
+    position: absolute;
+    left: -60px;
+  }
+  
+  /* Capability Items */
+  .capability-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 350px;
+    position: relative;
+    padding: 10px;
+    background-color: rgba(225,237,248,255);
+    border-radius: 10px;
+    border: 2px solid rgb(151, 151, 151);
+    transition-duration: 0.4s;
+  }
+
+  .capability-item:hover{
+    border: 2px solid blue;
+    background-color: #a9d5fe;
+  }
+  
+  .capability-text {
+    padding-left: 20px;
+  }
+  
+  .capability-text h3 {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  .capability-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #383838;
+  }
+  
+  /* Left & Right Columns */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 250px;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 250px;
+  }
+  
+  /* Responsive Design */
+
+
+  @media (max-width: 700px) {
+    .center{
+        display: flex;
+        margin: auto;
+        align-items: center;
+    /* .center { */
+        display: none;
+        position: relative;
+        /* background-color: gray; */
+        /* right: 50%;
+        left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        width: 180px;
+        height: 208px;
+        font-size: 18px;
+        /* } */
+    }
+  }
+  @media (max-width: 1024px) {
+    .left, .right {
+      margin: 0;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .capability-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .small {
+      position: relative;
+      left: 0;
+      margin-bottom: 10px;
+    }
+    
+    .capability-text {
+      padding-left: 0;
+    }
+    
+    .center {
+      position: relative;
+      transform: none;
+    }
+  }
+  

@@ -1,0 +1,154 @@
+table {
+    width: 40%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: "Manrope-Light" !important;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-family: "Manrope-Light" !important;
+
+}
+th {
+    background-color: #004c73;
+    color: white;
+    
+}
+td {
+    background-color: #e8ecef;
+}
+.mapped-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 70px;
+}
+
+ul li{
+    font-family: "Manrope-Light" !important;
+}
+
+
+.timeline-container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* background-color: green; */
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.event-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0074a2;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.event-content {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    min-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-year {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.event-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .event {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .event-circle {
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-family: "Manrope-Light" !important;
+    }
+
+    .event-circle{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .timeline {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        /* background-color: green; */
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        /* background-color: green; */
+    }
+    
+
+    .mapped-div{
+        padding: 7px;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 0px;
+        font-size: 13px;
+        font-family: "Manrope-Light" !important;
+    
+    }
+    th {
+        background-color: #004c73;
+        color: white;
+        
+    }
+    td {
+        background-color: #e8ecef;
+    }
+    .kno-head{
+        font-size: 18px;
+        font-family: "Manrope-Bold";
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* background-color: #f4f4f4; */
+    /* padding: 20px; */
+}
+
+.main-cont{
+    width: 100%;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 200px; */
+}
+
+.serv-back{
+    background: url('../../../public/servicesback.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.headerz{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-box {
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.blue { background-color: #007bff; }
+.green { background-color: #28a745; }
+.gray { background-color: #6c757d; }
+.dark-blue { background-color: #004085; }
+
+.row {
+    display: flex;
+    border-top: 2px solid #ddd;
+}
+
+.left-section {
+    width: 25%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 2px solid #ddd;
+}
+
+.content {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.box ul {
+    list-style-type: none;
+}
+
+.box ul ul {
+    margin-left: 15px;
+    list-style-type: circle;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .headerz{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.cap-main{
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    .headerz{
+        grid-template-columns: 1fr;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .left-section {
+        width: 100%;
+        border-right: none;
+    }
+    .content {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

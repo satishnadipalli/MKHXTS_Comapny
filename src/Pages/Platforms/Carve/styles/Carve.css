@@ -1,0 +1,239 @@
+.mvap_main_div{
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+.mktxs_backs {
+    height: 50vh;
+    width: 100%;
+    background: url("../assets/img/vdo-bg-1.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+.main-head{
+    font-size: 37px;
+    color: white;
+    font-weight: bold;
+}   
+.head-2{
+    color: wheat;
+    font-size: 20px;
+    font-weight: bold;
+}
+.head-34{
+    margin-top: 30px;
+    font-size: 22px;
+    font-style: italic;
+    color: rgb(22, 71, 71);
+    font-weight: 600;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.section_2{
+    width: 90%;
+    margin: auto;
+}
+
+.rounded_infos{
+    width: 90%;
+    background-color: white;
+    line-height: 35px;
+    /* height: 200px; */
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.rounded_infossss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plat-logo{
+    height: 330px;
+    min-height: 90px;
+    mix-blend-mode: multiply !important;
+    
+}
+.infor{
+    margin-top: 16px;
+    font-size: 17px;
+    color: rgb(105, 105, 105);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.infors{
+    margin-top: 16px;
+    font-size: 17px;
+    color: rgb(20, 87, 109);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inforss{
+    margin-top: 16px;
+    font-size: 17px;
+    color: rgb(94, 13, 144);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carve_offerings{
+    width: 700px;
+    min-width: 600px;
+    max-height: 300px;
+    
+}
+.desss{
+    color: rgb(93, 93, 93);
+}
+.info_holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.output-img{
+    height: 170px;
+    mix-blend-mode: multiply;
+}
+.rounded_infoss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flower-img{
+    height: 320px;
+    width: 320px;
+     mix-blend-mode: multiply;
+}
+
+.head-0{
+    font-size: 23px;
+    color: rgb(0, 238, 230);
+    margin-bottom: 20px;
+            
+}
+.big-img-holder{
+    display: flex;
+    margin-bottom: 100px;
+    vertical-align: text-bottom;
+}
+.our-skills{
+    width: 260px;
+    min-width: 200px;
+}
+@media (max-width: 1000px){
+    .mktxs_back {
+        height: 70vh;
+
+    
+    }
+    .info_holder{
+        flex-direction: column;
+    }
+    .output-img{
+        margin-top: 50px;
+        height: 130px;
+        mix-blend-mode: multiply;
+    }
+    .rounded_infoss{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .head-0{
+        font-size: 23px;
+        color: rgb(0, 238, 230);
+        margin-bottom: 20px;
+                
+    }
+    .head-4{
+        margin-top: 500px; 
+    }
+    .rounded_infos{
+        margin-top: -30px;
+    }
+}
+
+.head-4{
+    margin-top: 100px;
+}
+
+@media (max-width: 800px){
+    .mktxs_back {
+        height: 70vh;
+    }
+
+    .rounded_info{
+        margin-top: 50px;
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        gap: 5px; 
+    }
+    .info_holder{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .output-img{
+        height: 120px;
+        mix-blend-mode: multiply;
+    }
+    .head-4{
+        margin-top: 50px;
+    }
+    .carve_offerings{
+        width: 400px;
+        height: 150px;
+        min-width: 200px;
+        display: grid;
+        margin: auto;
+        
+    }
+    .big-img-holder{
+        display: grid;
+    }
+    .rounded_infos{
+        width: 100%;
+        background-color: white;
+        line-height: 35px;
+        display: flex;
+        gap: 70px;
+        padding:10px;
+        margin: auto;
+        
+    }
+    
+    
+.rounded_infossss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.head-3{
+    font-size: 18px;
+    text-decoration: none;
+    font-style:normal ;
+
+}
+.mktxs_backs {
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+.main-head{
+    margin-top: 80px;
+}
+}

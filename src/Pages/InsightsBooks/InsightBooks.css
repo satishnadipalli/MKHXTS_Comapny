@@ -1,0 +1,82 @@
+.about{
+    background: url("../../../public/insightsbanner.jpg") !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover  !important;
+}
+.insights-main{
+    font-family: "Manrope-Regular";
+}
+
+.insights-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: "Manrope-Regular";
+}
+.ins_logo{
+    height: 100px;
+}
+.sec-insight-container{
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    height: 140px;
+    background-color: rgb(234, 234, 234);
+    margin-top: 50px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main_ins_head{
+    font-size: 22px;
+    font-family: "Manrope-Bold";
+    color: #1bad99;
+}
+.over-maper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.over-maper div{
+    font-size: 16px;
+}
+
+.insights-container{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 720px) {
+    .over-maper{
+        display: grid !important;
+    }
+    .sec-insight-container{
+        display: grid !important;
+        width: 400px !important;
+        height: auto;
+    }
+    .over-maper{
+        display: grid !important;
+    }
+    .retro{
+        font-size: 17px;
+        font-family: "Manrope-Extrabold";
+    }
+
+    .over-maper{
+        padding: 10px;
+    }
+    .over-maper div{
+        padding: 10px;
+    }
+    .about-main-head{
+        font-size: 21px !important;
+    }
+}

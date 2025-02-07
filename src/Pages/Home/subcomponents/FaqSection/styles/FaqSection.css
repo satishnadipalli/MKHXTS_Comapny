@@ -1,0 +1,119 @@
+/* FAQSection.css */
+
+.faq-section {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .faq-head{
+    text-align: center;
+    font-size: 25px;
+    color: #170f5f;
+  }
+  .faq-sc{
+    width: 85%;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    height: 100%;
+    grid-area: 20px;
+    
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #2c3e50;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* background-color: #f9f9f9; */
+    position: relative;
+  }
+  
+  .faq-item:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    font-size: 1.0em;
+    color: #34495e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-icon {
+    font-size: 1em;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    /* font-size: 1em; */
+    color: #848484;
+    font-weight: 600;
+  }
+  
+  .faq-answer.show {
+    max-height: 340px;
+    .faq-item{
+    background-color: aquamarine;
+    }
+  }
+  
+  .faq-img{
+    height: 350px;
+    margin:auto;
+  }
+
+
+  @media (max-width:730px){
+    .faq-sc{
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+  .faq-section {
+    width: 100%;
+    padding: 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    flex-direction: column;
+  }
+  .faq-img{
+    height: 210px;
+    margin:auto;
+    mix-blend-mode: multiply;
+  }
+
+  }
