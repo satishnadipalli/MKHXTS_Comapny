@@ -8,7 +8,7 @@
     height: 100vh;
     background: 
         linear-gradient(rgba(93, 76, 203, 0.1), rgba(111, 59, 180, 0.216)), 
-        url("https://mktxs.com/wp-content/uploads/2023/03/123456.jpg");
+        url("../../../../public/homeback.jpg");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -381,7 +381,7 @@ input:focus {
 
 
 .subi:hover {
-  background: linear-gradient(135deg, rgb(34, 125, 190), silver);
+  background: linear-gradient(135deg, rgb(23, 207, 227), rgb(2, 13, 129));
   transform: scale(1.05);
 }
 
@@ -496,7 +496,7 @@ input:focus {
   position: absolute;
   bottom: 0px;
   right: 10px;
-  background: linear-gradient(135deg, #5f476a, #0b576e);
+  background: linear-gradient(135deg, #a90cf2, #0b576e);
   color: white;
   border: none;
   
@@ -668,7 +668,7 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
     grid-template-rows: repeat(5, auto); /* 5 rows */
-    gap: 10px; /* Adjust spacing between images */
+    gap: 40px; /* Adjust spacing between images */
     padding: 20px;
     margin: auto;
     place-items: center;
@@ -683,6 +683,7 @@ input:focus {
 
   .clients-list-div img{
     width: 140px;
+    /* height: 140px; */
   }
   .home-why-inner{
     display: flex;
@@ -756,6 +757,17 @@ input:focus {
     line-height: 40px;
     text-align: center;
 }
+.clients-list-div img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* Ensures the whole image fits without being cropped */
+}
+
+.main-home{
+  display: flex !important;
+  align-items: center;
+}
+
 
 
 .client_list{
@@ -843,10 +855,20 @@ input:focus {
   margin-bottom: 70px;
 }
 
+
 .Two_divs{
-  flex-direction: column;
+  position: absolute;
+  display: flex;
+  width: 80%;
+  display: block;
+  /* background-color: green; */
+  display: flex;
+  align-items: baseline;
   justify-content: center;
+  
 }
+
+
 
 .head_2{
   font-size:30px;
@@ -934,5 +956,10 @@ input:focus {
 }
   .card{
     padding: 15px;
+  }
+
+  .anchor:hover{
+    background-color: white;
+    color: black;
   }
 }

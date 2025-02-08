@@ -16,16 +16,13 @@ const ContactUs = () => {
 
   return (
     <div className="contact-wrapper">
-      <section className="about">
+      <div className='mktxs_backs' data-aos="fade">
         <div className='background'></div>
-        <div className="about-text" data-aos="fade-up">
-          <h1 className="about-main-head">Our Services</h1>
-          <p className="about-main-para">
-            MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies 
-            to resolve key market access concerns and enhance product value.
-          </p>
-        </div>
-      </section>
+         <div className='mobilitys'>
+         <h2 className='main-head'>We are Offering</h2>
+         <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span>
+         </div>
+      </div>
 
       <div className="contact-container">
         <h1 className="contact-header">

@@ -3,11 +3,14 @@ import './Header.css';
 import logo from './Assets/logo.png';
 import { Hamberger, IntoMark } from '../../HeroIcons';
 import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const [width, setWidth] = useState(window.innerWidth);
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+
+
 
     useEffect(() => {
         const handleWidth = () => {
@@ -19,6 +22,12 @@ const Header = () => {
         // Cleanup listener on unmount
         return () => window.removeEventListener('resize', handleWidth);
     }, []);
+
+
+    const navigatorOption = (path) =>{
+        navigate(path);
+        setIsOpen(false);
+    }
 
     return (
         <>
@@ -47,9 +56,6 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className='route_links'>
-                            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
-                                <FaGithub size={21} color='white' className='linku'/>
-                            </a>
                             <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram size={21} color='white' className='linku'/>
                             </a>
@@ -69,9 +75,7 @@ const Header = () => {
                         </div>
                         <div>
                             <div className='route_links' style={{margin:"auto"}}>
-                                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
-                                    <FaGithub size={22} color='rgb(7 ,107 ,178)' className='linku'/>
-                                </a>
+                               
                                 <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
                                     <FaInstagram size={22} color='rgb( 27 ,173 ,153)' className='linku'/>
                                 </a>
@@ -99,18 +103,30 @@ const Header = () => {
           <div style={{marginTop:"30px"}} onClick={() => setIsOpen(!isOpen)} >
             <IntoMark />
           </div>
-          <Link to={"/"} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
+          <div onClick={()=>{
+            navigate("/");
+            setIsOpen(false)
+          }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
             <a href="#" className="anchor" >Home</a>
-          </Link>
-          <Link to={"/aboutus"} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
+          </div>
+          <div onClick={()=>{
+            navigate("/aboutus");
+            setIsOpen(false)
+          }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
             <a href="#" className="anchor">About Us</a>
-          </Link>
-          <Link to={"/contactus"} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
+          </div>
+          <div onClick={()=>{
+            navigate("/contactus");
+            setIsOpen(false)
+          }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
             <a href="#" className="anchor">Contact Us</a>
-          </Link>
-          <Link to={"/services"} style={{textDecoration:"none"}}>
+          </div>
+          <div onClick={()=>{
+            navigate("/services");
+            setIsOpen(false)
+          }} style={{textDecoration:"none"}}>
           <a href="#" className="anchor">Services</a>
-          </Link>
+          </div>
           
         </div>
       )}

@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <p style={{color:"lightgray"}}>&copy; 2024 Developed by GitaSphere Techonologies and Innovations.</p>
+                <p style={{color:"lightgray"}}>&copy; 2024 Developed by Satish Nadipalli.</p>
             </div>
         </footer>
     );

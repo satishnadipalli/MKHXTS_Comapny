@@ -119,33 +119,15 @@ const Home = () => {
         <div  className='main-home'>
           <div className='background'></div>
           <div className='Two_divs'   style={{zIndex:17}}>
-              <div className='sec_1' style={{zIndex:17}} data-aos="fade-up">
-                  <p className='head_2'>Discover the world of an integrated global consultancy</p>
-                  <p className='head_9'>
+              <div className='sec_1' style={{zIndex:17}} >
+                  <p className='head_2 ' data-aos="fade-up">Discover the world of an integrated global consultancy</p>
+                  <p className='head_9' data-aos="fade-up" >
                   Surpassing your needs. Exceeding your expectations
                   </p>
                   <div className='buttons-div'>
                     <button className='subi'>Services</button> 
                   </div>
               </div>
-              {/* <div className='sec_2' style={{zIndex:17}} data-aos="slide-left">
-                <form action="" className="form-container">
-                  <span className='form-p'>
-                    Book a Free Consultation Appointment
-                  </span>
-                  <label htmlFor="name">Name</label>
-                  <input type="text" id="name" placeholder="Enter your name" />
-                  
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" placeholder="Enter your email" />
-                  
-                  <label htmlFor="phone">Phone</label>
-                  <input type="text" id="phone" placeholder="Enter your phone number" />
-                  
-                  <button type="submit" className='sub'>Book Appointment</button>
-                </form>
-
-              </div> */}
           </div>
         </div>
         <div className='home_sec2'>

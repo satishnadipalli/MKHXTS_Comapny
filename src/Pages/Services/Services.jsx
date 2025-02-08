@@ -18,14 +18,14 @@ const Services = () => {
 
   return (
     <div className='main-cont'>
-    <div className='about ' style={{marginBottom:"50px",backgroundImage: `url(${"./servicesback.jpg"})`}}>
-        <div className='background '></div>
-        <div className='about-text' data-aos="fade-up">
-            <h1 className='about-main-head'>Our Services</h1>
-            <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p>
+    <div className='serv-back' style={{marginBottom:"50px",backgroundImage: `url(${"./servicesback.jpg"})`}}>
+        <div className='background'></div>
+        <div className='about-text' >
+            <h1 className='about-main-head' data-aos="fade-up">Our Services</h1>
+            <p className='about-main-para' data-aos="fade-up">MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p>
         </div>
     </div> 
-    <h3 style={{marginTop:"50px",textAlign:"center",width:"80%",margin:"auto",marginBottom:"60px"}}>
+    <h3 className='headingphase' style={{marginTop:"50px",textAlign:"center",width:"80%",margin:"auto",marginBottom:"60px"}}>
             MKTXS provides integrated offerings across all stages of the product life-cycle to optimize price and access upon launch 
         </h3>  
     <div className="containers">

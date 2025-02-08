@@ -24,7 +24,10 @@ body {
     position: relative;
     /* margin-top: 200px; */
 }
-
+.about-main-head,
+.about-main-para{
+    text-align: center;
+}
 .serv-back{
     background: url('../../../public/servicesback.jpg') !important;
     background-size: cover !important;
@@ -35,6 +38,18 @@ body {
     justify-content: center;
     position: relative;
 }
+
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: #161C2D;
+    /* background-color: rgb(61, 61, 62); */
+    opacity: 0.3;
+    position: absolute; 
+    
+}
+  
 .headerz{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -119,5 +134,18 @@ body {
     .content {
         width: 100%;
         grid-template-columns: 1fr;
+    }
+    .headingphase{
+        font-size: 18px;
+        font-family: "Manrope-Regular";
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+        background-color: #161C2D;
+        background-color: rgb(61, 61, 62);
+        opacity: 0.3;
+        position: absolute; 
+        
     }
 }
