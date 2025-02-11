@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import "./styles/About.css"
 import { IoMdSettings } from "react-icons/io";
@@ -257,6 +257,22 @@ const boradingData = [
 ];
 
 const About = () => {
+
+  const [isVisible, setIsVisible] = useState(window.innerWidth >= 720);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsVisible(window.innerWidth >= 720);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener when component unmounts
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
   useEffect(()=>{
     window.scrollTo({behavior:"smooth",top:0})
   },[])
@@ -321,17 +337,36 @@ const About = () => {
           
       </div>
 
-      <div className='why-choose-us-div' style={{backgroundColor:"transparent"}}>
+      {
+        isVisible 
+        ?
+        <div className='why-choose-us-div' style={{backgroundColor:"transparent"}}>
         <div className='why-choose-us'>
           <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
           <WhyMKTXS/>
         </div>
       </div>
+      :
+      <div className='why-choose-us-div' style={{}}>
+        <div className='why-choose-us'>
+          <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
+          <ul className='why-choose-us-cards'>{whyChooseUsData.map(eachRes => (
+            <li key={eachRes.id} className={`why-choose-us-each-list ${eachRes.style}`}>
+              {eachRes.whyChooseUsImg !== undefined ? <div className='why-choose-us-img'>{eachRes.whyChooseUsImg}</div> : null}
+              <p className='why-choose-us-each-para'>{eachRes.whyChooseUsText}</p>
+            </li>
+          ))}</ul>
+        </div>
+      </div>
+      }
 
       
+      <div style={{marginTop:"70px"}}>
 
+      </div>
       <MeetTheFounder/>
 
+      <div style={{marginTop:"50px"}}></div>
       <div className='experience-div'>
           <h1 className='experince-main-head'>We Brighout These to your Sights</h1>
           <div className='card-holders'>
@@ -355,3 +390,14 @@ const About = () => {
 }
 
 export default About
+      // <div className='why-choose-us-div' style={{}}>
+      //   <div className='why-choose-us'>
+      //     <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
+      //     <ul className='why-choose-us-cards'>{whyChooseUsData.map(eachRes => (
+      //       <li key={eachRes.id} className={`why-choose-us-each-list ${eachRes.style}`}>
+      //         {eachRes.whyChooseUsImg !== undefined ? <div className='why-choose-us-img'>{eachRes.whyChooseUsImg}</div> : null}
+      //         <p className='why-choose-us-each-para'>{eachRes.whyChooseUsText}</p>
+      //       </li>
+      //     ))}</ul>
+      //   </div>
+      // </div>

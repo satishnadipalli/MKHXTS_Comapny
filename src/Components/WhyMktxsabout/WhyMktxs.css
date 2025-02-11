@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   min-height:70vh ;
+  margin-top: 70px;
+  margin-bottom: 70px;
 
 }
 
@@ -32,9 +34,10 @@
 
 .why-mktxs-container img{
   mix-blend-mode: multiply;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 80px;
   min-width: 300px;
+
 }
 
 .inner-scope {
