@@ -60,11 +60,11 @@ const Capabilities = () => {
 // Reusable Capability Item Component
 const CapabilityItem = ({ number, title, text , link}) => {
   return (
-    <Link to={link}>
+    <Link to={link} style={{textDecoration:"none"}}>
       <div className="capability-item">
-      <div className="hexagon small">
+      {/* <div className="hexagon small">
         <div className="hex-content">{number}</div>
-      </div>
+      </div> */}
       <div className="capability-text">
         <h3>{title}</h3>
         <p>{text}</p>

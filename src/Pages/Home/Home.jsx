@@ -50,13 +50,14 @@ import { MdBugReport } from 'react-icons/md';
 import { TbDeviceMobileMessage } from "react-icons/tb";
 import { MdGroups2 } from "react-icons/md";
 import { FaLayerGroup } from "react-icons/fa";
+import { useNavigate } from 'react-router';
 SwiperCore.use([Pagination, Autoplay]);
 
 const clientImages = [
   One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
   Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Eighteen, 
   Nineteen, Twenty, TwentyOne, TwentyTwo, TwentyThree, TwentyFour, 
-  TwentyFive, TwentySix, TwentySeven, TwentyEight,One, Two, Three,
+  TwentyFive, TwentySix
 ];
 
 const serviceData = [
@@ -88,6 +89,7 @@ const cards=[
 
 const Home = () => {
 
+  const navigate = useNavigate();
   useEffect(()=>{
     Aos.init({duration:1000});
   },[])
@@ -117,20 +119,23 @@ const Home = () => {
     <>
       <div className='main-main-home'>
         <div  className='main-home'>
-          <div className='background'></div>
+          <div className='backgrounds'></div>
           <div className='Two_divs'   style={{zIndex:17}}>
               <div className='sec_1' style={{zIndex:17}} >
                   <p className='head_2 ' data-aos="fade-up">Discover the world of an integrated global consultancy</p>
-                  <p className='head_9' data-aos="fade-up" >
-                  Surpassing your needs. Exceeding your expectations
+                  <p className='head_9' style={{fontStyle:"italic"}} data-aos="fade-up" >
+                    Meeting your needs. Surpassing your expectations
                   </p>
                   <div className='buttons-div'>
-                    <button className='subi'>Services</button> 
+                    <button className='subi' onClick={()=>navigate("/services")}>Services</button> 
                   </div>
               </div>
           </div>
         </div>
         <div className='home_sec2'>
+          {/* <div className='backgrounded'>
+
+          </div> */}
           <p className='home_partner'>
             Market Access Solutions (MKTXS) is a boutique global consultancy that collaborates with life science companies to produce customized, integrated, and evidence-based strategies to optimize product value and patient access. 
           </p>
@@ -153,30 +158,6 @@ const Home = () => {
         </div>
         </>
 
-
-        {/* <div className='home-why-div'>
-          
-            <div className='home-why-inner'>
-              <div className='home-service-cards'>
-                <BsGenderTrans size={50}/>
-                <p>Comprehensive Services</p>
-              </div>
-              <div className='home-service-cards'>
-                <BsGenderTrans size={50}/>
-                <p>Systematic Approach</p>
-              </div>
-              <div className='home-service-cards'>
-                <BsGenderTrans size={50}/>
-                <p>Extended Communication & Support</p>
-              </div> 
-              <div className='home-service-cards'>
-                <BsGenderTrans size={50}/>
-                <p>Innovative & Pragmatic Solutions</p>
-              </div> 
-            </div>
-        </div> */}
-
-
         <div>
           
         </div>
@@ -189,7 +170,7 @@ const Home = () => {
               {
                 clientImages?.map((element,index)=>{
                   return(
-                    <img key={index} src={element} alt={element}/>
+                    <img style={{width:`${(index > 9 && index <=14 && index != 12) && "80px" || index == 12 && "100px" }`}} key={index} src={element} alt={element}/>
                   )
                 })
               }

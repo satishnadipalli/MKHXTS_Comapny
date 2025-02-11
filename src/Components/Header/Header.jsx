@@ -9,7 +9,7 @@ const Header = () => {
     const [width, setWidth] = useState(window.innerWidth);
     const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
-
+    const [isLogoOpen,setIsLogoOpen] = useState(false);
 
 
     useEffect(() => {
@@ -29,6 +29,10 @@ const Header = () => {
         setIsOpen(false);
     }
 
+    const handleLogoClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top (or add your desired action)
+      };
+
     return (
         <>
             <header>
@@ -39,6 +43,7 @@ const Header = () => {
                                 src={logo}
                                 alt='Logo not found'
                                 className='company_logo'
+                                onClick={()=>setIsLogoOpen(true)}
                             />
                         </div>
                         <div className='route_container'>
@@ -71,6 +76,7 @@ const Header = () => {
                                 src={logo}
                                 alt='Logo not found'
                                 className='company_logo'
+                                onClick={()=>{setIsLogoOpen(true)}}
                             />
                         </div>
                         <div>
@@ -130,6 +136,15 @@ const Header = () => {
           
         </div>
       )}
+
+      { 
+        isLogoOpen &&
+        <div className="floating-overlay" onClick={()=>setIsLogoOpen(false)}>
+            <div className="logo-container">
+                <img src={logo} alt="Logo" className="logo" />
+            </div>
+        </div>
+      }
         </>
     );
 };

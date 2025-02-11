@@ -36,6 +36,8 @@ import Verification from "./Assets/Verification.svg";
 
 import SandipShah from "./Assets/SandipShah.jpeg"
 import { FaChevronRight } from "react-icons/fa";
+import MeetTheFounder from '../../Components/MeetTheFounder/Meetthefounder';
+import WhyMKTXS from '../../Components/WhyMktxsabout/WhyMktxs';
 const servicesList = [
   {id: -3, gridClass: "dummy-1"},
   {id: -2, gridClass: "dummy-2"},
@@ -244,7 +246,7 @@ const boradingData = [
     image: clients,
     title: "Publications",
     members: 989,
-    desc: "Healthcare costs are paid for by private payers or public payers. Private payers are insurance companies."
+    desc: "Healthcare services costs are paid for by private payers or public payers. Private payers are insurance companies."
   },
   {
     image: recruit,
@@ -271,7 +273,9 @@ const About = () => {
           <div className='background'></div>
           <div className='about-text' data-aos="fade-up">
             <h1 className='about-main-head'>About Our Company</h1>
-            <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p>
+            <p className='about-main-para'>
+              MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value
+            </p>
           </div>
         </div>
       </div>
@@ -290,7 +294,7 @@ const About = () => {
         </div>
       </div>
     
-      <div>
+      <div style={{marginBlock:"70px",height:"90vh"}}>
         <h2 className='clientListHead'>We can help you to grow your business</h2>
         <div className='client_list'>
             {
@@ -299,71 +303,34 @@ const About = () => {
                 return(
                   <div className='clients-list-inner-wraper'>
                     <div key={index} className='rect_divs' > 
-                    <div className='icon_wraper'>
-                      <img src={item.image} alt={item.title} />
-                    </div>  
-                    <div className='info_wraper'>
-                      <span className='head_10'>{item.members}+</span>
-                      <span className='head_3'>{item.title}</span>    
+                      <div className='icon_wraper'>
+                        <img src={item.image} alt={item.title} />
+                      </div>  
+                      <div className='info_wraper'>
+                        <span className='head_10'>{item.members}+</span>
+                        <span className='head_3'>{item.title}</span>    
+                      </div>
                     </div>
+                    <p>{item?.desc}</p>
                   </div>
-                <p>Around the world, the term physician refers to a specialist in internal medicine or one of its many sub-specialties</p>
-              </div>
                 )
               })
   
             }
           </div>
+          
       </div>
 
-      <div className='why-choose-us-div'>
+      <div className='why-choose-us-div' style={{backgroundColor:"transparent"}}>
         <div className='why-choose-us'>
           <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
-          <ul className='why-choose-us-cards'>{whyChooseUsData.map(eachRes => (
-            <li key={eachRes.id} className={`why-choose-us-each-list ${eachRes.style}`}>
-              {eachRes.whyChooseUsImg !== undefined ? <div className='why-choose-us-img'>{eachRes.whyChooseUsImg}</div> : null}
-              <p className='why-choose-us-each-para'>{eachRes.whyChooseUsText}</p>
-            </li>
-          ))}</ul>
+          <WhyMKTXS/>
         </div>
       </div>
 
-      <div className='ceo-div'>
-        <div className='ceo_sec_1'>
-          <img className='ceo_image' src={SandipShah} alt="" />
-          <div className='sandip-infor'>
-            <p className='sandip-name'>SHANDAP SHAH</p>
-            <p className='sandip-proffesion'>President & CEO of MHTXS</p>
-          </div>
-        </div>
-        <div className='ceo_sec_2'>
-            <p className='ceo-head'>Meet Mr.Shanip Shah Who is the founder of MKTXS</p>
-            <p className='ceo-intro'>Sandip Shah, the founder of Market Access Solutions (MKTXS), is an experienced pricing strategist. He is focused on providing global strategic guidance in pricing and reimbursement at all phases of pharmaceutical and medical/surgical product development through to customer segment contracting.</p>
-            <p className='ceo-intro'>As the President/CEO of Market Access Solutions, Sandip has led numerous initiatives managing and providing global market access strategies to Fortune 500 clients in various therapeutic areas for the last two decades.</p>
-            <div className='ceo_info_holder'>
-              <div className='ceo-prof-wraper'>
-                <div className='rounded--div'>
-                  <FaChevronRight size={20} color='white'/>
-                </div>
-                <p className='ceo-information'>developed optimal Price and Reimbursement strategies for the pharmaceutical, medical and surgical sectors and worked with local operating companies</p>
-              </div>
-              <div className='ceo-prof-wraper'>
-                <div className='rounded--div'>
-                  <FaChevronRight size={20} color='white'/>
-                </div>
-                <p className='ceo-information'>developed optimal Price and Reimbursement strategies for the pharmaceutical, medical and surgical sectors and worked with local operating companies</p>
-              </div>
+      
 
-              <div className='ceo-prof-wraper'>
-                <div className='rounded--div'>
-                  <FaChevronRight size={20} color='white'/>
-                </div>
-                <p className='ceo-information'>developed optimal Price and Reimbursement strategies for the pharmaceutical, medical and surgical sectors and worked with local operating companies</p>
-              </div>
-
-            </div>
-        </div>  
-      </div>
+      <MeetTheFounder/>
 
       <div className='experience-div'>
           <h1 className='experince-main-head'>We Brighout These to your Sights</h1>
@@ -374,7 +341,7 @@ const About = () => {
                   <div className='exp-card'>
                     {element.icon}
                     <h1 className='exp-title'>{element.head}</h1>
-                    <p className='exp-desc'>covering 70% of the global population</p>
+                    <p className='exp-desc'>{element?.desc}</p>
                   </div>
                 )
               })

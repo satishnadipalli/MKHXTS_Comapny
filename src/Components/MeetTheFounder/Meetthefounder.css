@@ -1,0 +1,143 @@
+/* General Container */
+.founder-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .founder-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Content Layout */
+  .founder-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  /* Image Section */
+  .founder-image-section {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .founder-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid #0077a5;
+    object-fit: cover;
+  }
+  
+  .founder-info {
+    background-color: #0077a5;
+    color: white;
+    padding: 10px;
+    border-top: 2px solid white;
+  }
+  
+  .founder-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .founder-position {
+    font-size: 16px;
+  }
+  
+  /* Description Section */
+  .founder-description {
+    flex: 2;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .expertise-section {
+    border: 2px solid #007a33;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+  }
+
+  .bookmark{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+  }
+
+
+  .in-bookmark{
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: green;
+    position: absolute;
+    right: -10px;
+    /* float: right;
+    margin-left: 10px !important; */
+  }
+
+  .upper-wraper{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-family: "Manrope-Bold";
+  }
+  .inner-elements{
+    
+  }
+  
+  .expertise-title {
+    background-color: #007a33;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    transform: skew(-20deg);
+    margin-bottom: 10px;
+  }
+  
+  .expertise-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .expertise-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .founder-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .founder-image-section, .founder-description {
+      max-width: 100%;
+    }
+  
+    .founder-title {
+      text-align: center;
+    }
+    .upper-wraper{
+        display: grid;
+        justify-content: space-around;
+        font-weight: 600;
+        font-family: "Manrope-Bold";
+      }
+  }
+  

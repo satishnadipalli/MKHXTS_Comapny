@@ -350,7 +350,8 @@ p{
         align-items: center;
         margin-bottom: 90px;
         height: auto !important;
-        
+        /* height: auto; */
+        /* margin-bottom: 50px !important; */
     }
 
     .why-choose-us-cards{
@@ -377,6 +378,7 @@ p{
         background-color: #757589;
         /* 33325b */
         margin-top: 100px;
+
 
     }
     .card-holders{
@@ -410,12 +412,20 @@ p{
     height: 80px;
     color: white; /* Optional: To ensure text is visible */
     padding: 10px; /* Optional: Adds some space around the text */
-}    
+} 
+
+.why-choose-us-div{
+    margin-top: 500px !important;
+}
 
 }
 
+.exp-desc{
+    max-width: 300px;
+}
+
 .why-choose-us-div{
-    padding: 90px 0px;
+    padding: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -502,8 +512,11 @@ p{
     row-gap: 30px;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 90px;
-    height: 50vh;
+    /* height: 50vh; */
+    /* background-color: green; */
+    place-items: center;
     
 }
 .rect_divs{
@@ -525,8 +538,14 @@ p{
 }
 .clients-list-inner-wraper{
     display: flex;
-    flex-direction: column;
-    width: 300px;
+    /* flex-direction: column; */
+    /* width: 300px; */
+    /* background-color: orange; */
+    /* height: 100%;
+    width: 100%; */
+    gap: 20px;
+    margin: auto !important;
+    min-width: 350px !important;
 }
 .clients-list-inner-wraper p{
     font-size: 14px;
@@ -603,10 +622,10 @@ p{
     margin-bottom: 50px;
     height: 100%;
     /* background-color: rgb(144, 238, 144); */
-    background-color: #91a6a8;
+    background-color: #4b5058;
     position: relative;
-    color: blue;
-
+    color: white;
+    margin-top: -50px;
 }
 
 .servies{
@@ -618,9 +637,12 @@ p{
     position: absolute;
     margin-left: 20%;
     font-size: 26px;
-    color: #33186B;
+    color: #f7f7f7;
 }
 
+.service-card-new{
+    
+}
 .services-list-new{
     margin-left: auto;
     padding: 0;
@@ -648,6 +670,20 @@ p{
     }
     .service-name-new{
         font-size: 10px;
+    }
+    .clients-list-inner-wraper{
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .why-choose-us-div{
+        position: inherit;
+        /* height: auto !important; */
+    }
+    .why-choose-us{
+        /* background-color: orange; */
+        /* height: 70vh;
+        margin-top: -50px; */
     }
 }
 
@@ -684,10 +720,13 @@ p{
 }
 
 .experience-div{
-    height: 100vh;
-    background-color: #757589;
+    /* height: 100vh; */
+    background-color: #4b5058;
+    /* background-color: rgba(7, 157, 178,0.3); */
     /* 33325b */
-    margin-top: 100px;
+    padding: 10px;
+    /* margin-top: 100px; */
+    /* padding-bottom: 40px; */
 }
 .experince-main-head{
     text-align: center;
@@ -715,16 +754,19 @@ p{
 .exp-card{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white !important;
     padding: 15px;
+    /* min-width: 350px; */
 }
 
 .exp-title{
     font-size: 20px;
     margin-top: 15px;
-    color: #63627b;
+    color: #ffffff;
     font-weight: bold;
 }
 .exp-desc{
-    color: gray;
+    color: rgb(248, 248, 248);
 }
