@@ -200,3 +200,11 @@ const Home = () => {
 export default Home;
 
 //Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
+//Home is the entre right after the app torugh hte 
