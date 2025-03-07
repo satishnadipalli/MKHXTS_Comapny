@@ -95,15 +95,22 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
+ul li{
+    text-align: left;
+}
 .box ul {
     list-style-type: none;
+    color: black;
 }
 
 .box ul ul {
     margin-left: 15px;
     list-style-type: circle;
+    white-space: nowrap;
+    text-align: left;
 }
 
 /* Responsive Design */

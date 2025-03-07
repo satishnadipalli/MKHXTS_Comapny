@@ -602,7 +602,7 @@ input:focus {
     font-family: "Manrope-Extralight";
     
   }
-  .clients-trust {
+  .clients-trusts {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -637,7 +637,7 @@ input:focus {
     transform: scale(1.1);
   }
   
-  .image-overlay {
+  .image-overlays {
     position: absolute;
     bottom: 0;
     left: 0;

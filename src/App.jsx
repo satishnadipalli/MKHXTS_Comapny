@@ -34,7 +34,6 @@ function App() {
           <Route path='/insight-miner' element={<InsightMiner/>}/>
           <Route path='/vip' element={<Vip/>}/>
           <Route path="/carve" element={<Carve/>}/>
-          <Route path="/aboutus" element={<About/>}/>
           <Route path="*" element={<NotFound/>}/>
           <Route path="/iemap" element={<Iemap/>}/>
           <Route path="/insights" element={<InsightsBooks/>}/>

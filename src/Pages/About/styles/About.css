@@ -720,11 +720,11 @@ p{
 }
 
 .experience-div{
-    /* height: 100vh; */
+    min-height: 100vh;
     background-color: #4b5058;
     /* background-color: rgba(7, 157, 178,0.3); */
     /* 33325b */
-    padding: 10px;
+    padding-bottom: 70px;
     /* margin-top: 100px; */
     /* padding-bottom: 40px; */
 }

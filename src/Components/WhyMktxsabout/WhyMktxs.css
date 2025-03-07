@@ -10,6 +10,112 @@
 
 }
 
+
+
+.flow-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.left-section, .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  background-color: #0074c2;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  width: 180px;
+  position: relative;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.key-domains, .core-value {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: #005b9f;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.connector {
+  background: linear-gradient(to right, #0074c2, #00bfa5);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #00bfa5;
+  border-radius: 50px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.description {
+  font-style: italic;
+  font-size: 12px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Dashed Lines */
+.left-section .box::after, .right-section .box::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: transparent;
+  border: 2px dashed #0074c2;
+}
+
+.left-section .box::after {
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-section .box::before {
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 720px) {
+  .flow-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .key-domains, .core-value {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+
+  .left-section .box::after, .right-section .box::before {
+    display: none;
+  }
+}
+
 @keyframes lineExpand {
   0% {
     width: 0;

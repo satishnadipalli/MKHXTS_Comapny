@@ -51,6 +51,7 @@ import { TbDeviceMobileMessage } from "react-icons/tb";
 import { MdGroups2 } from "react-icons/md";
 import { FaLayerGroup } from "react-icons/fa";
 import { useNavigate } from 'react-router';
+import About from '../About/About';
 SwiperCore.use([Pagination, Autoplay]);
 
 const clientImages = [
@@ -117,7 +118,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='main-main-home'>
+      <div className='main-main-home' style={{position:"relative",}}>
         <div  className='main-home'>
           <div className='backgrounds'></div>
           <div className='Two_divs'   style={{zIndex:17}}>
@@ -143,12 +144,12 @@ const Home = () => {
 
         <>
         <p className='home-why-head'>Why Clients Trust MKTXS</p>
-        <div className="clients-trust">
+        <div className="clients-trusts" style={{backgroundColor:"white"}}>
           {images.map((image, index) => (
             <div>
-              <div key={index} className="image-card">
-                <img src={image.src || "/placeholder.svg"} alt={image.alt} />
-                <div className="image-overlay">
+              <div key={index} className="image-card" style={{backgroundColor:"white"}}>
+                <img src={image.src } alt={image.alt} />
+                <div className="image-overlays">
                   <p>{image.text}</p>
                 </div>
               </div>
@@ -177,11 +178,10 @@ const Home = () => {
             </div>
           </>
          }
-
-
-        {/* <div className='Our_services'>
-            <OurService />
-        </div> */}
+        
+        <div style={{backgroundColor:'white',position:"relative"}}>
+          <About/>
+        </div>
         <Testimonial/>
         <div>
           {/* <FAQSection/> */}

@@ -28,7 +28,7 @@ import { FaHospital } from "react-icons/fa";
 import { SiExpertsexchange } from "react-icons/si";
 import { TbStars } from "react-icons/tb";
 import { MdOutlineGroups } from "react-icons/md";
-
+import { FaGlobe } from 'react-icons/fa';
 import clients from "./Assets/clients.svg";
 import Players from "./Assets/Players.svg";
 import recruit from "./Assets/recruit.svg";
@@ -38,24 +38,7 @@ import SandipShah from "./Assets/SandipShah.jpeg"
 import { FaChevronRight } from "react-icons/fa";
 import MeetTheFounder from '../../Components/MeetTheFounder/Meetthefounder';
 import WhyMKTXS from '../../Components/WhyMktxsabout/WhyMktxs';
-const servicesList = [
-  {id: -3, gridClass: "dummy-1"},
-  {id: -2, gridClass: "dummy-2"},
-  {id: -1, gridClass: "dummy-3"},
-  {id: 1,serviceText: "Evidence Generation", icon: <IoMdSettings size={"100%"} />,gridClass: "grid"},
-  {id: 2,serviceText: "Strategic market access", icon: <PiStrategy size={"100%"}/> ,gridClass: "grid"},
-  {id: 3,serviceText: "GVDs",icon: <GrNotes size={"100%"}/> ,gridClass: "grid"},
-  {id: 4,serviceText: "Contracting& payer strategy", icon: <FaPeopleGroup size={"100%"}/> ,gridClass: "grid"},
-  {id: 5,serviceText: "Real World Evidence", icon: <IoGlobeOutline size={"100%"}/> ,gridClass: "grid"},
-  {id: 6,serviceText: "Value Message Testing", icon: <FaBugSlash size={"100%"}/> ,gridClass: "grid"},
-  {id: 7,serviceText: "Pricing & reimbursement strategy", icon: <GiPriceTag size={"100%"}/> ,gridClass: "grid"},
-  {id: 8,serviceText: "Launch sequencing assessment", icon: <MdOutlineAssessment size={"100%"}/> ,gridClass: "grid"},
-  {id: 9,serviceText: "Analog Case Studies & Analysis", icon: <MdOutlineContentPasteSearch size={"100%"}/> ,gridClass: "grid"},
-  {id: 10,serviceText: "Advisory Boards / Panels (PRISM)", icon: <WiSmallCraftAdvisory size={"100%"}/> ,gridClass: "grid"},
-  {id: 11,serviceText: "Proprietary Technologies", icon: <FaCode size={"100%"}/>, gridClass: "grid"},
-  {id: 0, gridClass: "dummy-4"},
-  {id: 12,serviceText: "Systematic / Targeted Literature Reviews", icon: <PiTargetBold size={"100%"}/>, gridClass: "grid"}
-]
+
 
 const developmentPhaseList =[
   {
@@ -193,37 +176,37 @@ const whyChooseUsData = [
 const experience = [
   {
     id:1,
-    icon:<PiGlobeStandFill size={70} color='#33325b'/>,
+    icon:<PiGlobeStandFill size={70} color='white'/>,
     head:"51 countries",
     desc:"covering 70% of the global population"
   },
   {
     id:2,
-    icon:<GiHealthCapsule size={70} color='#33325b'/>,
+    icon:<GiHealthCapsule size={70} color='white'/>,
     head:"~1,000 products",
     desc:"covering 70% of the global population"
   },
   {
     id:3,
-    icon:<FaHospital size={70} color='#33325b'/>,
+    icon:<FaHospital size={70} color='white'/>,
     head:"70+ disease areas",
     desc:"covering 70% of the global population"
   },
   {
     id:4,
-    icon:<SiExpertsexchange size={70} color='#33325b'/>,
+    icon:<SiExpertsexchange size={70} color='white'/>,
     head:">6000 external experts",
     desc:"payers, and KOLs within our database"
   },
   {
     id:5,
-    icon:<TbStars size={70} color='#33325b'/>,
+    icon:<TbStars size={70} color='white'/>,
     head:"4.7 / 5 rating",
     desc:"by clients interviewed on Windrose quality and experience "
   },
   {
     id:6,
-    icon:<MdOutlineGroups size={70} color='#33325b'/>,
+    icon:<MdOutlineGroups size={70} color='white'/>,
     head:"92% repeat business rate",
     desc:"covering 70% of the global population"
   }
@@ -284,37 +267,10 @@ const About = () => {
 
   return (
     <>
-      <div className='about-div'>
-        <div className='about' >
-          <div className='background'></div>
-          <div className='about-text' data-aos="fade-up">
-            <h1 className='about-main-head'>About Our Company</h1>
-            <p className='about-main-para'>
-              MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className='our-services'>
-        <h1 className='our-services-main-head'>OUR SERVICES</h1>
-        <div className='servies'>
-          <ul className='services-list-new'>
-            {servicesList.map(eachService => (
-              <li className={`service-card-new ${eachService.gridClass}`} key={eachService.id}>
-                <div className='service-img-new'>
-                  {eachService.icon}
-                </div>
-                <p className='service-name-new'>{eachService.serviceText}</p>
-              </li>
-            ))}</ul>
-        </div>
-      </div>
-    
-      <div style={{marginBlock:"70px",height:"90vh"}}>
+      <div style={{marginBlock:"70px",height:"90vh",backgroundColor:"transparent"}}>
         <h2 className='clientListHead'>We can help you to grow your business</h2>
         <div className='client_list'>
             {
-
               boradingData.map((item,index)=>{
                 return(
                   <div className='clients-list-inner-wraper'>
@@ -358,9 +314,7 @@ const About = () => {
           ))}</ul>
         </div>
       </div>
-      }
-
-      
+}
       <div style={{marginTop:"70px"}}>
 
       </div>
@@ -390,14 +344,3 @@ const About = () => {
 }
 
 export default About
-      // <div className='why-choose-us-div' style={{}}>
-      //   <div className='why-choose-us'>
-      //     <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
-      //     <ul className='why-choose-us-cards'>{whyChooseUsData.map(eachRes => (
-      //       <li key={eachRes.id} className={`why-choose-us-each-list ${eachRes.style}`}>
-      //         {eachRes.whyChooseUsImg !== undefined ? <div className='why-choose-us-img'>{eachRes.whyChooseUsImg}</div> : null}
-      //         <p className='why-choose-us-each-para'>{eachRes.whyChooseUsText}</p>
-      //       </li>
-      //     ))}</ul>
-      //   </div>
-      // </div>

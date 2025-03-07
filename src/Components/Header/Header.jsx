@@ -50,9 +50,6 @@ const Header = () => {
                             <Link to={"/"}>
                                 <span className='route_names'>Home</span>
                             </Link>
-                            <Link to={"/aboutus"}>
-                              <span className='route_names'>Aboutus</span>
-                            </Link>
                             <Link to={"/services"}>
                                 <span className='route_names'>Services</span>
                             </Link>
@@ -114,12 +111,6 @@ const Header = () => {
             setIsOpen(false)
           }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
             <a href="#" className="anchor" >Home</a>
-          </div>
-          <div onClick={()=>{
-            navigate("/aboutus");
-            setIsOpen(false)
-          }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
-            <a href="#" className="anchor">About Us</a>
           </div>
           <div onClick={()=>{
             navigate("/contactus");
