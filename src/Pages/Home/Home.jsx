@@ -185,6 +185,9 @@ const Home = () => {
         <Testimonial/>
         <div>
           {/* <FAQSection/> */}
+          
+
+
         </div>
         {/* <div>
           <Connect/>
@@ -195,3 +198,5 @@ const Home = () => {
 };
 
 export default Home;
+
+//Home is the entre right after the app torugh hte 
