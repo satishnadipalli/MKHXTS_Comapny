@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect } from 'react';
 import "./Services.css";
 import Capabilities from '../../Components/Capabilities/Capabilities';
@@ -97,7 +94,7 @@ const Services = () => {
     <div className="containers">
         
         <div className="headerz">
-            <div className="header-box blue">Development Phase</div>
+            <div className="header-box blue" style={{}}>Development Phase</div>
             <div className="header-box green">Preclinical – Phase I (Discovery)</div>
             <div className="header-box gray">Phase II – Phase III (Development)</div>
             <div className="header-box dark-blue">Phase III/IV (Launch/Post-launch)</div>
@@ -128,7 +125,7 @@ const Services = () => {
                         <li>Enhanced endpoints</li>
                         <ul>
                             <li>Indication Sequencing</li>
-                            <li>Access stakeholder mapping and segmentation</li>
+                            <li>Access stakeholder mapping</li>
                             <li>Value story development</li>
                             <li>Payer value mapping</li>
                         </ul>
@@ -148,7 +145,6 @@ const Services = () => {
                 </div>
             </div>
         </div>
-
         <div className="row">
             <div className="left-section">
                 <h3>Commercial Impact</h3>

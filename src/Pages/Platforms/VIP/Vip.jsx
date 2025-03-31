@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import "./styles/Vip.css";
 import flex from "./assets/flexibility.png"
 import stateofart from "./assets/stateofart.png"
-import sustained from "./assets/sustaied.png"
-import synergic from "./assets/synergic.png"
-import valid from "./assets/valild.png"
-import velocity from "./assets/velocity.png"
+import insights from "./assets/insights.png"
+import vocalitic from "./assets/vocalists.jpg"
+import valid from "./assets/mindset.jpg"
+import velocity from "./assets/velocity.jpg"
 import Background from "./assets/vipbackground.jpg"
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import GlobalPayerNetwork from '../../../Components/GlobalPlayerNetwork/GlobalPlayerNetwork';
 
 const allowanceData = [
     {
@@ -22,24 +23,28 @@ const allowanceData = [
 ]
 
 const benifitsData = [
+           {
+        img:vocalitic,
+        points:"True resonance:  Assess the words and the perceptions (emotions, patterns, and cues) to gauge value of the story "
+    },  
     {
         img:flex,
-        points:["Customized to client specific needs", "Value messages can be tested, refined, and re-tested almost real-time"]
+        points:"Customized to assess individual messages as well as overall value story"
+    },  
+    {
+        img:valid,
+        points:"Real-time: Payer mindset movement toward optimal value"
+    },    
+    {
+        img:insights,
+        points:"Actionable, Refined, and Globally validated"
     },
     {
         img:velocity,
-        points:["Delivery of results in ONE WEEK from start to finish", "Check the Reviews of us to have a understanding"]
-    },        {
-        img:sustained,
-        points:["Approach based on Harvard Based Negotiations framework ", "Effectiveness of each message is tested individually and wholistically"]
-    },        {
-        img:valid,
-        points:["Insight Dashboard provides analytics in real-time to allow for holistic ", "understanding of payer mindset / movement and VM effectiveness"]
-    },
-    // {
-    //     img:synergic,
-    //     points:["Option to upload value messages / points of evidence ", "Option to select country scope / payer archetype "]
-    // }
+        points:"ONE WEEK from start to finish"
+    }, 
+ 
+
 ]
 
 const Vip = () => {
@@ -61,9 +66,17 @@ const Vip = () => {
          </div>
       </div>
       <div className='section_2'>
-      <p className='head-34' data-aos="fade-left">Value Insights Platform (VIP™) for Value Message Testing, Analysis, & Validation</p>
-      <p className='head-common' data-aos="fade-right">VIP is a state-of-the-art digital application for real-time value message testing, analysis, and validation</p>
-      <div className='rounded_info' data-aos="fade-left">
+        <h2 className='title' style={{width:"90%",textAlign:"center",marginTop:"40px",marginBottom:"30px"}}>
+            VIP provides actionable insights of a qualitative interview with the significance and speed of a quant survey
+        </h2>
+      <div style={{margin:"auto",width:"100%",display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <img src="./vipmain.jpg" style={{height:"400px",minWidth:"500px",margin:"auto"}} alt="" />
+      </div>
+
+      <GlobalPayerNetwork/>
+      <p className='head-34' >Value Insights Platform (VIP™) for Value Message Testing, Analysis, & Validation</p>
+      <p className='head-common'>VIP is a state-of-the-art digital application for real-time value message testing, analysis, and validation</p>
+      <div className='rounded_info' >
         <img src={stateofart} className='plat-logo' alt="" />
         <div className='info_holder'>
             <ul className='ul_holder'>
@@ -85,16 +98,10 @@ const Vip = () => {
             {
                 benifitsData.map((item)=>{
                     return(
-                        <div className='stack_holder' data-aos="fade-right">
+                        <div className='stack_holder'>
                             <img className='cardd' src={item.img} alt="" />
                             <ul>
-                                {
-                                    item.points.map((ele)=>{
-                                        return(
-                                            <li className='infor'>{ele}</li>
-                                        )
-                                    })
-                                }
+                                <li className='infor'>{item.points}</li>
                             </ul>
                         </div>
                     )
@@ -109,19 +116,3 @@ const Vip = () => {
 
 export default Vip
 
-{/* <p className='head-4'>MVAP™ Allows For</p> */}
-// <div className='info_holder'>
-//             <ul>
-//                 {
-//                     allowanceData.map((item)=>{
-//                         return(
-//                             <>
-//                             <li className='infor'>{item.question}</li>
-//                             <li>  {item.answer}</li>
-//                             </>
-//                         )
-//                     })
-//                 }
-//             </ul>
-//             <img className='output-img' src={outputs} alt="" />
-//         </div>

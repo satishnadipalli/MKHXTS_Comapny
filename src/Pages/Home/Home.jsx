@@ -28,7 +28,6 @@ import Eighteen from "../../assets/clients/18.jpg";
 import Nineteen from "../../assets/clients/19.jpg";
 import Twenty from "../../assets/clients/20.png";
 import TwentyOne from "../../assets/clients/21.jpg";
-import TwentyTwo from "../../assets/clients/22.jpg";
 import TwentyThree from "../../assets/clients/23.jpg";
 import TwentyFour from "../../assets/clients/24.png";
 import TwentyFive from "../../assets/clients/25.png";
@@ -56,8 +55,8 @@ SwiperCore.use([Pagination, Autoplay]);
 
 const clientImages = [
   One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
-  Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Eighteen, 
-  Nineteen, Twenty, TwentyOne, TwentyTwo, TwentyThree, TwentyFour, 
+  Eleven, Thirteen, Fourteen, Fifteen, Sixteen, Eighteen, 
+  Nineteen, Twenty, TwentyOne, TwentyThree, TwentyFour, 
   TwentyFive, TwentySix
 ];
 
@@ -184,14 +183,10 @@ const Home = () => {
         </div>
         <Testimonial/>
         <div>
-          {/* <FAQSection/> */}
           
 
 
         </div>
-        {/* <div>
-          <Connect/>
-        </div> */}
       </div>
     </>
   );

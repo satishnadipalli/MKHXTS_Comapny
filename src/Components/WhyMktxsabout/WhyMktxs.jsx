@@ -16,7 +16,7 @@ const WhyMktxs = () => {
   return (
     <>
     <div className="why-mktxs-container" >
-      <img src="./whymktxs.svg" style={{mixBlendMode:'multiply'}}  data-aos="fade-in" alt="" /> 
+      <img src="./whymktxss.png" style={{width:"auto"}}  data-aos="fade-in" alt="" /> 
     </div>
     {/* <div className="flow-container">
       <div className="left-section">

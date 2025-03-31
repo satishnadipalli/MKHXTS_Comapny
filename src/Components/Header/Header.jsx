@@ -4,6 +4,7 @@ import logo from './Assets/logo.png';
 import { Hamberger, IntoMark } from '../../HeroIcons';
 import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaLinkedin } from 'react-icons/fa6';
 
 const Header = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -58,11 +59,8 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className='route_links'>
-                            <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
-                                <FaInstagram size={21} color='white' className='linku'/>
-                            </a>
-                            <a href="https://facebook.com/your-username" target="_blank" rel="noopener noreferrer">
-                                <FaFacebook size={21} color='white' className='linku'/>
+                            <a href="https://www.linkedin.com/company/mktxs/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin size={21} color='white' className='linku'/>
                             </a>
                         </div>
                     </div>
@@ -79,11 +77,8 @@ const Header = () => {
                         <div>
                             <div className='route_links' style={{margin:"auto"}}>
                                
-                                <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer">
-                                    <FaInstagram size={22} color='rgb( 27 ,173 ,153)' className='linku'/>
-                                </a>
-                                <a href="https://facebook.com/your-username" target="_blank" rel="noopener noreferrer">
-                                    <FaFacebook size={23} color='rgb(75, 80 ,88)' className='linku'/>
+                                <a href="https://www.linkedin.com/company/mktxs/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin size={22} color='rgb( 27 ,173 ,153)' className='linku'/>
                                 </a>
                             </div>
                         </div>

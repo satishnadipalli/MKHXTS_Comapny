@@ -5,7 +5,11 @@
     font-family: "Manrope-Regular" !important;
 }
 
-
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
 .mktxs_backs {
     height: 40vh;
@@ -125,8 +129,10 @@
 }
 .rounded_infosss {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
+    margin: auto;
+    width: 100%;
+    place-items: center;
 }
 .cardd{
     width: 250px;

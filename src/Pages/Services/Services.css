@@ -74,7 +74,7 @@ body {
 }
 
 .left-section {
-    width: 25%;
+    width: 26%;
     background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
@@ -102,12 +102,14 @@ ul li{
     text-align: left;
 }
 .box ul {
-    list-style-type: none;
+    /* list-style-type: none; */
+    padding-left: 10px;
     color: black;
+    font-weight: 500;
 }
 
 .box ul ul {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     list-style-type: circle;
     white-space: nowrap;
     text-align: left;
@@ -154,5 +156,82 @@ ul li{
         opacity: 0.3;
         position: absolute; 
         
+    }
+}
+
+
+.headerz {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Evenly space header boxes */
+    text-align: center;
+    font-weight: bold;
+    width: 100%; /* Full width */
+}
+
+.header-box {
+    flex: 1; /* Allow each header box to grow equally */
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    min-width: 150px; /* Minimum width for responsiveness */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.blue { background-color: #007bff; }
+.green { background-color: #28a745; }
+.gray { background-color: #6c757d; }
+.dark-blue { background-color: #004085; }
+
+.row {
+    display: flex; /* Use flexbox for rows */
+    border-top: 2px solid #ddd;
+}
+
+.left-section {
+    width: 25%; 
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 40px;
+    /* border-right: 2px solid #ddd; Right border for separation */
+    border: none;
+}
+
+.content {
+    width: 75%; /* Fixed width for content */
+    display: flex; /* Use flexbox for content */
+    flex-wrap: wrap; /* Allow wrapping of boxes */
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* Responsive boxes with gap consideration */
+    min-width: 250px; /* Minimum width for boxes */
+    max-width: 300px; /* Maximum width for boxes to maintain consistency */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .headerz {
+        flex-direction: column; /* Stack header boxes on smaller screens */
+    }
+    .content {
+        flex-direction: column; /* Stack content boxes on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .left-section {
+        width: 100%; /* Full width on smaller screens */
+        border-right: none; /* Remove right border */
+    }
+    .content {
+        width: 100%; /* Full width on smaller screens */
     }
 }

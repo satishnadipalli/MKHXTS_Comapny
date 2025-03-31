@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import "./Knolens.css"
+import KnolensSLR from '../../Components/SLRBoxes/KnolensSLR'
 const Knolens = () => {
 
 
@@ -28,6 +29,7 @@ const Knolens = () => {
                 <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p>
             </div>
         </div> 
+       {/* <KnolensSLR/> */}
         <div className='two-wraper'>
             <h3 className='kno-head' style={{textAlign:"center",marginBottom:"50px"}}>MKTXS Knolens SLR will disrupt the industry by providing ability to conduct in-depth assessment faster and efficient</h3>
             <div className='sub-colun'>

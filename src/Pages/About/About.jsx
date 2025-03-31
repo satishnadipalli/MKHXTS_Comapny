@@ -321,7 +321,7 @@ const About = () => {
       <MeetTheFounder/>
 
       <div style={{marginTop:"50px"}}></div>
-      <div className='experience-div'>
+      {/* <div className='experience-div'>
           <h1 className='experince-main-head'>We Brighout These to your Sights</h1>
           <div className='card-holders'>
             {
@@ -336,7 +336,7 @@ const About = () => {
               })
             }
           </div>
-      </div>
+      </div> */}
 
     </> 
 
