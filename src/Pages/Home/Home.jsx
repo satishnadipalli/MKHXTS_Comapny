@@ -51,6 +51,7 @@ import { MdGroups2 } from "react-icons/md";
 import { FaLayerGroup } from "react-icons/fa";
 import { useNavigate } from 'react-router';
 import About from '../About/About';
+import ClientsTrust from '../../Components/ClientsTrust/ClientsTrust';
 SwiperCore.use([Pagination, Autoplay]);
 
 const clientImages = [
@@ -141,22 +142,7 @@ const Home = () => {
           </p>
         </div>
 
-        <>
-        <p className='home-why-head'>Why Clients Trust MKTXS</p>
-        <div className="clients-trusts" style={{backgroundColor:"white"}}>
-          {images.map((image, index) => (
-            <div>
-              <div key={index} className="image-card" style={{backgroundColor:"white"}}>
-                <img src={image.src } alt={image.alt} />
-                <div className="image-overlays">
-                  <p>{image.text}</p>
-                </div>
-              </div>
-              <p className='alt-name' >{image?.alt}</p>
-            </div>
-          ))}
-        </div>
-        </>
+        <ClientsTrust images={images}/>
 
         <div>
           
@@ -178,28 +164,14 @@ const Home = () => {
           </>
          }
         
-        <div style={{backgroundColor:'white',position:"relative"}}>
-          <About/>
+        
+        <About />
         </div>
-        <Testimonial/>
+        <Testimonial />
         <div>
-          
-
-
-        </div>
       </div>
     </>
   );
 };
 
 export default Home;
-
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 
-//Home is the entre right after the app torugh hte 

@@ -23,26 +23,22 @@ const allowanceData = [
 ]
 
 const benifitsData = [
-           {
-        img:vocalitic,
-        points:"True resonance:  Assess the words and the perceptions (emotions, patterns, and cues) to gauge value of the story "
-    },  
-    {
-        img:flex,
-        points:"Customized to assess individual messages as well as overall value story"
-    },  
-    {
-        img:valid,
-        points:"Real-time: Payer mindset movement toward optimal value"
-    },    
     {
         img:insights,
         points:"Actionable, Refined, and Globally validated"
     },
     {
-        img:velocity,
-        points:"ONE WEEK from start to finish"
-    }, 
+        img:valid,
+        points:"Real-time: Payer mindset movement toward optimal value"
+    },
+    {
+        img:flex,
+        points:"Customized to assess individual messages as well as overall value story"
+    },
+           {
+        img:vocalitic,
+        points:"True resonance:  Assess the words and the perceptions (emotions, patterns, and cues) to gauge value of the story "
+    },  
  
 
 ]
@@ -74,40 +70,29 @@ const Vip = () => {
       </div>
 
       <GlobalPayerNetwork/>
-      <p className='head-34' >Value Insights Platform (VIP™) for Value Message Testing, Analysis, & Validation</p>
-      <p className='head-common'>VIP is a state-of-the-art digital application for real-time value message testing, analysis, and validation</p>
-      <div className='rounded_info' >
-        <img src={stateofart} className='plat-logo' alt="" />
-        <div className='info_holder'>
-            <ul className='ul_holder'>
-                {
-                allowanceData.map((item)=>{
-                    return(
-                        <>
-                        <li className='question'>{item.question}</li>
-                        <p className='answer'>{item.answer}</p>
-                        </>
-                    )
-                })
-                }
-            </ul>
-        </div>
-      </div>
-      <p className='head-3'>Key Features & Benefits</p>
-      <div  className='rounded_infosss'> 
-            {
-                benifitsData.map((item)=>{
-                    return(
-                        <div className='stack_holder'>
-                            <img className='cardd' src={item.img} alt="" />
-                            <ul>
-                                <li className='infor'>{item.points}</li>
-                            </ul>
-                        </div>
-                    )
-                })
-            }
-      </div>
+      <h3 className='' style={{textAlign:"center",marginTop:"40px",marginBottom:"40px"}}>
+        VIP offers real-time feedback and assessment for your TPP assumptions and Value Story 
+      </h3>
+      <div className="rounded_infosss">
+            {benifitsData.map((item, index) => (
+                <>
+                <div key={index} className="stack_holder">
+                <img className="cardd" src={item.img} alt="" />
+                <ul>
+                    <li className="infor">
+                    <span style={{ color: "rgb(27,173,153)", fontWeight: "bold" }}>
+                        {item.points.split(" ")[0]} {/* First word in bold green */}
+                    </span>{" "}
+                    {item.points.substring(item.points.indexOf(" ") + 1)} {/* Rest of the sentence */}
+                    </li>
+                </ul>
+                
+                </div>
+                <img src="./dotted.png" alt="" />
+                </>
+            ))}
+            </div>
+
       </div>
       
     </div>

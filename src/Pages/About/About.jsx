@@ -267,7 +267,7 @@ const About = () => {
 
   return (
     <>
-      <div style={{marginBlock:"70px",height:"90vh",backgroundColor:"transparent"}}>
+      <div style={{marginBlock:"70px",height:"90vh",backgroundColor:"white"}}>
         <h2 className='clientListHead'>We can help you to grow your business</h2>
         <div className='client_list'>
             {

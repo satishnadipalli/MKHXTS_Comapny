@@ -37,43 +37,23 @@ const Mvap = () => {
          <span className='head-0' data-aos="fade-left">MKTXS Value Assessment Platform (MVAP™)</span>
       </div>
       <div className='section_2' >
-      <p className='head-34' >MKTXS Value Assessment Platform (MVAP™) aids in developing optimal market access strategies</p>
-      <div className='rounded_info' data-aos="fade">
-        <img src={mvapplogo} className='plat-logos' alt="" />
-        <p className='infor'>Proprietary clinical and commercial value assessment tool which quantifies product(s) value based on published literature and internal intelligence, to help assess the clinical and commercial opportunities within/across indications and competitive landscape</p>
+      <h2 style={{fontWeight:'bold',textAlign:"center",marginTop:"40px"}}>Pharma AI™ aids in developing optimal market access strategies</h2>
+      <p style={{fontWeight:"bold",fontSize:"20px",backgroundColor:"rgb(72, 77, 82)",margin:"auto",display:"flex",alignItems:'center',justifyContent:"center",textAlign:"center",marginTop:"50px",color:"white"}}>
+        Pharma AI output results will culminate in the Value Story while providing rationale grounded in evidence 
+      </p>
+      <div style={{width:"100%",display:"flex",alignItems:'center',justifyContent:"center",marginTop:"40px"}}>
+        < img src="./pharma.png"  style={{height:"450px",minWidth:"400px",margin:"auto"}} alt="" />
       </div>
-      <div className='rounded_inf'>
-        <p className='head-4'>MVAP™ Allows For</p>
-        <div className='info_holder'data-aos="fade">
-            <ul>
-                {
-                    allowanceData.map((item)=>{
-                        return(
-                            <li className='infor'>{item}</li>
-                        )
-                    })
-                }
-            </ul>
-            <img className='output-img'  src={outputs} alt=""  />
-        </div>
-      </div>
-      <p style={{marginTop:"70px"}} className='head-3'>MKTXS value assessment platform focuses on all fundamental factors that drive product value from payer perspective</p>
-      <div  className='rounded_infoss'> 
-        <img src={flower} alt="" className='flower-img' data-aos="fade-right"/>
-        
-        <div className='info_holders'>
-        <p className='head-4' style={{marginTop:"-30px"}} data-aos="fade">The MVAP™ output results will culminate in the Value Story while providing rationale grounded in evidence</p>
-            <ul>
-                {
-                    productValueData.map((item)=>{
-                        return(
-                            <li className='infor' data-aos="fade">{item}</li>
-                        )
-                    })
-                }
-            </ul>
-            
-        </div>
+      {/* This will be removed from this point */}
+      <h3 style={{fontWeight:'bold',marginTop:"60px",textAlign:"center"}}>
+        Pharma AI conducts future asset valuation by deconstructing clinical and economic attributes to find the real value of a clinical strategy
+      </h3>
+      <p style={{fontWeight:"bold",fontSize:"20px",backgroundColor:"rgb(7, 107, 178)",margin:"auto",display:"flex",alignItems:'center',justifyContent:"center",textAlign:"center",marginTop:"50px",color:"white"}}>
+        The IDEAL value assessment of pipeline products incorporates competitors and future dynamics
+      </p>
+      <div style={{display:"flex",gap:"30px",alignItems:"center",width:"80%",justifyContent:"space-around",margin:"auto",marginTop:"50px",flexWrap:"wrap"}}>
+        <img src="./pharma2.png" style={{minWidth:"250px",minHeight:"250px"}} alt="" />
+        <img src="./pharam1.png" alt="" />
       </div>
       </div>
       

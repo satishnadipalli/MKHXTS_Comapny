@@ -45,10 +45,10 @@ const Capabilities = () => {
 
         <div className="right">
           <CapabilityItem
-            link="/insight-miner"
+            link="/iemap"
             number="4"
-            title="Insight Miner"
-            text="An interactive module designed for analytical deep dive by mapping information from various data sources including HTA."
+            title="IEMAP"
+            text="Mapping competitive integrated evidence chronologically across indications (clinical trials, HE models, RWE, etc.)."
           />
           <CapabilityItem
             link="/mvap"
@@ -57,10 +57,10 @@ const Capabilities = () => {
             text="Assessment of a product’s value against its competitors across indications based on robust clinical and economic data."
           />
           <CapabilityItem
-            link="/iemap"
+            link="/insight-miner"
             number="6"
-            title="IEMAP"
-            text="Mapping competitive integrated evidence chronologically across indications (clinical trials, HE models, RWE, etc.)."
+            title="Outcome Navigator"
+            text="Optimize clinical development and market access strategies based on historical regulatory and HTA assessments of endpoints"
           />
         </div>
       </div>

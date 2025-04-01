@@ -76,7 +76,8 @@
 }
 .infor{
     margin-top: 16px;
-    font-size: 17px;
+    font-size: 20px !important;
+    font-weight: 600;
     color: rgb(105, 105, 105);
     padding-left: 10px;
     padding-right: 10px;
@@ -128,11 +129,12 @@
     align-items: center;
 }
 .rounded_infosss {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     margin: auto;
-    width: 100%;
-    place-items: center;
+    width: 70%;
+    /* place-items: center; */
 }
 .cardd{
     width: 250px;

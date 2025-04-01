@@ -53,12 +53,12 @@ const InsightsBooks = () => {
             Insight Books – A 360° View for Smarter Market Access
         </h3>
         <div style={{width:"100%",marginTop:"50px",display:"flex",alignItems:"center",justifyContent:"center"}}>
-            <img data-aos="fade-up" src="./insightbooks.png" style={{width:"700px",minWidth:"500px",margin:"auto"}} alt="" />
+            <img data-aos="fade-up" src="./insightbooks.png" style={{height:"600px",minWidth:"500px",margin:"auto"}} alt="" />
         </div>
         <h3 style={{textAlign:"center",width:"80%",margin:"auto",marginTop:"80px",}} className='retro'>
             Insight Books Module Empower Rapid de-risk and Optimal Decision-making for NBD opportunities
         </h3>
-        <div className='insights-container'>
+        {/* <div className='insights-container'>
             <img src="./insightlogo.png" alt="No iamge found" className='ins_logo'/>
             {
                 curse?.map((element)=>{
@@ -67,9 +67,9 @@ const InsightsBooks = () => {
                     )
                 })
             }
-        </div>
+        </div> */}
 
-        <div className='sec-insight-container'>
+        {/* <div className='sec-insight-container'>
             <div className='main_ins_head'>
                 KEY DOMAINS
             </div>
@@ -82,9 +82,9 @@ const InsightsBooks = () => {
                     })
                 }
             </div>
-        </div>
+        </div> */}
 
-        <div className='sec-insight-container'>
+        {/* <div className='sec-insight-container'>
             <div className='main_ins_head'>
                 KEY INSIGHTS
             </div>
@@ -97,7 +97,7 @@ const InsightsBooks = () => {
                     })
                 }
             </div>
-        </div>
+        </div> */}
 
         <h3 style={{textAlign:"center",width:"80%",margin:"auto",marginTop:"80px",fontSize:"18px"}} className='retro'>
             Insight Books Module Empower Rapid de-risk and Optimal Decision-making for NBD opportunities
