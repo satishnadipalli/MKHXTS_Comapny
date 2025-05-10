@@ -10,8 +10,7 @@ const Header = () => {
     const [width, setWidth] = useState(window.innerWidth);
     const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
-    const [isLogoOpen,setIsLogoOpen] = useState(false);
-
+    const [isLogoOpen, setIsLogoOpen] = useState(false);
 
     useEffect(() => {
         const handleWidth = () => {
@@ -20,19 +19,17 @@ const Header = () => {
 
         window.addEventListener('resize', handleWidth);
 
-        // Cleanup listener on unmount
         return () => window.removeEventListener('resize', handleWidth);
     }, []);
 
-
-    const navigatorOption = (path) =>{
+    const navigatorOption = (path) => {
         navigate(path);
         setIsOpen(false);
-    }
+    };
 
     const handleLogoClick = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top (or add your desired action)
-      };
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <>
@@ -44,7 +41,7 @@ const Header = () => {
                                 src={logo}
                                 alt='Logo not found'
                                 className='company_logo'
-                                onClick={()=>setIsLogoOpen(true)}
+                                onClick={() => navigate("/")}
                             />
                         </div>
                         <div className='route_container'>
@@ -60,7 +57,7 @@ const Header = () => {
                         </div>
                         <div className='route_links'>
                             <a href="https://www.linkedin.com/company/mktxs/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin size={21} color='white' className='linku'/>
+                                <FaLinkedin size={21} color='white' className='linku' />
                             </a>
                         </div>
                     </div>
@@ -71,14 +68,13 @@ const Header = () => {
                                 src={logo}
                                 alt='Logo not found'
                                 className='company_logo'
-                                onClick={()=>{setIsLogoOpen(true)}}
+                                onClick={() => navigate("/")}
                             />
                         </div>
                         <div>
-                            <div className='route_links' style={{margin:"auto"}}>
-                               
+                            <div className='route_links' style={{ margin: "auto" }}>
                                 <a href="https://www.linkedin.com/company/mktxs/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedin size={22} color='rgb( 27 ,173 ,153)' className='linku'/>
+                                    <FaLinkedin size={22} color='rgb( 27 ,173 ,153)' className='linku' />
                                 </a>
                             </div>
                         </div>
@@ -88,49 +84,63 @@ const Header = () => {
                     </div>
                 )}
             </header>
+
             {width <= 720 && (
-            <button onClick={() => setIsOpen(!isOpen)} style={{ margin: "10px",}}>
-            ☰ Menu
-            </button>
-        )}
+                <button onClick={() => setIsOpen(!isOpen)} style={{ margin: "10px" }}>
+                    ☰ Menu
+                </button>
+            )}
 
-      {isOpen && <div className={`overlay ${isOpen ? "active" : ""}`} onClick={() => setIsOpen(false)}></div>}
+            {isOpen && (
+                <div className={`overlay ${isOpen ? "active" : ""}`} onClick={() => setIsOpen(false)}></div>
+            )}
 
-      {width <= 720 && (
-        <div className={`drop_down_menu ${isOpen ? "open" : ""}`}>
-          <div style={{marginTop:"30px"}} onClick={() => setIsOpen(!isOpen)} >
-            <IntoMark />
-          </div>
-          <div onClick={()=>{
-            navigate("/");
-            setIsOpen(false)
-          }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
-            <a href="#" className="anchor" >Home</a>
-          </div>
-          <div onClick={()=>{
-            navigate("/contactus");
-            setIsOpen(false)
-          }} style={{textDecoration:"none",whiteSpace:"nowrap"}}>
-            <a href="#" className="anchor">Contact Us</a>
-          </div>
-          <div onClick={()=>{
-            navigate("/services");
-            setIsOpen(false)
-          }} style={{textDecoration:"none"}}>
-          <a href="#" className="anchor">Services</a>
-          </div>
-          
-        </div>
-      )}
+            {width <= 720 && (
+                <div className={`drop_down_menu ${isOpen ? "open" : ""}`}>
+                    <div style={{ marginTop: "30px" }} onClick={() => setIsOpen(!isOpen)} >
+                        <IntoMark />
+                    </div>
+                    <div
+                        onClick={() => {
+                            navigate("/");
+                            setIsOpen(false);
+                        }}
+                        className="anchor"
+                        style={{ textDecoration: "none", whiteSpace: "nowrap" }}
+                    >
+                        Home
+                    </div>
+                    <div
+                        onClick={() => {
+                            navigate("/contactus");
+                            setIsOpen(false);
+                        }}
+                        className="anchor"
+                        style={{ textDecoration: "none", whiteSpace: "nowrap" }}
+                    >
+                        Contact Us
+                    </div>
+                    <div
+                        onClick={() => {
+                            navigate("/services");
+                            setIsOpen(false);
+                        }}
+                        className="anchor"
+                        style={{ textDecoration: "none" }}
+                    >
+                        Services
+                    </div>
+                </div>
+            )}
 
-      { 
-        isLogoOpen &&
-        <div className="floating-overlay" onClick={()=>setIsLogoOpen(false)}>
-            <div className="logo-container">
-                <img src={logo} alt="Logo" className="logo" />
-            </div>
-        </div>
-      }
+            {
+                isLogoOpen &&
+                <div className="floating-overlay" onClick={() => setIsLogoOpen(false)}>
+                    <div className="logo-container">
+                        <img src={logo} alt="Logo" className="logo" />
+                    </div>
+                </div>
+            }
         </>
     );
 };

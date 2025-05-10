@@ -330,7 +330,7 @@ p{
     .ceo-text{
         font-size: 7px;
     }
-    .client_list{
+    .client_lists{
         display: grid !important;
         flex-direction: column !important;
         place-items: center !important;
@@ -339,7 +339,7 @@ p{
         /* place-items: center; */
         /* margin: auto; */
     }
-    .client_list{
+    .client_lists{
         width: 85%;
         margin: auto;
         display: flex;
@@ -349,7 +349,6 @@ p{
         justify-content: center !important;
         align-items: center;
         margin-bottom: 90px;
-        height: auto !important;
         /* height: auto; */
         /* margin-bottom: 50px !important; */
     }
@@ -438,6 +437,7 @@ p{
 
 .why-choose-us-main-head{
     margin-bottom: 30px;
+    margin-top: 70px;
     color: #074173;
 }
 
@@ -503,7 +503,7 @@ p{
     font-size: 12px;
 }
 
-.client_list{
+.client_lists{
     width: 85%;
     margin: auto;
     display: flex;

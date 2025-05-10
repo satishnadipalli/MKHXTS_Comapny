@@ -228,13 +228,13 @@ const boradingData = [
   {
     image: clients,
     title: "Publications",
-    members: 989,
+    members: 390,
     desc: "Healthcare services costs are paid for by private payers or public payers. Private payers are insurance companies."
   },
   {
     image: recruit,
     title: "Payers",
-    members: 389,
+    members: 3456,
     desc: "Subscription and open-access journals from SAGE Publishing, the world’s leading independent academic publisher."
   }
 ];
@@ -268,8 +268,8 @@ const About = () => {
   return (
     <>
       <div style={{marginBlock:"70px",height:"90vh",backgroundColor:"white"}}>
-        <h2 className='clientListHead'>We can help you to grow your business</h2>
-        <div className='client_list'>
+        <h2 className='clientListHead'>MKTXS Global Footprint can grow your business</h2>
+        <div className='client_lists'>
             {
               boradingData.map((item,index)=>{
                 return(
@@ -298,7 +298,6 @@ const About = () => {
         ?
         <div className='why-choose-us-div' style={{backgroundColor:"transparent"}}>
         <div className='why-choose-us'>
-          <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
           <WhyMKTXS/>
         </div>
       </div>

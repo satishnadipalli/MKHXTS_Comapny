@@ -4,7 +4,7 @@ import './KnolenSLR.css'; // Importing the CSS file
 const KnolensSLR = () => {
   return (
     <div className="slr-container">
-      <h1>Knolens SLR: A fully automated SLR at your fingertips</h1>
+      <h1>A fully automated SLR platform at your fingertips</h1>
       <div style={{display:"grid",gap:"20px",placeItems:"center"}}>
       {/* <div className='first-sections'>
         <div style={{backgroundColor:"rgb(7, 107,178)"}}>

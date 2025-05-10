@@ -30,28 +30,7 @@ const Knolens = () => {
             </div>
         </div> 
        <KnolensSLR/>
-        <div className='two-wraper'>
-            <h3 className='kno-head' style={{textAlign:"center",marginBottom:"50px"}}>MKTXS Knolens SLR will disrupt the industry by providing ability to conduct in-depth assessment faster and efficient</h3>
-            <div className='sub-colun'>
-                <img className='card-img' src="./knolen.png" alt="" />
-                <div className='seconde-card'>
-                    <p style={{textAlign:"center"}}>
-                        Knolens SLR provides efficiency, and cost reductions with velocity and accuracy
-                    </p>
-                    <div className='first-box'>
-                        {
-                            slr?.map((element,i)=>{
-                                return(
-                                    <div key={i} className='bbox'>
-                                        {element}
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
   )
 }

@@ -187,6 +187,28 @@ ul li{
     border-top: 2px solid #ddd;
 }
 
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-box {
+    background-color: #0071bc;
+    color: white;
+    padding: 40px 30px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Manrope-SemiBold";
+    line-height: 1.5;
+  }
+  
 .left-section {
     width: 25%; 
     background-color: #ffffff;

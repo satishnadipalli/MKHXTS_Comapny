@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FiGlobe, FiPhone, FiMail } from 'react-icons/fi';
+import { FiGlobe, FiPhone, FiMail, FiLinkedin } from 'react-icons/fi';
 import './Contactus.css';
 import Aos from 'aos';
 import "aos/dist/aos.css"
@@ -19,15 +19,14 @@ const ContactUs = () => {
       <div className='mktxs_backs' data-aos="fade">
         <div className='background'></div>
          <div className='mobilitys'>
-         <h2 className='main-head'>We are Offering</h2>
-         <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span>
+         <h2 className='main-head'>CONTACT US</h2>
+         
          </div>
       </div>
 
-      <div className="contact-container">
+      <div className="contact-container" style={{marginTop:50}}>
         <h1 className="contact-header">
-          Unlock the future of <span>Pricing and Market Access</span> with MKTXS — 
-          <br /> reach out today to <span>supercharge your team's efficiency!</span>
+        Unlock the future of Pricing and Market Access with MKTXS - reach out today to supercharge your team's efficiency! 
         </h1>
 
         <div className="contact-content">
@@ -48,7 +47,7 @@ const ContactUs = () => {
               <FiPhone className="icon" size={40} />
               <div>
                 <strong>Phone</strong>
-                <p>+1 908-391-3398</p>
+                <p>+1 908-391-3398                </p>
               </div>
             </div>
 
@@ -59,9 +58,17 @@ const ContactUs = () => {
                 <div className='enomis'>
                   <p><a href="mailto:sshah@mktxs.com">sshah@mktxs.com</a></p>
                   {/* <br /> */}
-                  <p><a href="mailto:kpatel@mktxs.com">kpatel@mktxs.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <FiLinkedin className="icon" size={40} />
+              <div>
+                <strong>Linkedin</strong>
+                <div className='enomis'>
+                  <p><a href="mailto:sshah@mktxs.com">https://www.linkedin.com/company/mktxs                  </a></p>
                   {/* <br /> */}
-                  <p><a href="mailto:tsabbi@mktxs.com">tsabbi@mktxs.com</a></p>
                 </div>
               </div>
             </div>
@@ -74,12 +81,6 @@ const ContactUs = () => {
             </div>
             <p className="qr-caption" style={{marginTop:"30px"}}>Scan to book an appointment today</p>
 
-            <form className="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <input type="tel" placeholder="Your Phone" required />
-              <button type="submit">Submit</button>
-            </form>
           </div>
         </div>
 

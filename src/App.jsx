@@ -18,6 +18,7 @@ import Knolens from './Pages/Knolens/Knolens'
 import Iemap from './Pages/IEMAP/Iemap'
 import ContactUs from './Pages/ContactUs/Contactus'
 import InsightMiner from './Pages/InsightMiner/InsightMiner'
+import ClinicalOutComes from './Pages/Platforms/ClinicalOutComes/ClinicalOutComes'
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
           <Route path='/mvap' element={<Mvap/>}/>
           <Route path='/contactus' element={<ContactUs/>}/>
           <Route path='/services' element={<Services/>}/>
-          <Route path='/insight-miner' element={<InsightMiner/>}/>
+          {/* <Route path='/insight-miner' element={<InsightMiner/>}/> */}
+          <Route path='/outcomes' element={<ClinicalOutComes/>}/> 
           <Route path='/vip' element={<Vip/>}/>
           <Route path="/carve" element={<Carve/>}/>
           <Route path="*" element={<NotFound/>}/>

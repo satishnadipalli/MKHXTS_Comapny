@@ -23,7 +23,7 @@ const ourOffices = [
     },
     {
         country: "India  ",
-        place: "IN MKTXS Biopharma Solutions LLP Suite D902 Bhadralok Towers OP Road Vadodara 390001 Gujurat / India"
+        place: "MKTXS 4BioPharm Solutions LLP Suite D902, Bhadralok Towers OP Road, Vadodara Gujarat, India 390001"
     }
 ];
 
@@ -32,8 +32,8 @@ const ourOffices = [
 const Footer = () => {
 
 
-    function handleTop(){
-        window.scrollTo({top:"top",behavior:"smooth"});
+    function handleTop() {
+        window.scrollTo({ top: "top", behavior: "smooth" });
     }
     return (
         <footer>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <p style={{color:"lightgray"}}>&copy; 2024 Developed by Satish Nadipalli.</p>
+                <p style={{ color: "lightgray" }}>&copy; 2024 Developed by Satish Nadipalli.</p>
             </div>
         </footer>
     );

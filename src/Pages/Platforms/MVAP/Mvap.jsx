@@ -33,8 +33,7 @@ const Mvap = () => {
     <div className='mvap_main_div'>
       <div className='mktxs_backss' data-aos="fade">
         <div className='background'></div>
-         <h2 className='main-head'>MVAP</h2>
-         <span className='head-0' data-aos="fade-left">MKTXS Value Assessment Platform (MVAP™)</span>
+         <h2 className='main-head'>Pharma AI</h2>
       </div>
       <div className='section_2' >
       <h2 style={{fontWeight:'bold',textAlign:"center",marginTop:"40px"}}>Pharma AI™ aids in developing optimal market access strategies</h2>
@@ -46,17 +45,16 @@ const Mvap = () => {
       </div>
       {/* This will be removed from this point */}
       <h3 style={{fontWeight:'bold',marginTop:"60px",textAlign:"center"}}>
-        Pharma AI conducts future asset valuation by deconstructing clinical and economic attributes to find the real value of a clinical strategy
+      Pharma AI conducts future asset valuation by considering product core clinical and economic attributes
       </h3>
       <p style={{fontWeight:"bold",fontSize:"20px",backgroundColor:"rgb(7, 107, 178)",margin:"auto",display:"flex",alignItems:'center',justifyContent:"center",textAlign:"center",marginTop:"50px",color:"white"}}>
-        The IDEAL value assessment of pipeline products incorporates competitors and future dynamics
+      The IDEAL value assessment of pipeline products incorporates competitors and future dynamics
       </p>
       <div style={{display:"flex",gap:"30px",alignItems:"center",width:"80%",justifyContent:"space-around",margin:"auto",marginTop:"50px",flexWrap:"wrap"}}>
         <img src="./pharma2.png" style={{minWidth:"250px",minHeight:"250px"}} alt="" />
         <img src="./pharam1.png" alt="" />
       </div>
       </div>
-      
     </div>
   )
 }
