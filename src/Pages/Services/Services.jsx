@@ -72,7 +72,7 @@ const Services = () => {
                         "Proprietary<br />Technologies",
                         "Advisory<br />Boards/Panels (PRISM)",
                         "Global Value<br />Dossiers (GVDs)"
-                    ].map((text, i) => (
+                    ]?.map((text, i) => (
                         <div key={i} className="grid-box" dangerouslySetInnerHTML={{ __html: text }} />
                     ))}
                 </div>
@@ -130,12 +130,12 @@ const Services = () => {
                                     "Policy/advocacy strategy Analytics"
                                 ]
                             ]
-                        ].map((group, i) => (
+                        ]?.map((group, i) => (
                             <div key={i} className="box">
                                 <ul>
-                                    {group.slice(0, 3).map((item, j) => <li key={j}>{item}</li>)}
+                                    {group.slice(0, 3)?.map((item, j) => <li key={j}>{item}</li>)}
                                     <ul>
-                                        {group[3].map((sub, k) => <li key={k}>{sub}</li>)}
+                                        {group[3]?.map((sub, k) => <li key={k}>{sub}</li>)}
                                     </ul>
                                 </ul>
                             </div>
@@ -166,10 +166,10 @@ const Services = () => {
                                 "Brand plan development and messaging",
                                 "Patient support programs"
                             ]
-                        ].map((group, i) => (
+                        ]?.map((group, i) => (
                             <div key={i} className="box">
                                 <ul>
-                                    {group.map((item, j) => <li key={j}>{item}</li>)}
+                                    {group?.map((item, j) => <li key={j}>{item}</li>)}
                                 </ul>
                             </div>
                         ))}
