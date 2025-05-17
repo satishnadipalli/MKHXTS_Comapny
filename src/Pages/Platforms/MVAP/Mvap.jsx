@@ -41,7 +41,7 @@ const Mvap = () => {
         Pharma AI output results will culminate in the Value Story while providing rationale grounded in evidence 
       </p>
       <div style={{width:"100%",display:"flex",alignItems:'center',justifyContent:"center",marginTop:"40px"}}>
-        < img src="./pharma.png"  style={{height:"450px",minWidth:"400px",margin:"auto"}} alt="" />
+        < img src="./change2.png"  style={{height:"450px",minWidth:"400px",margin:"auto"}} alt="" />
       </div>
       {/* This will be removed from this point */}
       <h3 style={{fontWeight:'bold',marginTop:"60px",textAlign:"center"}}>

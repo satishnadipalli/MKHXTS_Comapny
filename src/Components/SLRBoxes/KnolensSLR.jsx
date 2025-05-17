@@ -58,8 +58,7 @@ const KnolensSLR = () => {
             Trace the origin of every data point down to the finest details. Ensuring transparency and explainability having highest confidence in the results
         </div>
       </div>    */}
-      <img src="./customslr.png"  style={{minWidth:"300px",minHeight:"300px",marginTop:"50px",marginBottom:"20px"}} alt="" />
-     
+      <img src="./newone2.png"  style={{minWidth:"300px",minHeight:"300px",marginTop:"50px",marginBottom:"20px"}} alt="" />
       </div>
     </div>
   );

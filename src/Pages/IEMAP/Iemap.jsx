@@ -10,14 +10,20 @@ const Iemap = () => {
         <div className='about' style={{marginBottom:"50px"}}>
             <div className='background'></div>
             <div className='about-text'>
-                <h1 className='about-main-head'>Our Services</h1>
-                <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p>
+                <h1 className='about-main-head'>IMEAP</h1>
+                {/* <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p> */}
             </div>
         </div>
-        <h3 className='kno-head' style={{textAlign:"center",marginBottom:"50px"}}>
+        <h3 className='kno-head' style={{textAlign:"center",marginBottom:"40px"}}>
             IEMAP effectively maps chronologically competitive evidence to support clinical development and access strategies
         </h3>
-        <div className='mapped-div'>
+
+        <h2 style={{textAlign:"center",marginBottom:"30px",backgroundColor:"rgb(7,78,178)",margin:"10%",marginBottom:20,marginTop:0,padding:20,color:'white',fontFamily:"Manrope-Bold"}}>MKTXS Integrated Evidence Mapping Platform (IEMAPTM)
+</h2>
+        <div style={{display:"flex",alignContent:'center',mixBlendMode:"multiply"}}>
+            <img src="./change3.png" alt="" style={{margin:"auto"}} />
+        </div>
+        {/* <div className='mapped-div'>
             <img src="./iemap.png" alt="" />
             <table>
                 <thead>
@@ -83,13 +89,13 @@ const Iemap = () => {
                 <li>Developing short- and long-term business strategy, etc.</li>
                 <li>Gap mitigation</li>
             </ul>
-        </div>
+        </div> */}
 
-        <h3 className='kno-head' style={{textAlign:"center",marginBottom:"20px",fontSize:"19px",marginTop:'70px'}}>
+        {/* <h3 className='kno-head' style={{textAlign:"center",marginBottom:"20px",fontSize:"19px",marginTop:'70px'}}>
         Chronology of competitive evidence mapping
         </h3>
-        <div className="timeline-container">
-        <div className="timeline">
+        <div className="timeline-container"> */}
+        {/* <div className="timeline">
             <div className="event">
                 <div className="event-circle" style={{backgroundColor: "#0074a2"}}></div>
                 <div className="event-content">
@@ -129,12 +135,12 @@ const Iemap = () => {
                     <div className="event-description">Real-world QoL</div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <h3 className='kno-head' style={{textAlign:"center",marginBottom:"20px",fontSize:"19px",marginTop:'70px'}}>
+        {/* <h3 className='kno-head' style={{textAlign:"center",marginBottom:"20px",fontSize:"19px",marginTop:'70px'}}>
             EMAP helps in developing a targeted, efficient, and effective evidence-generation strategy that maximizes your product’s potential
-        </h3>
-    </div>
+        </h3> */}
+    {/* </div> */}
     </div>
   )
 }

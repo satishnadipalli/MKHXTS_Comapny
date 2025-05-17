@@ -87,13 +87,13 @@ const Services = () => {
                 <div className="headerz">
                     <div className="header-box blue">Development Phase</div>
                     <div className="header-box green">Preclinical – Phase I (Discovery)</div>
-                    <div className="header-box gray">Phase II – Phase III (Development)</div>
-                    <div className="header-box dark-blue">Phase III/IV (Launch/Post-launch)</div>
+                    <div className="header-box gray">Phase II – Phase III (Product Lifecycle)</div>
+                    <div className="header-box dark-blue">Phase III – IV (Launch / Post Launch) </div>
                 </div>
 
                 {/* Row 1 - PMA/HEOR Impact */}
                 <div className="row">
-                    <div className="left-section">
+                    <div className="left-section" style={{display:"flex",flexDirection:"column",alignItems:'center',justifyContent:'center'}}>
                         <h3>PMA/HEOR Impact</h3>
                         <p>(Non-Exhaustive)</p>
                         <p><i>Functional areas and work streams</i></p>
@@ -134,7 +134,7 @@ const Services = () => {
                             <div key={i} className="box">
                                 <ul>
                                     {group.slice(0, 3)?.map((item, j) => <li key={j}>{item}</li>)}
-                                    <ul>
+                                    <ul style={{marginLeft:10}}>
                                         {group[3]?.map((sub, k) => <li key={k}>{sub}</li>)}
                                     </ul>
                                 </ul>

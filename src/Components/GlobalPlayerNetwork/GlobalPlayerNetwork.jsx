@@ -8,13 +8,14 @@ const GlobalPayerNetwork = () => {
         MKTXS has a vast global payer network, which includes relevant payer archetypes within each market
       </h1>
       <div className="map-container">
-        <img src="/globalpayernetwork.jpg" alt="World Map with Markers" className="world-map" />
+        <img src="/worldmap.png" alt="World Map with Markers" className="world-map" />
       </div>
       <div className="info-box">
-        <h2 className="info-title">MKTXS has "feet on the ground" partners across global markets including US and EU</h2>
+        <h2 className="info-title">MKTXS has "feet on the ground" partners across global markets including US, UK and EU</h2>
         <p className="info-text">We have global partners that are experts in markets across their specific region of expertise, and currently span:</p>
-        <div className="country-grid">
+        <div className="country-grid" style={{placeItems:"center"}}>
           <div>
+            <p>US</p>
             <p>UK</p>
             <p>France</p>
             <p>Germany</p>

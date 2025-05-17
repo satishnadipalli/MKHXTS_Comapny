@@ -45,8 +45,10 @@ const InsightsBooks = () => {
         <div className='about'>
           <div className='background'></div>
           <div className='about-text'>
-            <h1 className='about-main-head'>About Our Company</h1>
-            <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p>
+            <h1 className='about-main-head' style={{fontSize:"50px",fontFamily:"Manrope-Semibold",textDecoration:"underline"}}>
+                Insignts
+            </h1>
+            {/* <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p> */}
           </div>
         </div>
         <h3 className='title' style={{textAlign:"center"}}>
@@ -55,52 +57,9 @@ const InsightsBooks = () => {
         <div style={{width:"100%",marginTop:"50px",display:"flex",alignItems:"center",justifyContent:"center"}}>
             <img data-aos="fade-up" src="./insightbooks.png" style={{height:"600px",minWidth:"500px",margin:"auto"}} alt="" />
         </div>
-        <h3 style={{textAlign:"center",width:"80%",margin:"auto",marginTop:"80px",}} className='retro'>
-            Insight Books Module Empower Rapid de-risk and Optimal Decision-making for NBD opportunities
-        </h3>
-        {/* <div className='insights-container'>
-            <img src="./insightlogo.png" alt="No iamge found" className='ins_logo'/>
-            {
-                curse?.map((element)=>{
-                    return(
-                        <img src={element} alt="" style={{width:"180px"}} />
-                    )
-                })
-            }
-        </div> */}
-
-        {/* <div className='sec-insight-container'>
-            <div className='main_ins_head'>
-                KEY DOMAINS
-            </div>
-            <div className='over-maper'>
-                {
-                    overview?.map((element,i)=>{
-                        return(
-                            <div className='overmap'>{element}</div>
-                        )
-                    })
-                }
-            </div>
-        </div> */}
-
-        {/* <div className='sec-insight-container'>
-            <div className='main_ins_head'>
-                KEY INSIGHTS
-            </div>
-            <div className='over-maper'>
-                {
-                    insights?.map((element,i)=>{
-                        return(
-                            <div>{element}</div>
-                        )
-                    })
-                }
-            </div>
-        </div> */}
-
-        <h3 style={{textAlign:"center",width:"80%",margin:"auto",marginTop:"80px",fontSize:"18px"}} className='retro'>
-            Insight Books Module Empower Rapid de-risk and Optimal Decision-making for NBD opportunities
+        <h3 style={{textAlign:"center",width:"80%",margin:"auto",marginTop:"80px",fontSize:"20px",fontStyle:"italic",fontFamily:"Manrope-Bold",color:"rgb(7,107,178)"}} className='retros'>
+            "Insight Books aligns the cross-functional team and serves as a valuable reference for powering decision-making
+Disease-level P&R Landscape, including in-line and pipeline products"
         </h3>
     </div>
   )

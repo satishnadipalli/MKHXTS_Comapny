@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import "./styles/Vip.css";
-import flex from "./assets/flexibility.png"
+
+// import flex from ""
+// import vocalitic from ""
+// import valid from "./assets/velocity-1.jpg"
+// import velocity from ""
+// import insights from "./insights-1.png"
+
+
 import stateofart from "./assets/stateofart.png"
-import insights from "./assets/insights.png"
-import vocalitic from "./assets/vocalists.jpg"
-import valid from "./assets/mindset.jpg"
-import velocity from "./assets/velocity.jpg"
 import Background from "./assets/vipbackground.jpg"
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -24,20 +27,24 @@ const allowanceData = [
 
 const benifitsData = [
     {
-        img:insights,
+        img:"./insights-1.png",
         points:"Actionable, Refined, and Globally validated"
     },
     {
-        img:valid,
-        points:"Real-time: Payer mindset movement toward optimal value"
+        img:"./velocity-1.png",
+        points:"ONE WEEK from start to finish"
     },
     {
-        img:flex,
-        points:"Customized to assess individual messages as well as overall value story"
+        img:"./vocalties-1.png",
+        points:"True resonance:  Assess the words and the perceptions (emotions, patterns, and cues) to gauge the value of the story "
+    },
+    {
+        img:"./mind-1.png",
+        points:"Real-time Payer mindset movement toward optimal value"
     },
            {
-        img:vocalitic,
-        points:"True resonance:  Assess the words and the perceptions (emotions, patterns, and cues) to gauge value of the story "
+        img:"./flex-1.png",
+        points:"Customized to assess individual messages as well as overall value story"
     },  
  
 
@@ -57,8 +64,8 @@ const Vip = () => {
       <div className='mktxs_backs' data-aos="fade">
         <div className='background'></div>
          <div className='mobility'>
-         <h2 className='main-head'>VIP™</h2>
-         <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span>
+         <h2 className='main-head ' style={{fontSize:"50px",fontFamily:"Manrope-Semibold"}}>VIP™</h2>
+         {/* <span className='head-2 main-head'>Value Message Testing, Analysis, & Validation</span> */}
          </div>
       </div>
       <div className='section_2'>

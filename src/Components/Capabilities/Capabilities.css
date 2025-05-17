@@ -126,7 +126,7 @@
   display: block;
   width: 30%;  /* Increased width to cover the chip */
   height: 18%; /* Increased height to cover the chip */
-  background: rgba(255, 255, 255, 0.01); /* Invisible but clickable */
+  /* background: rgba(255, 255, 255, 0.01); Invisible but clickable */
   cursor: pointer;
 }
 

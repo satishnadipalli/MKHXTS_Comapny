@@ -20,7 +20,6 @@ const ContactUs = () => {
         <div className='background'></div>
          <div className='mobilitys'>
          <h2 className='main-head'>CONTACT US</h2>
-         
          </div>
       </div>
 
