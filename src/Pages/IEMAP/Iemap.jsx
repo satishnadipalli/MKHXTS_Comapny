@@ -18,7 +18,7 @@ const Iemap = () => {
             IEMAP effectively maps chronologically competitive evidence to support clinical development and access strategies
         </h3>
 
-        <h2 style={{textAlign:"center",marginBottom:"30px",backgroundColor:"rgb(7,78,178)",margin:"10%",marginBottom:20,marginTop:0,padding:20,color:'white',fontFamily:"Manrope-Bold"}}>MKTXS Integrated Evidence Mapping Platform (IEMAPTM)
+        <h2 style={{textAlign:"center",marginBottom:"30px",backgroundColor:"rgb(7,78,178)",margin:"10%",marginTop:0,padding:20,color:'white',fontFamily:"Manrope-Bold"}}>MKTXS Integrated Evidence Mapping Platform (IEMAPTM)
 </h2>
         <div style={{display:"flex",alignContent:'center',mixBlendMode:"multiply"}}>
             <img src="./change3.png" alt="" style={{margin:"auto"}} />

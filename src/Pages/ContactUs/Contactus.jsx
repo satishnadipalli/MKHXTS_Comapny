@@ -66,7 +66,7 @@ const ContactUs = () => {
               <div>
                 <strong>Linkedin</strong>
                 <div className='enomis'>
-                  <p><a href="mailto:sshah@mktxs.com">https://www.linkedin.com/company/mktxs                  </a></p>
+                  <p><a href="https://www.linkedin.com/company/mktxs" target='_blank'>https://www.linkedin.com/company/mktxs                  </a></p>
                   {/* <br /> */}
                 </div>
               </div>

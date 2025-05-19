@@ -8,7 +8,7 @@ const ClinicalOutComes = () => {
       <div className='about' style={{marginBottom:"50px"}}>
         <div className='background'></div>
         <div className='about-text'>
-            <h1 className='about-main-head' style={{fontSize:"50px",fontFamily:"Manrope-Semibold",textDecoration:"underline"}}>Outcomes</h1>
+            <h1 className='about-main-head' style={{fontSize:"50px",fontFamily:"Manrope-Semibold",textDecoration:"underline"}}>Outcomes Navigator</h1>
             {/* <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p> */}
         </div>
     </div>

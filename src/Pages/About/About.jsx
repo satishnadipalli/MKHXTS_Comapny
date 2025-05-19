@@ -229,13 +229,14 @@ const boradingData = [
     image: clients,
     title: "Publications",
     members: 390,
-    desc: "Healthcare services costs are paid for by private payers or public payers. Private payers are insurance companies."
+        desc: "Subscription and open-access journals from SAGE Publishing, the world’s leading independent academic publisher."
   },
   {
     image: recruit,
     title: "Payers",
     members: 3456,
-    desc: "Subscription and open-access journals from SAGE Publishing, the world’s leading independent academic publisher."
+    desc: "Healthcare services costs are paid for by private payers or public payers. Private payers are insurance companies."
+
   }
 ];
 

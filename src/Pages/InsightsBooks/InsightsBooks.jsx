@@ -46,7 +46,7 @@ const InsightsBooks = () => {
           <div className='background'></div>
           <div className='about-text'>
             <h1 className='about-main-head' style={{fontSize:"50px",fontFamily:"Manrope-Semibold",textDecoration:"underline"}}>
-                Insignts
+                Insights Books
             </h1>
             {/* <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p> */}
           </div>
