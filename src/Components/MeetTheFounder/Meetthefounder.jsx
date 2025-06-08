@@ -62,7 +62,7 @@ const MeetTheFounder = () => {
           <img src={SandipShah} alt="Sandip Shah" className="profile-image" />
         </div>
         <div className="profile-name">
-          <span>Koen Torfs</span>
+          <span>Sandip Shah</span>
         </div>
         <div className="divider-line"></div>
         <div className="profile-title">President & CEO</div>
@@ -83,7 +83,7 @@ const MeetTheFounder = () => {
           <img src={"./koen.png"} alt="Sandip Shah" className="profile-image" />
         </div>
         <div className="profile-name">
-          <span>Sandip Shah</span>
+          <span>Koen Torfs</span>
         </div>
         <div className="divider-line" ></div>
         <div className="profile-title">Senior Advisor</div>
