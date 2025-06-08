@@ -43,7 +43,7 @@ const Header = () => {
                                 className='company_logo'
                                 onClick={() => navigate("/")}
                             />
-                            <p className='head_9' style={{fontSize:"12px",textAlign:"center",whiteSpace:"nowrap",marginLeft:-20,marginRight:30}}>Meeting your needs. Surpassing your expectations.</p>
+                            <p className='head_9' style={{fontSize:"11px",textAlign:"center",whiteSpace:"nowrap",marginLeft:-20,marginRight:30}}>Meeting your needs. Surpassing your expectations.</p>
                         </div>
                         <div className='route_container'>
                             <Link to={"/"}>
