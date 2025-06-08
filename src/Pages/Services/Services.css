@@ -206,8 +206,13 @@ ul li{
     padding: 30px 20px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
+    width: 170px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: "Manrope-SemiBold";
     line-height: 1.5;

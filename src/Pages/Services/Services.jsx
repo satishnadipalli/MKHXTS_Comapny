@@ -58,7 +58,7 @@ const Services = () => {
 
             <div className='our-services' style={{ backgroundColor: "white" }}>
                 <div>
-                    <h1 className='our-services-main-head' style={{ color: "black" }}>OUR SERVICES</h1>
+                    <h1 className='our-services-main-head' style={{ color: "black",textAlign:"left" }}>OUR SERVICES</h1>
                     <div className="grid-wrapper">
                         {[
                             "Evidence Generation <br/> & Synthesis",
@@ -175,13 +175,6 @@ const Services = () => {
                         ))}
                     </div>
                 </div>
-            </div>
-
-            <div className='cap-main'>
-                <h3 style={{ marginTop: 80, textAlign: "center", width: "80%", margin: "auto" }}>
-                    MKTXS accelerated data availability for faster decision making and greater insights while saving costs
-                </h3>
-                
             </div>
         </div>
     );
