@@ -5,9 +5,17 @@
   align-items: center;
   justify-content: center;
   min-height:70vh ;
-  margin-top: 150px;
+  margin-top: 20px;
   margin-bottom: 70px;
 
+}
+
+
+.imgs {
+  width: auto;
+  height: auto;
+  object-fit: contain; /* or cover, depending on layout */
+  image-rendering: auto;
 }
 
 

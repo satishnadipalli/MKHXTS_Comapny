@@ -25,7 +25,6 @@ const GlobalPayerNetwork = () => {
           <div>
             <p>Austria</p>
             <p>Belgium</p>
-            <p>Luxembourg</p>
             <p>Switzerland</p>
             <p>Sweden</p>
             <p>Russia</p>
@@ -34,9 +33,9 @@ const GlobalPayerNetwork = () => {
             <p>Canada</p>
             <p>Australia</p>
             <p>India</p>
-            <p>Indonesia</p>
+            <p>Singapore</p>
             <p>Japan</p>
-            <p>Thailand</p>
+            <p>China</p>
           </div>
           <div>
             <p>Argentina</p>
@@ -44,6 +43,8 @@ const GlobalPayerNetwork = () => {
             <p>Mexico</p>
             <p>Egypt/MeNa</p>
             <p>Taiwan</p>
+            <p>Korea</p>
+            <p>China</p>
           </div>
         </div>
       </div>

@@ -285,11 +285,11 @@
   width: 100%;
   height: 100%;
   /* background-color: #161C2D; */
-  background-color: rgb(167, 167, 167);
+  /* background-color: rgb(255, 255, 255); */
   opacity: 0.3;
   position: absolute;
   background-color: black; 
-  opacity: 0.27;
+  /* opacity: 0.27; */
   /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   transition-behavior: normal, normal, normal;
   transition-duration: 0.3s, 0.3s, 0.3s;
@@ -305,11 +305,11 @@
   position: absolute;
   display: flex;
   width: 80%;
-  height: 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 11;
-  position: absolute;
-  /* background-color: green; */
-  bottom: -20px;
   right: 10%;
   
 }
@@ -425,7 +425,9 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  align-items: center;
+  /* width: 90%; */
+  /* background-color: green; */
 }
 .sec_2{
   width: 370px;
@@ -433,19 +435,21 @@ input:focus {
 }
 .head_2{
   font-family: "Manrope-Regular";
-  font-size:50px;
+  font-size:60px;
   color: white; 
   font-weight: 600;
+  text-align: center;
 }
 
 
 
 
 .head_9{
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Poppins",sans-serif;
   color: rgb(255, 255, 255);
   width: 80%;
+  text-align: center;
 }
 .subi3{
   background-color: white;
@@ -923,14 +927,12 @@ input:focus {
 
 
 .Two_divs{
-  position: absolute;
   display: flex;
-  width: 80%;
-  display: block;
-  /* background-color: green; */
+  width: 100%;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
+  background-color: rebeccapurple;
   
 }
 

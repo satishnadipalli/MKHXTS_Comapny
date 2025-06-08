@@ -85,23 +85,22 @@ const Home = () => {
     <>
       <div className='main-main-home' style={{ position: "relative" }}>
         <div className='main-home'>
-          <div className='backgrounds'></div>
+          {/* <div className='backgrounds'></div> */}
           <div className='Two_divs' style={{ zIndex: 17 }}>
             <div className='sec_1' style={{ zIndex: 17 }}>
               <p className='head_2' data-aos="fade-up">Discover the world of an integrated global consultancy</p>
               <p className='head_9' style={{ fontStyle: "italic" }} data-aos="fade-up">
-                Meeting your needs. Surpassing your expectations
-              </p>
-              <div className='buttons-div'>
+                </p>
+              {/* <div className='buttons-div'>
                 <button className='subi' onClick={() => navigate("/services")}>Services</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
         <div className='home_sec2'>
           <p className='home_partner'>
-            Market Access Solutions (MKTXS) is a boutique global consultancy that collaborates with life science companies to produce customized, integrated, and evidence-based strategies to optimize product value and patient access.
+            Market Access Solutions (MKTXS) is a boutique global consultancy with over two decades of experience in the life sciences industry, partnering with companies to develop customized, integrated, and evidence-based strategies that maximize product value and enhance patient access
           </p>
         </div>
 
@@ -119,9 +118,6 @@ const Home = () => {
 
         <About />
       </div>
-
-      {/* Testimonial Section */}
-      <Testimonial />
     </>
   );
 };

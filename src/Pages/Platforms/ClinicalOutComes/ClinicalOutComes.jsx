@@ -13,7 +13,7 @@ const ClinicalOutComes = () => {
         </div>
     </div>
       <ClinicalOutcomes/>
-      <PredictiveInsights/>
+      {/* <PredictiveInsights/> */}
     </div>
   )
 }

@@ -268,9 +268,9 @@ const About = () => {
 
   return (
     <>
-      <div style={{marginBlock:"70px",height:"90vh",backgroundColor:"white"}}>
-        <h2 className='clientListHead'>MKTXS Global Footprint can grow your business</h2>
-        <div className='client_lists'>
+      <div style={{marginBlock:"70px",backgroundColor:"white"}}>
+        <h2 className='clientListHead' style={{paddingTop:20}}>MKTXS Global Footprint can grow your business</h2>
+        <div className='client_lists' >
             {
               boradingData.map((item,index)=>{
                 return(
@@ -288,7 +288,6 @@ const About = () => {
                   </div>
                 )
               })
-  
             }
           </div>
           

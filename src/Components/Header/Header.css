@@ -17,7 +17,7 @@ header {
     margin: auto;
     display: flex;
     justify-items: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 7px;
     padding-top: 15px;
     align-items: center;
@@ -26,14 +26,15 @@ header {
 .logo_container {
     display: flex;
     /* background-color: rgb(44, 19, 19); */
-    border-radius: 90px;
-    align-items: center;
-    justify-content: center;
+    /* border-radius: 90px; */
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
     flex-direction: column;
 }
 
 .company_logo {
-    width: 200px;
+    width: 270px;
 }
 
 .route_container {

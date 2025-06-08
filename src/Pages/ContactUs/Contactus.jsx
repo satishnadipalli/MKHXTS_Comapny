@@ -41,26 +41,6 @@ const ContactUs = () => {
                 <p><a href="https://www.mktxs.com" target="_blank" rel="noopener noreferrer">www.MKTXS.com</a></p>
               </div>
             </div>
-
-            <div className="info-item">
-              <FiPhone className="icon" size={40} />
-              <div>
-                <strong>Phone</strong>
-                <p>+1 908-391-3398                </p>
-              </div>
-            </div>
-
-            <div className="info-item">
-              <FiMail className="icon" size={40} />
-              <div>
-                <strong>Email</strong>
-                <div className='enomis'>
-                  <p><a href="mailto:sshah@mktxs.com">sshah@mktxs.com</a></p>
-                  {/* <br /> */}
-                </div>
-              </div>
-            </div>
-
             <div className="info-item">
               <FiLinkedin className="icon" size={40} />
               <div>
@@ -83,10 +63,6 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* <footer className="footer">
-          <p>Contact Us</p>
-          <p>16</p> */}
-        {/* </footer> */}
       </div>
     </div>
   );

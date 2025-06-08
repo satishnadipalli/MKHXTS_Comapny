@@ -17,7 +17,7 @@ const WhyMktxs = () => {
     <>
     <div className="why-mktxs-container" style={{flexDirection:"column"}}>
       <h1 className='why-choose-us-main-head'>WHY CHOOSE US?</h1>
-      <img src="./website.png" style={{width:"auto"}}  data-aos="fade-in" alt="" /> 
+      <img src="https://res.cloudinary.com/dlehbizfp/image/upload/v1749364672/website_rzt27s.png" className='imgs'  data-aos="fade-in" alt="" /> 
     </div>
     {/* <div className="flow-container">
       <div className="left-section">

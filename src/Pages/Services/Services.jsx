@@ -57,24 +57,24 @@ const Services = () => {
             </div>
 
             <div className='our-services' style={{ backgroundColor: "white" }}>
-                <h1 className='our-services-main-head' style={{ color: "black" }}>OUR SERVICES</h1>
-                <div className="grid-wrapper">
-                    {[
-                        "Real World<br />Evidence (RWE)",
-                        "Evidence<br />Generation",
-                        "Strategic<br />Market Access",
-                        "Contracting &<br />Payer strategy",
-                        "Value Message<br />Testing",
-                        "Launch Sequence<br />Assessment",
-                        "Biomedical<br />Literature Reviews",
-                        "Pricing &<br />Reimbursement Strategy",
-                        "Analog Case<br />Studies & Analysis",
-                        "Proprietary<br />Technologies",
-                        "Advisory<br />Boards/Panels (PRISM)",
-                        "Global Value<br />Dossiers (GVDs)"
-                    ]?.map((text, i) => (
-                        <div key={i} className="grid-box" dangerouslySetInnerHTML={{ __html: text }} />
-                    ))}
+                <div>
+                    <h1 className='our-services-main-head' style={{ color: "black" }}>OUR SERVICES</h1>
+                    <div className="grid-wrapper">
+                        {[
+                            "Evidence Generation <br/> & Synthesis",
+                            "Pricing, Reimbursement <br/> and Access Strategy",
+                            "Value Message <br/> Testing",
+                            "Launch Sequence <br/> Assessment",
+                            "Analog Case Studies <br/> & Analysis",
+                            "Biomedical <br/> Literature Reviews",
+
+                        ]?.map((text, i) => (
+                            <div key={i} className="grid-box" dangerouslySetInnerHTML={{ __html: text }} />
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <Capabilities />
                 </div>
             </div>
 
@@ -86,14 +86,14 @@ const Services = () => {
                 {/* First row */}
                 <div className="headerz">
                     <div className="header-box blue">Development Phase</div>
-                    <div className="header-box green">Preclinical – Phase I (Discovery)</div>
-                    <div className="header-box gray">Phase II – Phase III (Product Lifecycle)</div>
-                    <div className="header-box dark-blue">Phase III – IV (Launch / Post Launch) </div>
+                    <div className="header-box green">Preclinical – Phase I <br /> (Discovery)</div>
+                    <div className="header-box gray">Phase II –  Phase III  <br /> (Product Lifecycle)</div>
+                    <div className="header-box dark-blue">Phase III – IV  <br /> (Launch / Post Launch) </div>
                 </div>
 
                 {/* Row 1 - PMA/HEOR Impact */}
                 <div className="row">
-                    <div className="left-section" style={{display:"flex",flexDirection:"column",alignItems:'center',justifyContent:'center'}}>
+                    <div className="left-section" style={{ display: "flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center' }}>
                         <h3>PMA/HEOR Impact</h3>
                         <p>(Non-Exhaustive)</p>
                         <p><i>Functional areas and work streams</i></p>
@@ -104,37 +104,37 @@ const Services = () => {
                                 "Risk and De-risk",
                                 "Comprehensive Economic and Clinical Burden",
                                 [
-                                    "PMA landscape",
+                                    "PMA Landscape",
                                     "Price Analog Analysis",
-                                    "Disease burden and HEOR analyses"
+                                    "Disease Burden and HEOR Analyses"
                                 ]
                             ],
                             [
-                                "CT design optimization",
-                                "Patient Selection and recruiting",
-                                "Enhanced endpoints",
+                                "CT Design Optimization",
+                                "Patient Selection and Recruiting",
+                                "Enhanced Endpoints",
                                 [
                                     "Indication Sequencing",
-                                    "Access stakeholder mapping",
-                                    "Value story development",
-                                    "Payer value mapping"
+                                    "Access Stakeholder Mapping",
+                                    "Value Story Development",
+                                    "Payer Value Mapping"
                                 ]
                             ],
                             [
                                 "Pricing Strategy Implementation",
-                                "Risk assessment of Outcomes-Based Contracts",
+                                "Risk Assessment of Outcomes-Based Contracts",
                                 "Enhanced RWE Analytics",
                                 [
                                     "PMA Strategy Development",
-                                    "Payer evidence Generation / HEOR",
-                                    "Policy/advocacy strategy Analytics"
+                                    "Payer Evidence Generation / HEOR",
+                                    "Policy/Advocacy Strategy Analytics"
                                 ]
                             ]
                         ]?.map((group, i) => (
                             <div key={i} className="box">
                                 <ul>
                                     {group.slice(0, 3)?.map((item, j) => <li key={j}>{item}</li>)}
-                                    <ul style={{marginLeft:10}}>
+                                    <ul style={{ marginLeft: 10 }}>
                                         {group[3]?.map((sub, k) => <li key={k}>{sub}</li>)}
                                     </ul>
                                 </ul>
@@ -145,8 +145,8 @@ const Services = () => {
 
                 {/* Row 2 - Commercial Impact */}
                 <div className="row">
-                    <div className="left-section">
-                        <h3>Commercial Impact</h3>
+                    <div className="left-section" style={{ display: "flex", alignItems: "center", justifyContent: 'center' }}>
+                        <h3 style={{ paddingLeft: 20 }}>Commercial Impact</h3>
                     </div>
                     <div className="content">
                         {[
@@ -158,13 +158,13 @@ const Services = () => {
                             [
                                 "Scientific Platform Development",
                                 "KOL Profiling and Mapping",
-                                "Patient flow Mapping",
+                                "Patient Flow Mapping",
                                 "Value Prop / Positioning",
-                                "Stakeholder segmentation"
+                                "Stakeholder Segmentation"
                             ],
                             [
-                                "Brand plan development and messaging",
-                                "Patient support programs"
+                                "Brand Plan Development and Messaging ",
+                                "Patient Support Programs "
                             ]
                         ]?.map((group, i) => (
                             <div key={i} className="box">
@@ -181,7 +181,7 @@ const Services = () => {
                 <h3 style={{ marginTop: 80, textAlign: "center", width: "80%", margin: "auto" }}>
                     MKTXS accelerated data availability for faster decision making and greater insights while saving costs
                 </h3>
-                <Capabilities />
+                
             </div>
         </div>
     );

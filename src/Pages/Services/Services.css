@@ -188,21 +188,25 @@ ul li{
 }
 
 .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    padding: 60px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
+  gap: 30px;
+  padding: 60px 40px;
+  margin: 0 auto;
+}
+
+  .our-services{
+    display: flex;
+    gap: 50px;
   }
   
   .grid-box {
     background-color: #0071bc;
     color: white;
-    padding: 40px 30px;
+    padding: 30px 20px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     text-align: center;
     font-family: "Manrope-SemiBold";
@@ -245,6 +249,10 @@ ul li{
     }
     .content {
         flex-direction: column; /* Stack content boxes on smaller screens */
+    }
+    .our-services{
+        display: flex;
+        flex-direction: column;
     }
 }
 
