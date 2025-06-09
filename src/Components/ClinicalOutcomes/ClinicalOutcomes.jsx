@@ -3,116 +3,60 @@ import "./ClinicalOutcomes.css";
 
 const ClinicalOutcomes = () => {
   return (
-    <div className="clinical-outcomes-container">
-      {/* Header Section */}
-      <div className="header-section">
-        <h1 className="main-title">Clinical Outcomes Navigator</h1>
-        <p className="main-description">
-          Empowers asset development strategies with actionable insights into regulatory trends, competitive landscapes,
-          and clinically relevant outcomes
-        </p>
-      </div>
-
-      {/* Pyramid Structure */}
+        <div className="clinical-outcomes-container">
+      <h2 className="title">
+        Clinical Outcomes Navigator empowers asset development strategies with actionable insights into regulatory trends, competitive landscapes, and clinically relevant outcomes
+      </h2>
+      
       <div className="pyramid">
-        {/* Level 1 - Feedback/Validation */}
         <div className="pyramid-row">
           <div className="pyramid-content">
             <div className="pyramid-level dark">
-              <div className="level-header">
-                <span className="icon">✓</span>
-                <h3>Feedback & Validation</h3>
-              </div>
-              <p>Clinical Outcomes Assessment</p>
+              <p>Feedback / Validation on Clinical Outcomes</p>
             </div>
-            <div className="arrow">→</div>
-            <div className="description blue-theme">
-              <p>
-                Understanding which clinical outcomes have been successful or rejected by HTA/Payers, providing critical
-                insights for strategic decision-making
-              </p>
-            </div>
+            <div className="arrow">➡</div>
+            <div className="description aligned">Understanding which clinical outcomes have been successful or rejected by HTA/ Payers</div>
           </div>
         </div>
 
-        {/* Level 2 - Outcome Assessment Type */}
         <div className="pyramid-row">
           <div className="pyramid-content">
             <div className="pyramid-level green">
-              <div className="level-header">
-                <span className="icon">🎯</span>
-                <h3>Outcome Assessment</h3>
-              </div>
-              <p>Primary, Secondary, Exploratory, Co-Primary</p>
+              <p>Outcome Assessment Type <br />(Primary, Secondary, Exploratory, or Co-Primary)</p>
             </div>
-            <div className="arrow">→</div>
-            <div className="description green-theme">
-              <p>
-                Reveals endpoint patterns that guide benchmarking against competitor strategies, enabling informed
-                competitive positioning
-              </p>
-            </div>
+            <div className="arrow">➡</div>
+            <div className="description aligned">Reveals endpoint pattern that guides benchmarking against competitor strategies</div>
           </div>
         </div>
 
-        {/* Level 3 - Clinical Outcomes by Product */}
         <div className="pyramid-row">
           <div className="pyramid-content">
             <div className="pyramid-level gray">
-              <div className="level-header">
-                <span className="icon">📊</span>
-                <h3>Clinical Outcomes</h3>
-              </div>
-              <p>Assessment Reports by Product</p>
+              <p>Clinical outcomes used in the assessment report by product</p>
             </div>
-            <div className="arrow">→</div>
-            <div className="description gray-theme">
-              <p>
-                Comprehensive tracking of in-market therapy outcomes, providing real-world evidence and performance
-                benchmarks
-              </p>
-            </div>
+            <div className="arrow">➡</div>
+            <div className="description aligned">Tracks in-market therapy outcomes</div>
           </div>
         </div>
 
-        {/* Level 4 - Regulatory Bodies */}
         <div className="pyramid-row">
           <div className="pyramid-content">
             <div className="pyramid-level blue">
-              <div className="level-header">
-                <span className="icon">🌐</span>
-                <h3>Global Regulators</h3>
-              </div>
-              <div className="regulators">
-                <span>FDA</span> <span>EMA</span> <span>MHRA</span> <span>PMDA</span> <span>NMPA</span>
-                <span>GBA</span> <span>HAS</span> <span>NICE</span> <span>ICER</span> <span>C2H</span>
-              </div>
-            </div>
-            <div className="arrow">→</div>
-            <div className="description blue-theme">
-              <div className="description-content">
-                <p>
-                  Accurate data with comprehensive references, ensuring reliability and transparency across all regulatory
-                  jurisdictions
-                </p>
-                <div className="feature-highlight">
-                  <span className="bullet">•</span>
-                  <span>Customizable based on business needs</span>
+              <div className="regulators" >
+                <div>
+                  <span>FDA</span> <span>EMA</span> <span>MHRA</span> <span>PMDA</span> <span>NMPA</span>
+                </div>
+                <div>
+                  <span>GBA</span> <span>HAS</span> <span>NICE</span> <span>ICER</span> <span>C2H</span>
                 </div>
               </div>
             </div>
+            <div className="arrow">➡</div>
+            <div className="description aligned" style={{minWidth:300}}>
+              Accurate data with references, ensuring reliability and transparency <br />
+              Customizable based on business needs
+            </div>
           </div>
-        </div>
-      </div>
-
-      {/* Bottom CTA Section */}
-      <div className="cta-section">
-        <div className="cta-content">
-          <h3>Ready to Navigate Clinical Outcomes?</h3>
-          <p>
-            Transform your asset development strategy with comprehensive insights and data-driven decisions
-          </p>
-          {/* <button className="cta-button">Get Started Today</button> */}
         </div>
       </div>
     </div>
@@ -120,3 +64,82 @@ const ClinicalOutcomes = () => {
 };
 
 export default ClinicalOutcomes;
+
+
+// import React from "react";
+// import "./ClinicalOutcomes.css";
+
+// const ClinicalOutcomes = () => {
+//   return (
+//     <div className="clinical-outcomes-container">
+//       <h2 className="title">
+//         Clinical Outcomes Navigator empowers asset development strategies with actionable insights into regulatory trends, competitive landscapes, and clinically relevant outcomes
+//       </h2>
+      
+//       <div className="pyramid">
+//         <div className="pyramid-row">
+//           <div className="pyramid-content">
+//             <div className="pyramid-level dark">
+//               <p>Feedback / Validation on Clinical Outcomes</p>
+//             </div>
+//             <div className="arrow">➡</div>
+//             <div className="description aligned">Provides insight into how clinical outcomes are validated</div>
+//           </div>
+//         </div>
+
+//         <div className="pyramid-row">
+//           <div className="pyramid-content">
+//             <div className="pyramid-level green">
+//               <p>Outcome Assessment Type <br />(Primary, Secondary, Exploratory, or Co-Primary)</p>
+//             </div>
+//             <div className="arrow">➡</div>
+//             <div className="description aligned">Defines assessment types used for regulatory and market approval</div>
+//           </div>
+//         </div>
+
+//         <div className="pyramid-row">
+//           <div className="pyramid-content">
+//             <div className="pyramid-level gray">
+//               <p>Clinical outcomes used in the assessment report by product</p>
+//             </div>
+//             <div className="arrow">➡</div>
+//             <div className="description aligned">Tracks clinical outcome measures by product</div>
+//           </div>
+//         </div>
+
+//         <div className="pyramid-row">
+//           <div className="pyramid-content">
+//             <div className="pyramid-level blue">
+//               <div className="regulators">
+//                 <span>FDA</span> <span>EMA</span> <span>MHRA</span> <span>PMDA</span> <span>NMPA</span>
+//                 <span>GBA</span> <span>HAS</span> <span>NICE</span> <span>ICER</span> <span>C2H</span>
+//               </div>
+//             </div>
+//             <div className="arrow">➡</div>
+//             <div className="description aligned">Key regulators monitoring clinical outcomes</div>
+//           </div>
+//         </div>
+//       </div>
+      
+//       <div className="info-section">
+//         <div className="info-item">
+//           <span className="bullet">&#8226;</span> Understanding which clinical outcomes have been successful or rejected by HTA/Payers
+//         </div>
+//         <div className="info-item">
+//           <span className="bullet">&#8226;</span> Reveals endpoint pattern that guides benchmarking against competitor strategies
+//         </div>
+//         <div className="info-item">
+//           <span className="bullet">&#8226;</span> Tracks in-market therapy outcomes
+//         </div>
+//         <div className="info-item">
+//           <span className="bullet">&#8226;</span> Accurate data with references, ensuring reliability and transparency
+//         </div>
+//         <div className="info-item">
+//           <span className="bullet">&#8226;</span> Customizable based on business needs
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ClinicalOutcomes;

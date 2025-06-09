@@ -29,7 +29,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/'  element={<Home/>} />
-          <Route path='/pharma-ai' element={<Mvap/>}/>
+          <Route path='/mvap' element={<Mvap/>}/>
           <Route path='/contactus' element={<ContactUs/>}/>
           <Route path='/services' element={<Services/>}/>
           {/* <Route path='/insight-miner' element={<InsightMiner/>}/> */}

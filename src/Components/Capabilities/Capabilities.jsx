@@ -2,12 +2,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Capabilities.css";
-import capabilitiesImg from "/capbackground.png"; // Ensure correct image path
+// import capabilitiesImg from "/mktxs-products.png"; // Ensure correct image path
 
 const Capabilities = () => {
   return (
     <div className="capabilities-container" style={{border:"none"}}>
-      <img style={{mixBlendMode:"multiply"}} src={capabilitiesImg} alt="Capabilities"  styles={{border:"none"}} className="capabilities-image" />
+      <img style={{mixBlendMode:"multiply"}} src={"./mktxs-products.png"} alt="Capabilities"  styles={{border:"none"}} className="capabilities-image" />
 
       {/* Clickable Sections */}
       <Link to="/vip" className="click-area vip"></Link>
