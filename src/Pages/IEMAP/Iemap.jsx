@@ -10,7 +10,7 @@ const Iemap = () => {
             <div className='about' style={{ marginBottom: "50px" }}>
                 <div className='background'></div>
                 <div className='about-text'>
-                    <h1 className='about-main-head'>IMEAP</h1>
+                    <h1 className='about-main-head'>IEMAP</h1>
                     {/* <p className='about-main-para'>MKTXS has the tools to help pharmaceutical/biotechnology companies build effective strategies to resolve key market access concerns and enhance product value</p> */}
                 </div>
             </div>

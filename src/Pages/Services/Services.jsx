@@ -57,8 +57,9 @@ const Services = () => {
             </div>
 
             <div className='our-services' style={{ backgroundColor: "white" }}>
-                <div>
-                    <h1 className='our-services-main-head' style={{ color: "black",textAlign:"left" }}>OUR SERVICES</h1>
+                <div style={{}}>
+                    {/* <h1 className='our-services-main-head' style={{ color: "black", }}></h1> */}
+                    <p style={{color:"black",textAlign:"center",fontSize:19,fontFamily:"Manrope-Bold",marginBottom:-30}}>OUR SERVICES</p>
                     <div className="grid-wrapper">
                         {[
                             "Evidence Generation <br/> & Synthesis",
