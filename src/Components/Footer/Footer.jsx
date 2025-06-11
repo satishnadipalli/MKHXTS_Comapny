@@ -32,7 +32,7 @@ const ourOffices = [
   {
     country: "India",
     place: [
-      "MKTXS for BioPharm Solutions LLP",
+      "MKTXS 4BioPharm Solutions LLP",
       "Bhadralok Towers, Suite D902",
       "OP Road, Vadodara",
       "Gujarat, India",
