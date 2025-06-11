@@ -35,7 +35,7 @@ function App() {
           {/* <Route path='/insight-miner' element={<InsightMiner/>}/> */}
           <Route path='/outcomes' element={<ClinicalOutComes/>}/> 
           <Route path='/vip' element={<Vip/>}/>
-          <Route path="/carve" element={<Carve/>}/>
+          {/* <Route path="/carve" element={<Carve/>}/> */}
           <Route path="*" element={<NotFound/>}/>
           <Route path="/iemap" element={<Iemap/>}/>
           <Route path="/insights" element={<InsightsBooks/>}/>

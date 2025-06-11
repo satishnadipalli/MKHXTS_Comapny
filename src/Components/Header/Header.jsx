@@ -34,10 +34,12 @@ const Header = () => {
   }
 
   const serviceOptions = [
-    { name: "MVAP", path: "/services/mvap" },
-    { name: "VIP", path: "/services/vip" },
-    { name: "IEMAP", path: "/services/iemap" },
-    { name: "Outcomes", path: "/services/outcomes" },
+    { name: "MVAP", path: "/mvap" },
+    { name: "VIP", path: "/vip" },
+    { name: "IEMAP", path: "/iemap" },
+    { name: "Outcomes", path: "/outcomes" },
+    { name : "Insights", path: "/insights"},
+    { name : "SLR/TLR", path : "/knolens"}
   ]
 
   return (
